@@ -1,19 +1,19 @@
-import styles from './car-profile.module.css';
+import styles from './sharing-request.module.css';
 import '@splidejs/react-splide/css/core';
 
 import { gql, request } from 'graphql-request';
 import { msg, t, Trans } from '@lingui/macro';
 import { MessageDescriptor } from '@lingui/core';
 
-import { Layout } from '../components/Layout';
+import { Layout } from '../../components/Layout';
 import { useLingui } from '@lingui/react';
 import { TypedDocumentNode } from '@graphql-typed-document-node/core';
 import { parse } from 'graphql';
-import ResponsiveImage from '../components/ResponsiveImage';
+import ResponsiveImage from '../../components/ResponsiveImage';
 import classnames from 'classnames';
-import { Slider } from '../components/Slider';
-import { StickyHeader } from '../components/StickyHeader';
-import { useEffect, useState } from 'react';
+import { Slider } from '../../components/Slider';
+import { StickyHeader } from '../../components/StickyHeader';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 export enum Transmission {
@@ -45,7 +45,7 @@ const fuelTypeTranslations: {
   [FuelType.Other]: msg`Other`,
 };
 
-interface ProfileData {
+interface Data {
   car: {
     id: string;
     name: string;
@@ -95,7 +95,7 @@ interface ProfileData {
   };
 }
 
-const query: TypedDocumentNode<ProfileData, { carId: string }> = parse(gql`
+const query: TypedDocumentNode<Data, { carId: string }> = parse(gql`
   query ($carId: ID!) {
     car(carId: $carId) {
       id
@@ -151,12 +151,12 @@ const query: TypedDocumentNode<ProfileData, { carId: string }> = parse(gql`
   }
 `);
 
-export default function CarProfile() {
+export default function OwnerShareRequest() {
   const { i18n } = useLingui();
 
   const router = useRouter();
 
-  const [data, setData] = useState<ProfileData | undefined | null>();
+  const [data, setData] = useState<Data | undefined | null>();
 
   const [queryError, setQueryError] = useState<unknown>();
 
@@ -176,6 +176,18 @@ export default function CarProfile() {
       .catch(setQueryError);
   }, [router.query.carId]);
 
+  const pairingCode = Array.isArray(router.query.pairingCode)
+    ? router.query.pairingCode[0]
+    : router.query.pairingCode;
+
+  const openPairingCode = useCallback(() => {
+    if (!pairingCode) {
+      alert('Invalid URL');
+      return;
+    }
+    window.location.href = 'cabble://invite.redeem/' + pairingCode;
+  }, []);
+
   if (queryError || (data && !data.car)) {
     return t(i18n)`Could not load the page`;
   }
@@ -183,7 +195,9 @@ export default function CarProfile() {
   return (
     <Layout
       className={styles.container}
-      title={t(i18n)`Cabble car profile - ${data?.car.name ?? ''}`}>
+      title={t(i18n)`Message from ${
+        data?.car.owner.firstName ?? ''
+      } on Cabble`}>
       <section className={styles.pageSection}>
         <StickyHeader minWidth={breakpoint}>
           <header
@@ -361,6 +375,10 @@ export default function CarProfile() {
                       </Trans>
                     </li>
                   </ul>
+
+                  <a href="https://cabbleapp.com" className={styles.learnMore}>
+                    Learn more
+                  </a>
                 </div>
               </div>
             </aside>
@@ -423,6 +441,10 @@ export default function CarProfile() {
                     </Trans>
                   </li>
                 </ul>
+
+                <a href="https://cabbleapp.com" className={styles.learnMore}>
+                  Learn more
+                </a>
               </div>
             </aside>
           </Slider>
@@ -443,22 +465,49 @@ export default function CarProfile() {
             <div className={styles.sectionContent}>
               <header className={styles.subSectionHeader}>
                 <h3>
-                  <Trans>Download the app for free!</Trans>
+                  <Trans>Already have the app? Use my pairing code.</Trans>
                 </h3>
               </header>
 
               <p>
                 <Trans>
-                  You don't pay for using the app, why don't we just try it out?
+                  This is your unique pairing code to become a driver of this
+                  car.
                 </Trans>
               </p>
 
-              <button className={styles.appStoreButton}>
-                Go to the app store
+              <div className={styles.pairingCode}>
+                {!!pairingCode &&
+                  pairingCode.split('').map(letter => <span>{letter}</span>)}
+              </div>
+
+              <button className={styles.pairButton} onClick={openPairingCode}>
+                <Trans>Use pairing code</Trans>
               </button>
+
+              <header className={styles.subSectionHeader}>
+                <h3>
+                  <Trans>Don't have the app yet? Download it for free!</Trans>
+                </h3>
+              </header>
+
+              <p>
+                <Trans>
+                  You don't pay for using this app, why not give it a try?
+                </Trans>
+              </p>
+
+              <div className={styles.appStoreButtons}>
+                <a href="" className={styles.playStoreButton} />
+                <a href="" className={styles.appStoreButton} />
+              </div>
             </div>
           </aside>
         </div>
+
+        <a className={styles.siteLink} href="https://cabbleapp.com">
+          cabbleapp.com
+        </a>
       </section>
     </Layout>
   );

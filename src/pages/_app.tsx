@@ -1,5 +1,3 @@
-import { Inter, Work_Sans } from 'next/font/google';
-
 import { I18nProvider } from '@lingui/react';
 import { i18n } from '@lingui/core';
 
