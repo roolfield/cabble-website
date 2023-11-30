@@ -13,21 +13,19 @@ export function Layout({ title = null, className = '', children }) {
    * component for changes if you use t`` macro
    */
   useLingui();
-  const router = useRouter();
-  const { pathname, asPath, query } = router;
-
-  // Default props can't be translated at module level because active locale
-  // isn't known when module is imported, but rather when component
-  // is rendered.
-  if (title == null) {
-    title = t`No title`;
-  }
 
   return (
     <div className={styles.container}>
       <Head>
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <main className={classnames(styles.main, className)}>{children}</main>

@@ -9,9 +9,6 @@ import { AppProps } from 'next/app';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 
-const inter = Inter({ subsets: ['latin'] });
-const workSans = Work_Sans({ subsets: ['latin'] });
-
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [messages, setMessages] = useState({});
 
