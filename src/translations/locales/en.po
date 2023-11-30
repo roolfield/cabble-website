@@ -1,0 +1,238 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2020-04-04 13:38+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/pages/car-profile.tsx:256
+msgid "{0} doors"
+msgstr "{0} doors"
+
+#: src/pages/car-profile.tsx:259
+msgid "{0} seats"
+msgstr "{0} seats"
+
+#: src/pages/examples.tsx:36
+#: src/pages/examples.tsx:48
+#~ msgid "{value, plural, one {There's one book} other {There are # books}}"
+#~ msgstr "{value, plural, one {There's one book} other {There are # books}}"
+
+#: src/pages/car-profile.tsx:216
+#: src/pages/car-profile.tsx:301
+msgid "About me"
+msgstr "About me"
+
+#: src/pages/car-profile.tsx:308
+msgid "About my Cabble profile"
+msgstr "About my Cabble profile"
+
+#: src/pages/car-profile.tsx:215
+#: src/pages/car-profile.tsx:231
+msgid "About my car"
+msgstr "About my car"
+
+#: src/pages/car-profile.tsx:322
+msgid "And how does that all work? 🤔"
+msgstr "And how does that all work? 🤔"
+
+#: src/pages/car-profile.tsx:254
+msgid "Automatic"
+msgstr "Automatic"
+
+#: src/pages/examples.tsx:18
+#~ msgid "Black"
+#~ msgstr "Black"
+
+#: src/pages/car-profile.tsx:186
+msgid "Cabble car profile - {0}"
+msgstr "Cabble car profile - {0}"
+
+#: src/pages/index.tsx:50
+#~ msgid "Checkout LinguiJS examples and usecases."
+#~ msgstr "Checkout LinguiJS examples and usecases."
+
+#: src/pages/car-profile.tsx:43
+msgid "CNG"
+msgstr "CNG"
+
+#: src/pages/car-profile.tsx:331
+msgid "Costs"
+msgstr "Costs"
+
+#: src/pages/car-profile.tsx:180
+msgid "Could not load the page"
+msgstr "Could not load the page"
+
+#: src/pages/examples.tsx:18
+#~ msgid "Cyan"
+#~ msgstr "Cyan"
+
+#: src/pages/car-profile.tsx:39
+msgid "Diesel"
+msgstr "Diesel"
+
+#: src/pages/index.tsx:36
+#~ msgid "Documentation →"
+#~ msgstr "Documentation →"
+
+#: src/pages/car-profile.tsx:446
+msgid "Download the app for free!"
+msgstr "Download the app for free!"
+
+#: src/pages/car-profile.tsx:40
+msgid "Electric"
+msgstr "Electric"
+
+#: src/components/Layout.tsx:23
+#~ msgid "Example project using LinguiJS"
+#~ msgstr "Example project using LinguiJS"
+
+#: src/pages/examples.tsx:26
+#~ msgid "Examples"
+#~ msgstr "Examples"
+
+#: src/pages/index.tsx:47
+#~ msgid "Examples →"
+#~ msgstr "Examples →"
+
+#: src/pages/index.tsx:39
+#~ msgid "Find in-depth information about LinguiJS features and API."
+#~ msgstr "Find in-depth information about LinguiJS features and API."
+
+#: src/pages/car-profile.tsx:38
+msgid "Gasoline"
+msgstr "Gasoline"
+
+#: src/pages/car-profile.tsx:240
+msgid "General"
+msgstr "General"
+
+#: pages/index.tsx:13
+#~ msgid "Get started by editing <0>locale/en/messages.po</0>"
+#~ msgstr "Get started by editing <0>locale/en/messages.po</0>"
+
+#: src/pages/index.tsx:28
+#~ msgid "Get started by editing <0>locales/en.po</0>"
+#~ msgstr "Get started by editing <0>locales/en.po</0>"
+
+#: src/pages/car-profile.tsx:207
+msgid "Hey, want to use my car together?"
+msgstr "Hey, want to use my car together?"
+
+#: src/pages/car-profile.tsx:41
+msgid "Hybrid"
+msgstr "Hybrid"
+
+#: src/pages/car-profile.tsx:44
+msgid "Hydrogen"
+msgstr "Hydrogen"
+
+#: src/pages/car-profile.tsx:277
+msgid "License plate number"
+msgstr "License plate number"
+
+#: src/pages/car-profile.tsx:233
+msgid "Loading"
+msgstr "Loading"
+
+#: src/pages/car-profile.tsx:269
+msgid "Location"
+msgstr "Location"
+
+#: src/pages/car-profile.tsx:42
+msgid "LPG"
+msgstr "LPG"
+
+#: src/pages/examples.tsx:18
+#~ msgid "Magenta"
+#~ msgstr "Magenta"
+
+#: src/pages/car-profile.tsx:255
+msgid "Manual"
+msgstr "Manual"
+
+#: src/components/Layout.tsx:23
+msgid "No title"
+msgstr "No title"
+
+#: src/pages/car-profile.tsx:45
+msgid "Other"
+msgstr "Other"
+
+#: src/pages/car-profile.tsx:357
+msgid "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
+msgstr "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
+
+#: src/pages/examples.tsx:30
+#~ msgid "Plurals"
+#~ msgstr "Plurals"
+
+#: src/components/Layout.tsx:41
+#~ msgid "Powered by <0/>"
+#~ msgstr "Powered by <0/>"
+
+#: src/pages/car-profile.tsx:330
+#: src/pages/car-profile.tsx:338
+msgid "Sharing with Cabble"
+msgstr "Sharing with Cabble"
+
+#: src/pages/car-profile.tsx:373
+msgid "The costs"
+msgstr "The costs"
+
+#: src/pages/car-profile.tsx:413
+msgid "To make it worth my while, you pay a minimum of {0} hours per trip."
+msgstr "To make it worth my while, you pay a minimum of {0} hours per trip."
+
+#: src/pages/examples.tsx:57
+#~ msgid "Translation outside of React components"
+#~ msgstr "Translation outside of React components"
+
+#: src/pages/car-profile.tsx:436
+msgid "Want to give it a try? 💪🏼"
+msgstr "Want to give it a try? 💪🏼"
+
+#: src/pages/index.tsx:23
+#~ msgid "Welcome to <0>LinguiJS!</0>"
+#~ msgstr "Welcome to <0>LinguiJS!</0>"
+
+#: src/pages/car-profile.tsx:341
+msgid "With Cabble we can share my car safely and without any hassle."
+msgstr "With Cabble we can share my car safely and without any hassle."
+
+#: src/pages/examples.tsx:18
+#~ msgid "Yellow"
+#~ msgstr "Yellow"
+
+#: src/pages/car-profile.tsx:399
+msgid "You can drive {0} for free and pay {1} per kilometer after that."
+msgstr "You can drive {0} for free and pay {1} per kilometer after that."
+
+#: src/pages/car-profile.tsx:451
+msgid "You don't pay for using the app, why don't we just try it out?"
+msgstr "You don't pay for using the app, why don't we just try it out?"
+
+#: src/pages/car-profile.tsx:420
+msgid "You either refuel the car yourself or this gets added to the trip price."
+msgstr "You either refuel the car yourself or this gets added to the trip price."
+
+#: src/pages/car-profile.tsx:351
+msgid "You make a reservation for when you need it. After my approval you can start your trip in the app."
+msgstr "You make a reservation for when you need it. After my approval you can start your trip in the app."
+
+#: src/pages/car-profile.tsx:386
+msgid "You pay {0} per hour."
+msgstr "You pay {0} per hour."
+
+#: src/pages/car-profile.tsx:376
+msgid "You save the cost of ownership, I get some of the costs back."
+msgstr "You save the cost of ownership, I get some of the costs back."

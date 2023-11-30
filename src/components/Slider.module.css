@@ -1,0 +1,56 @@
+.slider:global(.is-active) .slide:not(:last-child) > :global(*) {
+  width: calc(100% - 1em);
+}
+
+.pagination {
+  display: flex;
+  padding: 1.5em 1em;
+  justify-content: space-between;
+}
+
+.pagination :global(.splide__arrow[disabled]) {
+  display: none;
+}
+
+.pagination :global(.splide__pagination) {
+  gap: 0.4em;
+}
+
+.pagination :global(.splide__pagination__page) {
+  width: 2em;
+  height: 7px;
+  border-radius: 10px;
+  background-color: #B8B8CC;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination :global(.splide__pagination__page.is-active) {
+  background-color: var(--background-color-4);
+  width: 4em;
+}
+
+.pagination :global(.splide__arrow) {
+  color: var(--text-color-6);
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.pagination :global(.splide__arrow--prev)::before, .pagination :global(.splide__arrow--next)::after {
+  content: '';
+  display: inline-block;
+  background: no-repeat center center;
+  width: 1em;
+  height: 1em;
+}
+
+.pagination :global(.splide__arrow--prev)::before {
+  background-image: url('../../public/chevron-right.png');
+  transform: rotate(180deg);
+}
+
+.pagination :global(.splide__arrow--next)::after {
+  background-image: url('../../public/chevron-right.png');
+}

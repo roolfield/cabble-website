@@ -1,0 +1,85 @@
+:root {
+  --max-width: 1100px;
+  --font-inter: 'Inter', sans-serif;
+  --font-work-sans: 'Work Sans', sans-serif;
+
+  --border-radius: 8px;
+
+  --brand-color-1: #00034a;
+  --brand-color-2: #6b22ff;
+
+  --text-color-1: #212529;
+  --text-color-2: #ffffff;
+  --text-color-3: #adb5bd;
+  --text-color-4: #6c757d;
+  --text-color-5: #6B22FF;
+  --text-color-6: #00034A;
+
+  --button-color-1: #6b22ff;
+  --button-color-2: #00034a;
+  --button-color-3: #eaedf1;
+  --button-color-4: #ffffff;
+
+  --background-color-1: #f8f9fa;
+  --background-color-2: #ffffff;
+  --background-color-3: #6b22ff;
+  --background-color-4: #00034a;
+  --background-color-5: #F8F9FA;
+  --background-color-6: #F2ECFF;
+  --background-color-7: #FAF9F6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  font-family: var(--font-inter);
+  font-size: 16px;
+  color: var(--text-color-1)
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-work-sans);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 1em 0 1em;
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin: 1em 0 1em;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin: 1em 0 1em;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: inherit;
+}
+
+p, li, span {
+  line-height: 1.5;
+}

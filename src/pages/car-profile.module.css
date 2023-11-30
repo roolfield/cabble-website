@@ -1,0 +1,231 @@
+.container {
+  font-size: 14px;
+}
+
+.pageTitle {
+  margin: 0.1em 0 0.8em;
+}
+
+.headerAvatars {
+  display: flex;
+  margin: 0 0 1.5em;
+}
+
+.cabbleLogo {
+  margin-left: -0.5em;
+  z-index: 1;
+  width: calc(3em / 2);
+  height: calc(3em / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  background-color: var(--brand-color-2);
+  border-radius: 50%;
+  font-family: var(--font-work-sans);
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ownerPicture {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+.subSectionImage {
+  border-radius: var(--border-radius);
+}
+
+.subSection {
+  display: grid;
+}
+
+.subSectionHeader > h3 {
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+.carDetails li {
+  padding: 0 0 1em 3em;
+  margin-bottom: 1em;
+  list-style: none;
+  border-bottom: 1px solid #EAEDF1;
+  background: no-repeat left center;
+}
+
+.carDetails li:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.carDetails li:nth-of-type(1) {
+  background-image: url(../../public/car-icon.svg)
+}
+
+.carDetails li:nth-of-type(2) {
+  background-image: url(../../public/license-place-icon.svg);
+  background-position-x: 4px;
+}
+
+.carDetails .label {
+  display: block;
+}
+
+.carDetails .value {
+  font-family: var(--font-work-sans);
+  line-height: 1.25;
+}
+
+.bulletList li {
+  padding: 0.75em 0 0.75em 2.5em;
+  background: no-repeat left center url('../../public/bullet-list-icon.svg');
+  list-style: none;
+}
+
+.appStoreButton {
+  padding: 1em;
+  min-height: 2em;
+  font-size: 1.25em;
+  background-color: var(--button-color-4);
+  text-align: center;
+  border-radius: var(--border-radius);
+  width: 100%;
+  font-weight: 600;
+  color: var(--text-color-6);
+  font-family: var(--font-work-sans);
+  margin-top: 1.5em;
+}
+
+@media (max-width: 44em) {
+  .pageHeader {
+    padding: 0 1em;
+  }
+
+  .slider {
+    margin: 0 -1rem;
+  }
+
+  .pageSection {
+    margin: 0 -1rem;
+    padding: 2em 1rem;
+  }
+
+  .pageSection:nth-of-type(1) .subSection .subSectionHeader,
+  .pageSection:nth-of-type(1) .subSection .subSectionContent {
+    background-color: var(--background-color-7);
+  }
+
+  .pageSection:nth-of-type(2) {
+    background-color: var(--background-color-7);
+  }
+
+  .pageSection:nth-of-type(2) .subSection .subSectionHeader,
+  .pageSection:nth-of-type(2) .subSection .subSectionContent {
+    background-color: var(--background-color-2);
+  }
+
+  .pageSection:nth-of-type(3) {
+    background-color: var(--background-color-4);
+    color: #fff;
+  }
+
+  .subSectionHeader {
+    margin-top: 1em;
+    padding: 2em 2em 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .subSectionContent {
+    padding: 0 2em 2em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .pageSection:last-child .subSectionHeader {
+    padding: 0
+  }
+
+  .pageSection:last-child {
+    padding-bottom: 6em;
+  }
+
+  .pageSection:last-child h2 {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 44em) {
+  .container {
+    font-size: 16px;
+    padding: 0 0 3em;
+  }
+
+  .pageSection {
+    padding-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+  }
+
+  .slider :global(.splide__slide):not(:last-child) {
+    margin-bottom: 4em;
+  }
+
+  .sectionHeader, .pageHeader {
+    padding-top: 1em;
+  }
+
+  .pageSection h2 {
+    margin: 0;
+  }
+
+  .headerAvatars {
+    font-size: 1.3em;
+  }
+
+  .subSection.lgTitleTop > figure {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .subSection.lgTitleTop .subSectionHeader {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .subSection figure {
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  .pageSection:nth-child(1) .subSectionContent, .pageSection:nth-child(2) .subSection {
+    background-color: var(--background-color-7);
+    padding: 2em;
+    border-radius: var(--border-radius);
+  }
+
+  .pageSection:last-of-type .subSection {
+    background-color: var(--background-color-4);
+    color: var(--text-color-2);
+    border-radius: var(--border-radius);
+    padding: 2em;
+  }
+
+  .pageSection:nth-of-type(1) .slider > :nth-child(1) {
+    padding-top: 5.85em;
+  }
+
+  .slider :global(.splide__slide:nth-of-type(1)), .pageSection:last-of-type .subSection  {
+    margin-top: 1em;
+  }
+
+  .slider :global(.splide__list)  {
+    gap: 2em;
+  }
+
+  .slider :global(.slider__pagination) {
+    display: none !important;
+  }
+}
