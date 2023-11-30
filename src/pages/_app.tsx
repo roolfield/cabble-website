@@ -1,3 +1,5 @@
+import { Inter, Work_Sans } from 'next/font/google';
+
 import { I18nProvider } from '@lingui/react';
 import { i18n } from '@lingui/core';
 
@@ -6,6 +8,9 @@ import { loadCatalog, useLinguiInit } from '../translations/i18n';
 import { AppProps } from 'next/app';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
+
+const inter = Inter({ subsets: ['latin'] });
+const workSans = Work_Sans({ subsets: ['latin'] });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [messages, setMessages] = useState({});
