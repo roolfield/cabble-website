@@ -7,9 +7,6 @@ module.exports = {
   //   defaultLocale: 'en',
   // },
 
-  // Don't remove line below, uncomment when deploying to github pages
-  // basePath: '/cabble-website',
-
   images: {
     // Necessary with static export
     unoptimized: true,
