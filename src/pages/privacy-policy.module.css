@@ -1,0 +1,16 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 1.5em 1.8em 3em;
+}
+
+.logo {
+    color: #6b22ff;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
