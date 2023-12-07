@@ -62,17 +62,17 @@
 }
 
 .carDetails li:nth-of-type(1) {
-  background-image: url(../../../public/car-icon.svg)
+  background-image: url(../../../public/car-icon.svg);
+  background-position-x: 5px;
 }
 
 .carDetails li:nth-of-type(2) {
   background-image: url(../../../public/location-icon.svg);
-  background-position-x: 4px;
+  background-position-x: 9px;
 }
 
-.carDetails li:nth-of-type(2) {
+.carDetails li:nth-of-type(3) {
   background-image: url(../../../public/license-plate-icon.svg);
-  background-position-x: 4px;
 }
 
 .carDetails .label {
