@@ -91,7 +91,7 @@
   font-size: 1.25em;
   background-color: var(--button-color-4);
   text-align: center;
-  border-radius: var(--border-radius);
+  border-radius: 2em;
   width: 100%;
   font-weight: 600;
   color: var(--text-color-6);
