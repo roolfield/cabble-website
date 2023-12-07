@@ -7,7 +7,17 @@ import styles from './Layout.module.css';
 import { useLingui } from '@lingui/react';
 import { useRouter } from 'next/router';
 
-export function Layout({ title = null, className = '', children }) {
+export function Layout({
+  title = null,
+  ogImage,
+  className = '',
+  children,
+}: {
+  title?: string | null;
+  ogImage?: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
   /**
    * This hook is needed to subscribe your
    * component for changes if you use t`` macro
@@ -26,6 +36,8 @@ export function Layout({ title = null, className = '', children }) {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
           rel="stylesheet"
         />
+
+        <meta property="og:image" content={ogImage} />
       </Head>
 
       <main className={classnames(styles.main, className)}>{children}</main>

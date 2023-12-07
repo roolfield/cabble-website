@@ -195,6 +195,7 @@ export default function OwnerShareRequest() {
   return (
     <Layout
       className={styles.container}
+      ogImage={`${data?.car.profilePicture.url}=s1200-rj`}
       title={t(i18n)`Message from ${
         data?.car.owner.firstName ?? ''
       } on Cabble`}>
