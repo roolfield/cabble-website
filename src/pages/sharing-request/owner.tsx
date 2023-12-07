@@ -185,7 +185,7 @@ export default function OwnerShareRequest() {
       alert('Invalid URL');
       return;
     }
-    window.location.href = 'cabble://invite.redeem/' + pairingCode;
+    window.location.href = 'cabble://pairing/' + pairingCode;
   }, []);
 
   if (queryError || (data && !data.car)) {
