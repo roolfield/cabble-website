@@ -93,7 +93,6 @@ export default function DriverShareRequest() {
   return (
     <Layout
       className={styles.container}
-      ogImage={`${data?.userProfile.profilePicture.url}=s1200-rj`}
       title={t(i18n)`Message from ${
         data?.userProfile.firstName ?? ''
       } on Cabble`}>
