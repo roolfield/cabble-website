@@ -10,26 +10,25 @@ import { useRouter } from 'next/router';
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [messages, setMessages] = useState({});
 
-  const router = useRouter();
+  const { isReady, query } = useRouter();
 
   const loadedQuery = useRef(false);
 
   useEffect(() => {
-    if (!loadedQuery.current) {
-      loadedQuery.current = true;
+    if (!isReady) {
       return;
     }
-    if (!router.query.lang) {
+    if (!query.lang) {
       const searchParams = new URLSearchParams(window.location.search);
       searchParams.set('lang', 'en');
       window.location.search = searchParams.toString();
     }
-  }, [router.query]);
+  }, [query, isReady]);
 
   const locale = loadedQuery.current
-    ? Array.isArray(router.query.lang)
-      ? router.query.lang[0]
-      : router.query.lang
+    ? Array.isArray(query.lang)
+      ? query.lang[0]
+      : query.lang
     : undefined;
 
   const loadMessages = useCallback(async locale => {
