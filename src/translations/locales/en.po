@@ -221,12 +221,20 @@ msgstr "Pay for each trip based on the time and distance you drive. If you could
 #~ msgid "Powered by <0/>"
 #~ msgstr "Powered by <0/>"
 
+#: src/pages/privacy-policy.tsx:10
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
 #: src/pages/sharing-request/driver.tsx:160
 #: src/pages/sharing-request/driver.tsx:168
 #: src/pages/sharing-request/owner.tsx:345
 #: src/pages/sharing-request/owner.tsx:353
 msgid "Sharing with Cabble"
 msgstr "Sharing with Cabble"
+
+#: src/pages/terms-and-conditions.tsx:10
+msgid "Terms and Conditions"
+msgstr "Terms and Conditions"
 
 #: src/pages/sharing-request/driver.tsx:206
 #: src/pages/sharing-request/owner.tsx:392

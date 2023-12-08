@@ -168,11 +168,19 @@ msgstr ""
 msgid "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
 msgstr ""
 
+#: src/pages/privacy-policy.tsx:10
+msgid "Privacy policy"
+msgstr ""
+
 #: src/pages/sharing-request/driver.tsx:160
 #: src/pages/sharing-request/driver.tsx:168
 #: src/pages/sharing-request/owner.tsx:345
 #: src/pages/sharing-request/owner.tsx:353
 msgid "Sharing with Cabble"
+msgstr ""
+
+#: src/pages/terms-and-conditions.tsx:10
+msgid "Terms and Conditions"
 msgstr ""
 
 #: src/pages/sharing-request/driver.tsx:206

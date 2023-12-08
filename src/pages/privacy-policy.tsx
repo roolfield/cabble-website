@@ -1,8 +1,13 @@
 import styles from './privacy-policy.module.css';
+import { Layout } from '../components/Layout';
+import { t } from '@lingui/macro';
+import { useLingui } from '@lingui/react';
 
 export default function PrivacyPolicy() {
+  const { i18n } = useLingui();
+
   return (
-    <div className={styles.container}>
+    <Layout className={styles.container} title={t(i18n)`Privacy policy`}>
       <a href="/" className={styles.logo}>
         Cabble
       </a>
@@ -180,6 +185,6 @@ export default function PrivacyPolicy() {
         If you have any questions or suggestions about our Privacy Policy, do
         not hesitate to contact us at support@cabbleapp.com.
       </p>
-    </div>
+    </Layout>
   );
 }

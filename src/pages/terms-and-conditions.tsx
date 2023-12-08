@@ -1,8 +1,13 @@
 import styles from './terms-and-conditions.module.css';
+import { Layout } from '../components/Layout';
+import { useLingui } from '@lingui/react';
+import { t } from '@lingui/macro';
 
-export default function PrivacyPolicy() {
+export default function TermsAndConditions() {
+  const { i18n } = useLingui();
+
   return (
-    <div className={styles.container}>
+    <Layout className={styles.container} title={t(i18n)`Terms and Conditions`}>
       <a href="/" className={styles.logo}>
         Cabble
       </a>
@@ -240,6 +245,6 @@ export default function PrivacyPolicy() {
         If you have any questions or suggestions about our Terms and Conditions,
         do not hesitate to contact us at support@cabbleapp.com.
       </p>
-    </div>
+    </Layout>
   );
 }

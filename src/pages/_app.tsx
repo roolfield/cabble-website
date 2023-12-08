@@ -4,15 +4,13 @@ import { i18n } from '@lingui/core';
 import '../styles/globals.css';
 import { loadCatalog, useLinguiInit } from '../translations/i18n';
 import { AppProps } from 'next/app';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [messages, setMessages] = useState({});
+  const [messages, setMessages] = useState();
 
   const { isReady, query } = useRouter();
-
-  const loadedQuery = useRef(false);
 
   useEffect(() => {
     if (!isReady) {
@@ -25,11 +23,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [query, isReady]);
 
-  const locale = loadedQuery.current
-    ? Array.isArray(query.lang)
-      ? query.lang[0]
-      : query.lang
-    : undefined;
+  const locale = useMemo(
+    () =>
+      query.lang
+        ? Array.isArray(query.lang)
+          ? query.lang[0]
+          : query.lang
+        : undefined,
+    [query.lang],
+  );
 
   const loadMessages = useCallback(async locale => {
     if (!locale) {
@@ -48,10 +50,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   useLinguiInit(messages, locale);
 
   return (
-    <>
-      <I18nProvider i18n={i18n}>
-        <Component {...pageProps} />
-      </I18nProvider>
-    </>
+    <I18nProvider i18n={i18n}>
+      <Component {...pageProps} />
+    </I18nProvider>
   );
 }
