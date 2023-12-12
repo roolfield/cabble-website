@@ -78,12 +78,16 @@ export default function DriverShareRequest() {
     ? router.query.pairingCode[0]
     : router.query.pairingCode;
 
-  const openPairingCode = useCallback(() => {
+  const openRedirect = useCallback(() => {
     if (!pairingCode) {
       alert('Invalid URL');
       return;
     }
-    window.location.href = 'cabble://pairing/' + pairingCode;
+    router.push(`/sharing-request/pairing`, {
+      query: {
+        pairingCode,
+      },
+    });
   }, []);
 
   if (queryError || (data && !data.userProfile)) {
@@ -245,7 +249,7 @@ export default function DriverShareRequest() {
         <StickyHeader minWidth={breakpoint}>
           <header className={styles.sectionHeader}>
             <h2>
-              <Trans>Want to give it a try? 💪🏼</Trans>
+              <Trans>Want to give it a go? 💪🏼</Trans>
             </h2>
           </header>
         </StickyHeader>
@@ -255,42 +259,18 @@ export default function DriverShareRequest() {
             <div className={styles.sectionContent}>
               <header className={styles.subSectionHeader}>
                 <h3>
-                  <Trans>Already have the app? Use my pairing code.</Trans>
+                  <Trans>Add me on the app</Trans>
                 </h3>
               </header>
 
               <p>
-                <Trans>
-                  This is your unique pairing code to add me as a driver to your
-                  car.
-                </Trans>
+                This is a prive sharing link that you can use to add me as a
+                driver of your car.
               </p>
 
-              <div className={styles.pairingCode}>
-                {!!pairingCode &&
-                  pairingCode.split('').map(letter => <span>{letter}</span>)}
-              </div>
-
-              <button className={styles.pairButton} onClick={openPairingCode}>
-                <Trans>Use pairing code</Trans>
+              <button className={styles.pairButton} onClick={openRedirect}>
+                <Trans>Connect with {data.userProfile.firstName}</Trans>
               </button>
-
-              <header className={styles.subSectionHeader}>
-                <h3>
-                  <Trans>Don't have the app yet? Download it for free!</Trans>
-                </h3>
-              </header>
-
-              <p>
-                <Trans>
-                  You don't pay for using this app, why not give it a try?
-                </Trans>
-              </p>
-
-              <div className={styles.appStoreButtons}>
-                <a href="" className={styles.playStoreButton} />
-                <a href="" className={styles.appStoreButton} />
-              </div>
             </div>
           </aside>
         </div>

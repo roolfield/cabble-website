@@ -126,24 +126,6 @@
   height: 5em;
 }
 
-.pairingCode {
-  display: flex;
-  gap: 0.5em;
-  margin-top: 1em;
-}
-
-.pairingCode > span {
-  font-family: var(--font-work-sans);
-  font-size: 1.5em;
-  padding: 1rem;
-  line-height: 1;
-  box-sizing: content-box;
-  text-align: center;
-  width: 1em;
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-}
-
 .learnMore {
   display: block;
   margin-top: 1em;
