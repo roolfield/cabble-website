@@ -45,9 +45,9 @@ export default function DriverShareRequest() {
     if (isRedirecting) {
       setTimeout(function () {
         if (isIphone) {
-          window.location.href = `https://apps.apple.com/app/id{${process.env.APP_ID_APPLE}}`;
+          window.location.href = `https://apps.apple.com/app/id{${process.env.NEXT_PUBLIC_APP_ID_APPLE}}`;
         } else if (isAndroid) {
-          window.location.href = `https://play.google.com/store/apps/details?id={${process.env.APP_ID_ANDROID}}`;
+          window.location.href = `https://play.google.com/store/apps/details?id={${process.env.NEXT_PUBLIC_APP_ID_ANDROID}}`;
         }
       }, 2000);
     }

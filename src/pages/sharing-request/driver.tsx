@@ -1,37 +1,22 @@
 import styles from './sharing-request.module.css';
 import '@splidejs/react-splide/css/core';
 
-import { gql, request } from 'graphql-request';
+import { request } from 'graphql-request';
 import { t, Trans } from '@lingui/macro';
 
 import { Layout } from '../../components/Layout';
 import { useLingui } from '@lingui/react';
-import { TypedDocumentNode } from '@graphql-typed-document-node/core';
-import { parse } from 'graphql';
 import ResponsiveImage from '../../components/ResponsiveImage';
 import classnames from 'classnames';
 import { Slider } from '../../components/Slider';
 import { StickyHeader } from '../../components/StickyHeader';
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { graphql } from '../../generated';
+import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
 
-interface Data {
-  userProfile: {
-    id: string;
-    profilePicture: {
-      url: string;
-      metadata: {
-        width: number;
-        height: number;
-      };
-    };
-    firstName: string;
-    lastName: string;
-  };
-}
-
-const query: TypedDocumentNode<Data, { driverId: string }> = parse(gql`
-  query ($driverId: ID!) {
+const query = graphql(`
+  query DriverSharingRequest($driverId: ID!) {
     userProfile(userId: $driverId) {
       id
       profilePicture {
@@ -54,7 +39,7 @@ export default function DriverShareRequest() {
 
   const router = useRouter();
 
-  const [data, setData] = useState<Data | undefined | null>();
+  const [data, setData] = useState<UseTypedDocumentNodeType<typeof query>>();
 
   const [queryError, setQueryError] = useState<unknown>();
 
@@ -67,10 +52,8 @@ export default function DriverShareRequest() {
     const variables = {
       driverId: router.query.driverId.toString(),
     };
-    request(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT, query, variables)
-      .then(profileData => {
-        setData(profileData);
-      })
+    request(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT ?? '', query, variables)
+      .then(data => setData(data))
       .catch(setQueryError);
   }, [router.query.driverId]);
 
@@ -90,14 +73,18 @@ export default function DriverShareRequest() {
     });
   }, []);
 
-  if (queryError || (data && !data.userProfile)) {
+  if (queryError) {
     return t(i18n)`Could not load the page`;
+  }
+
+  if (!data?.userProfile) {
+    return t(i18n)`Could not load the user`;
   }
 
   return (
     <Layout
       className={styles.container}
-      ogImage={`${data?.userProfile.profilePicture.url}=s1200`}
+      ogImage={`${data?.userProfile.profilePicture?.url}=s1200`}
       title={t(i18n)`Message from ${
         data?.userProfile.firstName ?? ''
       } on Cabble`}>
@@ -107,11 +94,11 @@ export default function DriverShareRequest() {
             className={classnames(styles.sectionHeader, styles.pageHeader)}>
             <div className={styles.headerAvatars}>
               <ResponsiveImage
-                url={data?.userProfile.profilePicture.url}
+                url={data?.userProfile.profilePicture?.url ?? ''}
                 widths={[48, 96, 192]}
                 sizes={`(max-width: ${breakpoint}) 3em, 4em`}
-                width={data?.userProfile.profilePicture.metadata.width}
-                height={data?.userProfile.profilePicture.metadata.height}
+                width={data?.userProfile.profilePicture?.metadata?.width}
+                height={data?.userProfile.profilePicture?.metadata?.height}
                 className={styles.ownerPicture}
               />
               <span className={styles.cabbleLogo}>C</span>
@@ -130,11 +117,11 @@ export default function DriverShareRequest() {
           <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
             <figure>
               <ResponsiveImage
-                url={data?.userProfile.profilePicture.url}
+                url={data?.userProfile?.profilePicture?.url ?? ''}
                 widths={[600, 1000, 2000]}
                 sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
-                width={data?.userProfile.profilePicture.metadata.width}
-                height={data?.userProfile.profilePicture.metadata.height}
+                width={data?.userProfile?.profilePicture?.metadata?.width}
+                height={data?.userProfile?.profilePicture?.metadata?.height}
                 className={styles.subSectionImage}
               />
             </figure>
@@ -268,7 +255,7 @@ export default function DriverShareRequest() {
               </p>
 
               <button className={styles.pairButton} onClick={openRedirect}>
-                <Trans>Add {data.userProfile.firstName}</Trans>
+                <Trans>Add {data?.userProfile?.firstName}</Trans>
               </button>
             </div>
           </aside>

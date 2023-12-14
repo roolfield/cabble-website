@@ -1,20 +1,20 @@
 import styles from './sharing-request.module.css';
 import '@splidejs/react-splide/css/core';
 
-import { gql, request } from 'graphql-request';
+import { request } from 'graphql-request';
 import { msg, t, Trans } from '@lingui/macro';
 import { MessageDescriptor } from '@lingui/core';
 
 import { Layout } from '../../components/Layout';
 import { useLingui } from '@lingui/react';
-import { TypedDocumentNode } from '@graphql-typed-document-node/core';
-import { parse } from 'graphql';
 import ResponsiveImage from '../../components/ResponsiveImage';
 import classnames from 'classnames';
 import { Slider } from '../../components/Slider';
 import { StickyHeader } from '../../components/StickyHeader';
 import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+import { graphql } from '../../generated';
+import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
 
 export enum Transmission {
   Automatic = 'automatic',
@@ -45,58 +45,8 @@ const fuelTypeTranslations: {
   [FuelType.Other]: msg`Other`,
 };
 
-interface Data {
-  car: {
-    id: string;
-    name: string;
-    description: string;
-    profilePicture: {
-      url: string;
-      metadata: {
-        width: number;
-        height: number;
-      };
-    };
-    vehicleData: {
-      fuel: {
-        type: string;
-      };
-      licensePlate: string;
-      numberOfDoors: number;
-      numberOfSeats: number;
-      firstAdmission: string;
-    };
-    location: {
-      description: string;
-    };
-    transmission: string;
-    tripPricing: {
-      minimumBillableHours: number;
-      currency: string;
-      distanceAllowance: number;
-      serviceFeePercentage: number;
-      priceList: {
-        distancePrice: number;
-        timePrice: number;
-      };
-    };
-    owner: {
-      id: string;
-      profilePicture: {
-        url: string;
-        metadata: {
-          width: number;
-          height: number;
-        };
-      };
-      firstName: string;
-      lastName: string;
-    };
-  };
-}
-
-const query: TypedDocumentNode<Data, { carId: string }> = parse(gql`
-  query ($carId: ID!) {
+const query = graphql(`
+  query OwnerSharingRequest($carId: ID!) {
     car(carId: $carId) {
       id
       name
@@ -156,7 +106,7 @@ export default function OwnerShareRequest() {
 
   const router = useRouter();
 
-  const [data, setData] = useState<Data | undefined | null>();
+  const [data, setData] = useState<UseTypedDocumentNodeType<typeof query>>();
 
   const [queryError, setQueryError] = useState<unknown>();
 
@@ -167,9 +117,9 @@ export default function OwnerShareRequest() {
       return;
     }
     const variables = {
-      carId: router.query.carId,
+      carId: router.query.carId as string,
     };
-    request(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT, query, variables)
+    request(process.env.NEXT_PUBLIC_GRAPHQL_ENDPOINT ?? '', query, variables)
       .then(profileData => {
         setData(profileData);
       })
@@ -189,14 +139,18 @@ export default function OwnerShareRequest() {
       '/sharing-request/redirect?pairingCode=' + pairingCode;
   }, []);
 
-  if (queryError || (data && !data.car)) {
-    return t(i18n)`Could not load the page`;
+  if (queryError) {
+    return t(i18n)`There was an error loading this page.`;
+  }
+
+  if (!data?.car) {
+    return t(i18n)`Could not load this car`;
   }
 
   return (
     <Layout
       className={styles.container}
-      ogImage={`${data?.car.profilePicture.url}=s1200`}
+      ogImage={`${data?.car.profilePicture?.url}=s1200`}
       title={t(i18n)`Message from ${
         data?.car.owner.firstName ?? ''
       } on Cabble`}>
@@ -206,11 +160,11 @@ export default function OwnerShareRequest() {
             className={classnames(styles.sectionHeader, styles.pageHeader)}>
             <div className={styles.headerAvatars}>
               <ResponsiveImage
-                url={data?.car.owner?.profilePicture.url}
+                url={data?.car.owner?.profilePicture?.url ?? ''}
                 widths={[48, 96, 192]}
                 sizes={`(max-width: ${breakpoint}) 3em, 4em`}
-                width={data?.car.profilePicture.metadata.width}
-                height={data?.car.profilePicture.metadata.height}
+                width={data?.car.profilePicture?.metadata?.width}
+                height={data?.car.profilePicture?.metadata?.height}
                 className={styles.ownerPicture}
               />
               <span className={styles.cabbleLogo}>C</span>
@@ -233,11 +187,11 @@ export default function OwnerShareRequest() {
             <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
               <figure>
                 <ResponsiveImage
-                  url={data?.car.profilePicture.url}
+                  url={data?.car.profilePicture?.url ?? ''}
                   widths={[600, 1000, 2000]}
                   sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
-                  width={data?.car.profilePicture.metadata.width}
-                  height={data?.car.profilePicture.metadata.height}
+                  width={data?.car.profilePicture?.metadata?.width}
+                  height={data?.car.profilePicture?.metadata?.height}
                   className={styles.subSectionImage}
                 />
               </figure>
@@ -256,14 +210,14 @@ export default function OwnerShareRequest() {
                       <Trans>General</Trans>
                     </span>
                     <span className={styles.value}>
-                      {(data
+                      {(data.car.vehicleData
                         ? [
                             new Date(
-                              data?.car.vehicleData.firstAdmission,
+                              data?.car.vehicleData.firstAdmission ?? '0',
                             ).getFullYear(),
                             i18n._(
                               fuelTypeTranslations[
-                                data?.car.vehicleData.fuel.type as FuelType
+                                data?.car.vehicleData.fuel?.type as FuelType
                               ],
                             ),
                             data?.car.transmission === Transmission.Automatic
@@ -285,7 +239,7 @@ export default function OwnerShareRequest() {
                       <Trans>Location</Trans>
                     </span>
                     <span className={styles.value}>
-                      {data?.car.location.description.replaceAll(', ', ' • ')}
+                      {data?.car.location?.description.replaceAll(', ', ' • ')}
                     </span>
                   </li>
                   <li>
@@ -293,7 +247,7 @@ export default function OwnerShareRequest() {
                       <Trans>License plate number</Trans>
                     </span>
                     <span className={styles.value}>
-                      {data?.car.vehicleData.licensePlate}
+                      {data?.car.vehicleData?.licensePlate}
                     </span>
                   </li>
                 </ul>
@@ -303,11 +257,11 @@ export default function OwnerShareRequest() {
             <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
               <figure>
                 <ResponsiveImage
-                  url={data?.car.owner.profilePicture.url}
+                  url={data?.car.owner.profilePicture?.url ?? ''}
                   widths={[600, 1000, 2000]}
                   sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
-                  width={data?.car.owner.profilePicture.metadata.width}
-                  height={data?.car.owner.profilePicture.metadata.height}
+                  width={data?.car.owner.profilePicture?.metadata?.width}
+                  height={data?.car.owner.profilePicture?.metadata?.height}
                   className={styles.subSectionImage}
                 />
               </figure>
@@ -404,11 +358,11 @@ export default function OwnerShareRequest() {
                   <li>
                     <Trans>
                       You pay{' '}
-                      {data?.car.tripPricing.priceList.timePrice.toLocaleString(
+                      {data?.car.tripPricing?.priceList.timePrice.toLocaleString(
                         i18n.locale,
                         {
                           style: 'currency',
-                          currency: data?.car.tripPricing.currency,
+                          currency: data?.car.tripPricing?.currency,
                         },
                       )}{' '}
                       per hour.
@@ -416,13 +370,13 @@ export default function OwnerShareRequest() {
                   </li>
                   <li>
                     <Trans>
-                      You can drive {data?.car.tripPricing.distanceAllowance}{' '}
+                      You can drive {data?.car.tripPricing?.distanceAllowance}{' '}
                       for free and pay{' '}
-                      {data?.car.tripPricing.priceList.distancePrice.toLocaleString(
+                      {data?.car.tripPricing?.priceList.distancePrice.toLocaleString(
                         i18n.locale,
                         {
                           style: 'currency',
-                          currency: data?.car.tripPricing.currency,
+                          currency: data?.car.tripPricing?.currency,
                         },
                       )}{' '}
                       per kilometer after that.
@@ -431,7 +385,7 @@ export default function OwnerShareRequest() {
                   <li>
                     <Trans>
                       To make it worth my while, you pay a minimum of{' '}
-                      {data?.car.tripPricing.minimumBillableHours} hours per
+                      {data?.car.tripPricing?.minimumBillableHours} hours per
                       trip.
                     </Trans>
                   </li>

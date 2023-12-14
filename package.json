@@ -6,6 +6,7 @@
     "extract": "lingui extract",
     "compile": "lingui compile",
     "dev": "next dev",
+    "generate": "gql-gen --config graphql-codegen.ts",
     "build": "yarn extract && yarn compile && next build && next export",
     "start": "next start"
   },
@@ -25,6 +26,8 @@
   "devDependencies": {
     "@lingui/cli": "^4.1.2",
     "@lingui/loader": "^4.1.2",
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/client-preset": "^4.0.1",
     "@lingui/macro": "^4.1.2",
     "@types/react": "^18.0.28",
     "babel-plugin-macros": "^3.1.0",
