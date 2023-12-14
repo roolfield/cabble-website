@@ -4,7 +4,7 @@ import { i18n } from '@lingui/core';
 import '../styles/globals.css';
 import { loadCatalog, useLinguiInit } from '../translations/i18n';
 import { AppProps } from 'next/app';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -33,7 +33,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     [query.lang],
   );
 
-  const loadMessages = useCallback(async locale => {
+  const loadMessages = useCallback(async (locale: string) => {
     if (!locale) {
       return;
     }
@@ -44,6 +44,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   useEffect(() => {
+    if (!locale) {
+      return;
+    }
     loadMessages(locale);
   }, [locale]);
 

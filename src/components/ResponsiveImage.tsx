@@ -12,7 +12,7 @@ export default function ResponsiveImage({
   lazy = true,
   showOverlay = false,
   styles = null,
-  className = null,
+  className = undefined,
   scale = false,
   progressive = true,
   width,
@@ -39,7 +39,11 @@ export default function ResponsiveImage({
     return null;
   }
 
-  const getSrcSet = (url?: string, widths = [], additionalParams = null) => {
+  const getSrcSet = (
+    url?: string,
+    widths: number[] = [],
+    additionalParams: string[] = [],
+  ) => {
     if (!url) return;
     const sources = widths.map(size => {
       let params = [`s${size}`];
@@ -58,7 +62,7 @@ export default function ResponsiveImage({
   const jpegSrcSet = getSrcSet(url, widths, ['rj']);
   const webPSrcSet = getSrcSet(url, widths, ['rw']);
 
-  const onIntersect = ({ isIntersecting }) => {
+  const onIntersect = ({ isIntersecting }: { isIntersecting: boolean }) => {
     if (isIntersecting) {
       setIsInViewport(true);
     }
@@ -80,7 +84,7 @@ export default function ResponsiveImage({
   }
 
   const progressiveImgUrl = `${url}=s10-c-fSoften=1,100,0`;
-  const aspectRatio = height / width;
+  const aspectRatio = (height ?? 0) / (width ?? 1);
 
   const show = !progressive || isInViewport || !!url;
 
@@ -89,7 +93,7 @@ export default function ResponsiveImage({
       <picture
         className={`container ${containerClasses.join(' ')}`.trim()}
         style={{
-          backgroundImage: show ? `url(${progressiveImgUrl})` : null,
+          backgroundImage: show ? `url(${progressiveImgUrl})` : '',
           ...style,
         }}>
         <div
@@ -143,19 +147,8 @@ export default function ResponsiveImage({
           .loaded img {
             opacity: 1;
           }
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-          }
           .container.scale:hover img {
             transform: scale(1.05);
-          }
-          .placeholder {
-            width: 100%;
           }
         `}</style>
         {styles}

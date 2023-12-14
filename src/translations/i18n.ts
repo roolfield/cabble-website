@@ -6,9 +6,12 @@ export async function loadCatalog(locale: string) {
   return catalog.messages;
 }
 
-export function useLinguiInit(messages: Messages, locale: string) {
+export function useLinguiInit(
+  messages: Messages | undefined,
+  locale: string | undefined,
+) {
   useEffect(() => {
-    if (messages || !i18n.locale || locale !== i18n.locale) {
+    if (messages && locale && (!i18n.locale || locale !== i18n.locale)) {
       i18n.loadAndActivate({ locale, messages });
     }
   }, [messages]);

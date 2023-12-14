@@ -16,11 +16,14 @@ export const StickyHeader = ({
 
   useEffect(() => {
     const onScroll = throttle(() => {
+      if (!wrapperRef.current || !contentRef.current) {
+        return;
+      }
       const wrapperRect = wrapperRef.current.getBoundingClientRect();
       const contentRect = contentRef.current.getBoundingClientRect();
       const parentElem = wrapperRef.current.parentElement;
       const distanceToBottomParent =
-        parentElem.getBoundingClientRect().bottom - contentRect.height;
+        (parentElem?.getBoundingClientRect().bottom ?? 0) - contentRect.height;
       setIsSticky(
         window.innerWidth >= minWidth &&
           wrapperRect.top < 0 &&
@@ -29,6 +32,9 @@ export const StickyHeader = ({
     }, 100);
 
     const onResize = throttle(() => {
+      if (!contentRef.current || !wrapperRef.current) {
+        return;
+      }
       setWidth(
         window.getComputedStyle(contentRef.current).position === 'fixed'
           ? wrapperRef.current.getBoundingClientRect().width
