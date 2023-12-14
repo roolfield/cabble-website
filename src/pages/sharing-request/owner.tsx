@@ -220,7 +220,7 @@ export default function OwnerShareRequest() {
               {data?.car.owner.lastName ?? ''}
             </span>
             <h1 className={styles.pageTitle}>
-              <Trans>Hey, want to use my car together?</Trans>
+              <Trans>Hey, do you want to use my car together?</Trans>
             </h1>
           </header>
         </StickyHeader>
@@ -355,8 +355,7 @@ export default function OwnerShareRequest() {
                   </span>
                   <h3>
                     <Trans>
-                      With Cabble we can share my car safely and without any
-                      hassle.
+                      With Cabble we can share my car safely and easily.
                     </Trans>
                   </h3>
                 </header>
@@ -472,12 +471,12 @@ export default function OwnerShareRequest() {
               </header>
 
               <p>
-                This is a prive sharing link that you can use to add my car to
-                the app.
+                This is a prive link that you can use to become a driver of this
+                car on the Cabble app.
               </p>
 
               <button className={styles.pairButton} onClick={openRedirect}>
-                <Trans>Connect with {data?.car?.owner.firstName}</Trans>
+                <Trans>Add {data?.car?.name} on Cabble</Trans>
               </button>
             </div>
           </aside>

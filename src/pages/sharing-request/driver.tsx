@@ -173,8 +173,7 @@ export default function DriverShareRequest() {
                   </span>
                   <h3>
                     <Trans>
-                      With Cabble we can share your car safely and without any
-                      hassle.
+                      With Cabble we can share your car safely and easily.
                     </Trans>
                   </h3>
                 </header>
@@ -189,7 +188,7 @@ export default function DriverShareRequest() {
                     </li>
                     <li>
                       <Trans>
-                        I Pay for each trip based on the time and distance I
+                        I pay for each trip based on the time and distance I
                         drive.
                       </Trans>
                     </li>
@@ -224,7 +223,7 @@ export default function DriverShareRequest() {
                   </li>
                   <li>
                     <Trans>
-                      You could set a free number of kilometers per trip and a
+                      You can set a free number of kilometers per trip and a
                       price per extra kilometer.
                     </Trans>
                   </li>
@@ -259,17 +258,17 @@ export default function DriverShareRequest() {
             <div className={styles.sectionContent}>
               <header className={styles.subSectionHeader}>
                 <h3>
-                  <Trans>Add me on the app</Trans>
+                  <Trans>Add me on Cabble</Trans>
                 </h3>
               </header>
 
               <p>
-                This is a prive sharing link that you can use to add me as a
-                driver of your car.
+                This is a prive link that you can use to add me as a driver to
+                your car on Cabble.
               </p>
 
               <button className={styles.pairButton} onClick={openRedirect}>
-                <Trans>Connect with {data.userProfile.firstName}</Trans>
+                <Trans>Add {data.userProfile.firstName}</Trans>
               </button>
             </div>
           </aside>
