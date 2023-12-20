@@ -170,8 +170,12 @@ msgid "Download the app for free."
 msgstr "Download the app for free."
 
 #: src/pages/index.tsx:186
-msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
-msgstr "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
+msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+msgstr "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+
+#: src/pages/index.tsx:186
+#~ msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
+#~ msgstr "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
 
 #: src/pages/sharing-request/owner.tsx:41
 msgid "Electric"
@@ -214,7 +218,7 @@ msgstr "Find answers to the most common questions about our service."
 #~ msgid "Find in-depth information about LinguiJS features and API."
 #~ msgstr "Find in-depth information about LinguiJS features and API."
 
-#: src/pages/index.tsx:198
+#: src/pages/index.tsx:191
 msgid "Flexible"
 msgstr "Flexible"
 
@@ -258,11 +262,11 @@ msgstr "Get early access"
 msgid "Go to FAQ"
 msgstr "Go to FAQ"
 
-#: src/pages/index.tsx:200
+#: src/pages/index.tsx:193
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 
-#: src/pages/index.tsx:191
+#: src/pages/index.tsx:198
 msgid "Good for our planet"
 msgstr "Good for our planet"
 
@@ -319,8 +323,12 @@ msgid "I want to use a car"
 msgstr "I want to use a car"
 
 #: src/pages/index.tsx:154
-msgid "Insurance for any damange"
-msgstr "Insurance for any damange"
+msgid "Insurance for any damage"
+msgstr "Insurance for any damage"
+
+#: src/pages/index.tsx:154
+#~ msgid "Insurance for any damange"
+#~ msgstr "Insurance for any damange"
 
 #: src/components/PageSectionHowItWorks.tsx:34
 msgid "Invite an owner or get invited."
@@ -434,8 +442,12 @@ msgid "Pay for each trip based on the time and distance you drive. If you could 
 msgstr "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
 
 #: src/common/useGetEarlyAccess.ts:12
-msgid "Please enter your email. This will open your email client to send us an email with your request."
-msgstr "Please enter your email. This will open your email client to send us an email with your request."
+msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
+msgstr "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
+
+#: src/common/useGetEarlyAccess.ts:12
+#~ msgid "Please enter your email. This will open your email client to send us an email with your request."
+#~ msgstr "Please enter your email. This will open your email client to send us an email with your request."
 
 #: src/pages/examples.tsx:30
 #~ msgid "Plurals"
@@ -481,7 +493,7 @@ msgstr "Share with those you trust"
 msgid "Share your underutilized car with a trusted group of people."
 msgstr "Share your underutilized car with a trusted group of people."
 
-#: src/pages/index.tsx:193
+#: src/pages/index.tsx:200
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 

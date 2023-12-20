@@ -170,8 +170,12 @@ msgid "Download the app for free."
 msgstr ""
 
 #: src/pages/index.tsx:186
-msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
+msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr ""
+
+#: src/pages/index.tsx:186
+#~ msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives."
+#~ msgstr ""
 
 #: src/pages/sharing-request/owner.tsx:41
 msgid "Electric"
@@ -214,7 +218,7 @@ msgstr ""
 #~ msgid "Find in-depth information about LinguiJS features and API."
 #~ msgstr ""
 
-#: src/pages/index.tsx:198
+#: src/pages/index.tsx:191
 msgid "Flexible"
 msgstr ""
 
@@ -254,11 +258,11 @@ msgstr ""
 msgid "Go to FAQ"
 msgstr ""
 
-#: src/pages/index.tsx:200
+#: src/pages/index.tsx:193
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr ""
 
-#: src/pages/index.tsx:191
+#: src/pages/index.tsx:198
 msgid "Good for our planet"
 msgstr ""
 
@@ -315,8 +319,12 @@ msgid "I want to use a car"
 msgstr ""
 
 #: src/pages/index.tsx:154
-msgid "Insurance for any damange"
+msgid "Insurance for any damage"
 msgstr ""
+
+#: src/pages/index.tsx:154
+#~ msgid "Insurance for any damange"
+#~ msgstr ""
 
 #: src/components/PageSectionHowItWorks.tsx:34
 msgid "Invite an owner or get invited."
@@ -430,8 +438,12 @@ msgid "Pay for each trip based on the time and distance you drive. If you could 
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:12
-msgid "Please enter your email. This will open your email client to send us an email with your request."
+msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
 msgstr ""
+
+#: src/common/useGetEarlyAccess.ts:12
+#~ msgid "Please enter your email. This will open your email client to send us an email with your request."
+#~ msgstr ""
 
 #: src/pages/examples.tsx:30
 #~ msgid "Plurals"
@@ -477,7 +489,7 @@ msgstr ""
 msgid "Share your underutilized car with a trusted group of people."
 msgstr ""
 
-#: src/pages/index.tsx:193
+#: src/pages/index.tsx:200
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr ""
 
