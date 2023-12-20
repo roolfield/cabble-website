@@ -1,0 +1,31 @@
+.button {
+  padding: 0.75em 1.5em;
+  font-weight: 700;
+  border-radius: 100px;
+  text-align: center;
+  display: inline-block;
+}
+
+.buttonOutlineWhite {
+  border: 2px solid var(--brand-color-4);
+  color: var(--text-color-2);
+}
+
+.buttonOutlineBlue {
+  border: 2px solid var(--brand-color-1);
+  color: var(--text-color-6);
+}
+
+.buttonSmall {
+    font-size: 1em;
+}
+
+.buttonLarge {
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    padding: 1em 2em;
+  }
+}

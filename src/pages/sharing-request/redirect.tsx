@@ -103,10 +103,6 @@ export default function DriverShareRequest() {
         <a href="" className={styles.playStoreButton} />
         <a href="" className={styles.appStoreButton} />
       </div>
-
-      <a className={styles.siteLink} href="https://cabbleapp.com">
-        cabbleapp.com
-      </a>
     </Layout>
   );
 }

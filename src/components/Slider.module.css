@@ -47,10 +47,10 @@
 }
 
 .pagination :global(.splide__arrow--prev)::before {
-  background-image: url('../../public/chevron-right.png');
+  background-image: url('../../public/images/chevron-right.png');
   transform: rotate(180deg);
 }
 
 .pagination :global(.splide__arrow--next)::after {
-  background-image: url('../../public/chevron-right.png');
+  background-image: url('../../public/images/chevron-right.png');
 }

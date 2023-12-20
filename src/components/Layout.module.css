@@ -1,45 +1,149 @@
 .container {
   min-height: 100vh;
-  max-width: 960px;
+  max-width: 1440px;
   width: 100%;
-  padding: 0 1rem;
   margin: 0 auto;
+  padding: 0.5rem;
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
+.logo {
+  width: 7em;
+}
+
+.main {
+  flex: 1;
+  padding: 4em 0.5em;
+  width: 100%;
+  background: var(--background-color-2);
+  border-radius: var(--section-border-radius);
+}
+
+.header {
+  width: 100%;
+  padding: 0 1em 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.activeMenuItem {
+  border-bottom: 2px solid var(--brand-color-1);
+}
+
+.menu li {
+  list-style: none;
+  padding: 0.5em 0.5em;
+  margin: 0 0.5em;
+  font-weight: 700;
+}
+
+.downloadSection {
+  background: var(--background-color-7) ;
+  background-size: 100%;
+  color: var(--text-color-1);
+  height: 30em;
+  width: 100%;
+  border-radius: var(--section-border-radius);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main {
-  flex: 1;
+.downloadSectionInner {
+  display: grid;
+  grid-gap: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+.subText {
+  font-size: 1.25em;
+  font-family: var(--font-work-sans);
+}
+
+.downloadSection h2 {
+  font-size: 4em;
+}
+
+.downloadSection h2 {
+  margin: 0;
+  color: var(--text-color-1);
+}
+
+.downloadSection h2 {
+  color: var(--text-color-1);
 }
 
 .footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
+  border-radius: var(--section-border-radius);
+  padding: 3em;
+  display: grid;
+  grid-gap: 5em;
+  background: var(--brand-color-3);
 }
 
-.footer img {
-  margin-left: 0.5rem;
+.footer h3 {
+  color: inherit;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer .grid {
+  display: grid;
+  grid-gap: 2em;
 }
 
-.logo {
-  height: 1em;
+.missionStatement {
+  max-width: 20em;
 }
 
-.link {
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: inherit;
+.footerMenu li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 1rem;
+    background: var(--background-color-5);
+    grid-gap: 1rem;
+  }
+
+  .main {
+    padding: 7.5em 5em;
+  }
+
+  .downloadSection h2 {
+    font-size: 6em;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .footer {
+    padding: 5em;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .downloadSection {
+    height: 40em;
+    background-size: initial;
+  }
+
+  .subText {
+    font-size: 1.5em;
+  }
 }

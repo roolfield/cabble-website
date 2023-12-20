@@ -1,21 +1,5 @@
-.container {
-  width: 100%;
-  margin: 0 -1em;
-  padding: 0 2em;
-  font-size: 14px;
-  color: #fff;
-  background-color: var(--background-color-4);
-}
-
 .redirectText {
   font-size: 1.7em;
-}
-
-.siteLink {
-  display: block;
-  padding: 6em 0 0;
-  font-size: 0.9em;
-  text-align: center;
 }
 
 .appStoreButtons {
@@ -26,26 +10,15 @@
 }
 
 .playStoreButton {
-  background: url("../../../public/playstore.svg") no-repeat left center ;
+  background: url("../../../public/images/play-store-dark.svg") no-repeat left center ;
   background-size: contain;
   width: 9em;
   height: 5em;
 }
 
 .appStoreButton {
-  background: url("../../../public/appstore.svg") no-repeat left center ;
+  background: url("../../../public/images/app-store-dark.svg") no-repeat left center ;
   background-size: contain;
   width: 9em;
   height: 5em;
-}
-
-@media (min-width: 44em) {
-  .container {
-    font-size: 16px;
-  }
-
-  .siteLink {
-    padding: 3em 0 0;
-    grid-column: 1 / span 2;
-  }
 }

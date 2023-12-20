@@ -1,16 +1,15 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 1.5em 1.8em 3em;
+.container h1 {
+    margin-top: 0;
 }
 
-.logo {
-    color: #6b22ff;
-    font-weight: 800;
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
-    text-align: center;
-    display: block;
-    text-decoration: none;
+.container h2:first-of-type {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-gap: 3em;
+        grid-template-columns: 1fr 2fr;
+    }
 }

@@ -1,0 +1,180 @@
+.container {
+    --step-index: 0;
+    --bg-step: 0;
+}
+
+.container {
+    background: var(--background-color-4) no-repeat left bottom;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background {
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    top: 330px;
+    left: -500px;
+    width: 950px;
+    height: 950px;
+    background: url(../../public/images/carousel-bg.svg) var(--background-color-4) no-repeat center center;
+    background-size: contain;
+    transform: rotate(calc(90deg * var(--bg-step)));
+    z-index: 0;
+}
+
+.container h2, .container h3 {
+    color: #fff;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 90%);
+    padding: 4em 0;
+    width: 100%;
+}
+
+.step {
+    transition: all 0.3s ease-in-out;
+    list-style: none;
+    opacity: 0.5;
+    transform: translateX(calc(5% - 100% * var(--step-index))) scale(0.6);
+}
+
+.step p {
+    margin-top: 1em;
+    min-height: 2em;
+}
+
+.activeStep {
+    opacity: 1;
+    transform: translateX(calc(5% - 100% * var(--step-index)));
+}
+
+.stepNumbers {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-family: var(--font-work-sans);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.stepSeparator {
+    display: inline-block;
+    width: 1.5em;
+    margin: 0 0.25em;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--text-color-2);
+}
+
+.stepTitle {
+    font-size: 2.3em;
+    font-family: var(--font-work-sans);
+    font-weight: 600;
+}
+
+.ownerDriverSwitch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5em;
+    border: 1px solid #495057;
+}
+
+.ownerDriverSwitch button {
+    color: inherit;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
+    font-family: var(--font-work-sans);
+    letter-spacing: -1px;
+}
+
+.ownerDriverSwitch .active {
+    color: inherit;
+    background-color: transparent;
+    font-weight: 600;
+    border-color: var(--text-color-2);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    padding: 0 3.5em;
+}
+
+.button {
+    width: 3em;
+    height: 3em;
+    background-size: contain;
+}
+
+.prevButton {
+    margin-right: 2em;
+}
+
+.prevButton {
+    background: url('../../public/images/carousel-prev.svg') no-repeat center center;
+}
+
+.nextButton {
+    background: url('../../public/images/carousel-next.svg') no-repeat center center;
+}
+
+@media screen and (min-width: 1200px) {
+    .steps {
+        grid-template-columns: repeat(4, 50%);
+        padding: 7em 0;
+    }
+
+    .step {
+        padding: 2.5em;
+        font-size: 1.375em;
+        transform: translateX(calc(50% - 100% * var(--step-index))) scale(0.6);
+    }
+
+    .activeStep {
+        transform: translateX(calc(50% - 100% * var(--step-index)));
+    }
+
+    .ownerDriverSwitch button {
+        font-size: 1.75em;
+    }
+
+    .stepTitle, .stepNumbers {
+        font-size: 2.3em;
+    }
+
+    .stepNumbers {
+        margin-bottom: 0;
+    }
+
+    .buttons {
+        width: 50%;
+    }
+
+    .background {
+        top: 400px;
+        left: -200px;
+        width: 1500px;
+        height: 1500px;
+        transform: rotate(calc(76.5deg * var(--bg-step)));
+    }
+}

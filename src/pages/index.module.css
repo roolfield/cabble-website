@@ -1,0 +1,316 @@
+.container {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.container h2 {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.pageSectionSplash {
+  color: var(--text-color-2);
+  display: grid;
+  grid-gap: 2em;
+  height: 44em;
+  background: var(--brand-color-1) url('../../public/images/hero_logo.svg') no-repeat
+    left bottom;
+  background-size: 150%;
+  margin-bottom: 45em;
+}
+
+.pageTitle {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.06em;
+  margin: 0;
+  line-height: 1;
+  color: var(--text-color-2);
+}
+
+.hero picture {
+  width: 100%;
+  max-width: 348px;
+  margin: 0 auto;
+}
+
+.pageSection {
+  border-radius: var(--section-border-radius);
+  padding: 1.5em;
+}
+
+.splashSectionLeftInner {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.splashSectionLeft {
+  padding: 6em 0 4em;
+}
+
+.pageTitle + span {
+  font-size: 1.5em;
+}
+
+.pageSectionTogether {
+  background: var(--background-color-2) no-repeat;
+}
+
+.togetherText {
+  text-align: center;
+}
+
+.pageSectionTogether h2 {
+  margin: 0.7em 0;
+}
+
+.pageSectionTogether h2 .accent {
+  color: var(--text-color-5);
+  line-height: inherit;
+}
+
+.pageSectionTogether picture {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.subText {
+  font-size: 1.25em;
+}
+
+.feature {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.featureLeft {
+  display: grid;
+  grid-gap: 2em;
+}
+
+.features {
+  padding: 10em 0 8em;
+  display: grid;
+  grid-gap: 5em;
+}
+
+.features h3 {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0.5em 0 0;
+}
+
+.feature picture {
+  max-width: 430px;
+}
+
+.featureIcon {
+  display: block;
+  width: 3em;
+}
+
+.readMore {
+  font-size: 0.8em;
+}
+
+.soon {
+  font-size: 1em;
+  background-color: var(--background-color-6);
+  padding: 0.8em 1.5em;
+  border-radius: 100em;
+  display: inline-block;
+  margin: 1.5em 0 1em;
+  font-family: var(--font-work-sans);
+}
+
+.stepNumbers {
+  font-family: var(--font-work-sans);
+  font-weight: 600;
+  font-size: 3.5em;
+  line-height: 1;
+}
+
+.stepTitle {
+  font-family: var(--font-work-sans);
+  font-weight: 600;
+  font-size: 1.375em;
+}
+
+.sectionUsps {
+  display: grid;
+  background: var(--background-color-2) no-repeat;
+  grid-gap: 3em;
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+
+.usps {
+  display: grid;
+  grid-gap: 5em;
+}
+
+.usp {
+  display: grid;
+  grid-gap: 2em;
+  border-radius: 10px;
+}
+
+.uspIcon {
+  display: block;
+  max-width: 70%;
+  margin: auto;
+}
+
+.usp:nth-of-type(3) .uspIcon {
+  max-width: 80%;
+}
+
+.usp:last-of-type .uspIcon {
+  max-height: 80%;
+}
+
+.sectionUsps h2 {
+  margin: 0;
+}
+
+.sectionUsps p {
+  font-size: 1.2em;
+}
+
+.usp h3 {
+  font-size: 2.1em;
+  margin: 0;
+}
+
+.usps p {
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .pageSectionSplash {
+    background-size: 80%;
+    background-position: right bottom;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    background-color: var(--brand-color-5);
+    grid-gap: 1em;
+  }
+
+  .pageTitle {
+    font-size: 7.8rem;
+  }
+
+  .container h2 {
+    font-size: 6rem;
+  }
+
+  .pageSection {
+    padding: 3.75em;
+  }
+
+  .pageSectionSplash {
+    grid-template-columns: 2fr 1fr;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    height: 66em;
+    background-position: right bottom;
+    background-size: auto;
+  }
+
+  .pageSectionTogether {
+    padding-top: 10em;
+    background-image: url('../../public/images/logo_together.svg');
+    background-position: right top;
+  }
+
+  .splashSectionLeft {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero picture {
+    max-width: 344px;
+  }
+
+  .pageTitle + span {
+    font-size: 2.185em;
+    max-width: 18em;
+  }
+
+  .subText {
+    font-size: 1.625em;
+  }
+
+  .readMore {
+    font-size: 1em;
+  }
+
+  .pageSectionTogether h2 {
+    font-size: 7.8rem;
+    margin: 0.7em 0;
+  }
+
+  .pageSectionTogether header {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .features {
+    padding-top: 10em;
+    grid-gap: 10em;
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .featureLeft {
+    max-width: 60%;
+  }
+
+  .features h3 {
+    font-size: 3em;
+  }
+
+  .featureIcon {
+    width: 4em;
+  }
+
+  .pageSectionHowItWorks {
+    height: 66em;
+  }
+
+  .usp {
+    padding: 2em;
+  }
+
+  .sectionUsps {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sectionUsps p {
+    font-size: 1.5em;
+  }
+
+  .uspIcon {
+    max-width: 50%;
+  }
+
+  .usp:nth-of-type(3) .uspIcon {
+    max-width: 65%;
+  }
+}

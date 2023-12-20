@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import Observer from '@researchgate/react-intersection-observer';
 import classnames from 'classnames';
+import { useInView } from 'react-intersection-observer';
 
-export default function ResponsiveImage({
+export default function GoogleServedImage({
   url,
   widths,
   sizes,
@@ -39,6 +39,11 @@ export default function ResponsiveImage({
     return null;
   }
 
+  const { ref, inView } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
   const getSrcSet = (
     url?: string,
     widths: number[] = [],
@@ -56,24 +61,17 @@ export default function ResponsiveImage({
     return srcSet;
   };
 
-  const [isInViewport, setIsInViewport] = useState(!lazy);
   const [loaded, setLoaded] = useState(false);
 
   const jpegSrcSet = getSrcSet(url, widths, ['rj']);
   const webPSrcSet = getSrcSet(url, widths, ['rw']);
-
-  const onIntersect = ({ isIntersecting }: { isIntersecting: boolean }) => {
-    if (isIntersecting) {
-      setIsInViewport(true);
-    }
-  };
 
   const onLoad = () => {
     setLoaded(true);
   };
 
   const containerClasses = [className || ''];
-  if (isInViewport) {
+  if (!lazy || inView) {
     containerClasses.push('visible');
   }
   if (!lazy || loaded) {
@@ -86,10 +84,10 @@ export default function ResponsiveImage({
   const progressiveImgUrl = `${url}=s10-c-fSoften=1,100,0`;
   const aspectRatio = (height ?? 0) / (width ?? 1);
 
-  const show = !progressive || isInViewport || !!url;
+  const show = !progressive || !lazy || inView;
 
   return (
-    <Observer disabled={!lazy} onChange={onIntersect}>
+    <div ref={ref}>
       <picture
         className={`container ${containerClasses.join(' ')}`.trim()}
         style={{
@@ -153,6 +151,6 @@ export default function ResponsiveImage({
         `}</style>
         {styles}
       </picture>
-    </Observer>
+    </div>
   );
 }

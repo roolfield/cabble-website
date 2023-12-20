@@ -22,8 +22,11 @@ export const StickyHeader = ({
       const wrapperRect = wrapperRef.current.getBoundingClientRect();
       const contentRect = contentRef.current.getBoundingClientRect();
       const parentElem = wrapperRef.current.parentElement;
+      if (!parentElem) {
+        return;
+      }
       const distanceToBottomParent =
-        (parentElem?.getBoundingClientRect().bottom ?? 0) - contentRect.height;
+        parentElem.getBoundingClientRect().bottom - contentRect.height;
       setIsSticky(
         window.innerWidth >= minWidth &&
           wrapperRect.top < 0 &&

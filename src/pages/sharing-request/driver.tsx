@@ -6,7 +6,7 @@ import { t, Trans } from '@lingui/macro';
 
 import { Layout } from '../../components/Layout';
 import { useLingui } from '@lingui/react';
-import ResponsiveImage from '../../components/ResponsiveImage';
+import GoogleServedImage from '../../components/GoogleServedImage';
 import classnames from 'classnames';
 import { Slider } from '../../components/Slider';
 import { StickyHeader } from '../../components/StickyHeader';
@@ -14,6 +14,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { graphql } from '../../generated';
 import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
+import { useLink } from '../../common/useLink';
 
 const query = graphql(`
   query DriverSharingRequest($driverId: ID!) {
@@ -43,6 +44,8 @@ export default function DriverShareRequest() {
 
   const [queryError, setQueryError] = useState<unknown>();
 
+  const { makeLinkParams } = useLink();
+
   const breakpoint = 44 * 14; // 44em
 
   useEffect(() => {
@@ -66,11 +69,14 @@ export default function DriverShareRequest() {
       alert('Invalid URL');
       return;
     }
-    router.push(`/sharing-request/pairing`, {
-      query: {
-        pairingCode,
-      },
-    });
+    router.push(
+      makeLinkParams({
+        pathname: `/sharing-request/redirect`,
+        query: {
+          pairingCode,
+        },
+      }),
+    );
   }, []);
 
   if (queryError) {
@@ -83,6 +89,7 @@ export default function DriverShareRequest() {
 
   return (
     <Layout
+      showHeaderAndFooter={false}
       className={styles.container}
       ogImage={`${data?.userProfile.profilePicture?.url}=s1200`}
       title={t(i18n)`Message from ${
@@ -93,7 +100,7 @@ export default function DriverShareRequest() {
           <header
             className={classnames(styles.sectionHeader, styles.pageHeader)}>
             <div className={styles.headerAvatars}>
-              <ResponsiveImage
+              <GoogleServedImage
                 url={data?.userProfile.profilePicture?.url ?? ''}
                 widths={[48, 96, 192]}
                 sizes={`(max-width: ${breakpoint}) 3em, 4em`}
@@ -116,7 +123,7 @@ export default function DriverShareRequest() {
         <div className={styles.subSections}>
           <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
             <figure>
-              <ResponsiveImage
+              <GoogleServedImage
                 url={data?.userProfile?.profilePicture?.url ?? ''}
                 widths={[600, 1000, 2000]}
                 sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
