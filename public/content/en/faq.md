@@ -29,3 +29,9 @@ De app is gratis te downloaden. Van de ritprijs betaal je 6.5% platform fee
 die grotendeels bestaat uit transactiekosten. We proberen deze kosten zo
 laag mogelijk te houden zodat je als deler zoveel mogelijk over houdt.
 
+## Account
+
+### Hoe kan ik mijn account verwijderen?
+
+Stuur ons een bericht via [de support pagina](/support) met het account waarmee
+je bent ingelogd en we zullen je account verwijderen.

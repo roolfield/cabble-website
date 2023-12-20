@@ -11,7 +11,7 @@ export const useGetEarlyAccess = () => {
       title: t(i18n)`Get early access`,
       text: t(
         i18n,
-      )`Please enter your email. This will open your email client to send us an email with your request.`,
+      )`Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request.`,
       input: 'text',
       inputPlaceholder: t(i18n)`john@doe.com`,
       showCancelButton: true,

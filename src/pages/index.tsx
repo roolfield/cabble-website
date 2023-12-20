@@ -151,7 +151,7 @@ export default function Home() {
                   <Trans>Coming soon</Trans>
                 </span>
                 <h3>
-                  <Trans>Insurance for any damange</Trans>
+                  <Trans>Insurance for any damage</Trans>
                 </h3>
               </div>
               <p className={styles.subText}>
@@ -185,14 +185,7 @@ export default function Home() {
               icon: '/images/usp-financial.svg',
               subtext: t(
                 i18n,
-              )`Drivers save on cost of ownership and owners get some of it back. Moreover, with only 6,5% fee, with Cabble you save most (by far) compared to alternatives.`,
-            },
-            {
-              title: t(i18n)`Good for our planet`,
-              icon: '/images/usp-planet.svg',
-              subtext: t(
-                i18n,
-              )`Sharing a car means less cars on the road, which means less emissions and more space in our cities.`,
+              )`Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far).`,
             },
             {
               title: t(i18n)`Flexible`,
@@ -200,6 +193,13 @@ export default function Home() {
               subtext: t(
                 i18n,
               )`Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when.`,
+            },
+            {
+              title: t(i18n)`Good for our planet`,
+              icon: '/images/usp-planet.svg',
+              subtext: t(
+                i18n,
+              )`Sharing a car means less cars on the road, which means less emissions and more space in our cities.`,
             },
           ].map(item => (
             <div className={styles.usp}>
