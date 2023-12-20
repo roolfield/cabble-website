@@ -89,17 +89,15 @@ export default function Home() {
           {[
             {
               title: t(i18n)`Manage availability`,
-              subtext: t(
-                i18n,
-              )`Request and approve/deny reservations in the app`,
+              subtext: t(i18n)`Request and approve/deny trips in the app`,
               image: '/images/mockup-reservation.png',
               icon: '/images/icon-calendar.svg',
             },
             {
-              title: t(i18n)`Automatic payments from owner to driver`,
+              title: t(i18n)`Automatic payments from driver to owner`,
               subtext: t(
                 i18n,
-              )`Pay after a reservation has ended. Fuel costs? These can be added too. Easy!`,
+              )`Pay after a trip has ended. Fuel costs? These can be added too. Easy!`,
               image: '/images/mockup-payments.png',
               icon: '/images/icon-wallet.svg',
             },
@@ -157,7 +155,7 @@ export default function Home() {
               <p className={styles.subText}>
                 <Trans>
                   Soon you will be able to insure for any damage that might
-                  occur during a reservation.
+                  occur during a trip.
                 </Trans>
               </p>
             </div>
