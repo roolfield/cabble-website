@@ -13,11 +13,11 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/sharing-request/owner.tsx:236
+#: src/pages/sharing-request/owner.tsx:234
 msgid "{0} doors"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:239
+#: src/pages/sharing-request/owner.tsx:237
 msgid "{0} seats"
 msgstr ""
 
@@ -26,29 +26,29 @@ msgstr ""
 #~ msgid "{value, plural, one {There's one book} other {There are # books}}"
 #~ msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:196
-#: src/pages/sharing-request/owner.tsx:281
+#: src/pages/sharing-request/owner.tsx:194
+#: src/pages/sharing-request/owner.tsx:279
 msgid "About me"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:288
+#: src/pages/sharing-request/owner.tsx:286
 msgid "About my Cabble profile"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:195
-#: src/pages/sharing-request/owner.tsx:211
+#: src/pages/sharing-request/owner.tsx:193
+#: src/pages/sharing-request/owner.tsx:209
 msgid "About my car"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:265
+#: src/pages/sharing-request/driver.tsx:263
 msgid "Add {0}"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:443
+#: src/pages/sharing-request/owner.tsx:441
 msgid "Add {0} on Cabble"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:255
+#: src/pages/sharing-request/driver.tsx:253
 msgid "Add me on Cabble"
 msgstr ""
 
@@ -56,7 +56,7 @@ msgstr ""
 msgid "Add some basic information about yourself."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:433
+#: src/pages/sharing-request/owner.tsx:431
 msgid "Add this car on the Cabble app"
 msgstr ""
 
@@ -65,15 +65,15 @@ msgstr ""
 #~ msgid "Already have the app? Use my pairing code."
 #~ msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:302
+#: src/pages/sharing-request/owner.tsx:300
 msgid "And how does that all work? 🤔"
 msgstr ""
 
-#: src/pages/index.tsx:101
+#: src/pages/index.tsx:127
 msgid "Anything to discuss? Use chat to keep each other in the loop."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:234
+#: src/pages/sharing-request/owner.tsx:232
 msgid "Automatic"
 msgstr ""
 
@@ -94,8 +94,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index.tsx:30
-msgid "Cabble car sharing app"
-msgstr ""
+#~ msgid "Cabble car sharing app"
+#~ msgstr ""
 
 #: src/components/Layout.tsx:168
 msgid "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
@@ -109,12 +109,12 @@ msgstr ""
 msgid "CNG"
 msgstr ""
 
-#: src/pages/index.tsx:144
+#: src/pages/index.tsx:170
 msgid "Coming soon"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:159
-#: src/pages/sharing-request/owner.tsx:311
+#: src/pages/sharing-request/driver.tsx:157
+#: src/pages/sharing-request/owner.tsx:309
 msgid "Costs"
 msgstr ""
 
@@ -164,7 +164,7 @@ msgstr ""
 msgid "Download the app 📱"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:88
+#: src/pages/sharing-request/redirect.tsx:91
 msgid "Download the app for free"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Download the app for free."
 msgstr ""
 
-#: src/pages/index.tsx:179
+#: src/pages/index.tsx:205
 msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr ""
 
@@ -194,7 +194,7 @@ msgstr ""
 msgid "Email us"
 msgstr ""
 
-#: src/pages/index.tsx:100
+#: src/pages/index.tsx:126
 msgid "Everything in one place"
 msgstr ""
 
@@ -209,6 +209,10 @@ msgstr ""
 #: src/pages/index.tsx:47
 #~ msgid "Examples →"
 #~ msgstr ""
+
+#: src/pages/index.tsx:59
+msgid "family"
+msgstr ""
 
 #: src/components/Layout.tsx:62
 msgid "FAQ"
@@ -226,7 +230,7 @@ msgstr ""
 #~ msgid "Find in-depth information about LinguiJS features and API."
 #~ msgstr ""
 
-#: src/pages/index.tsx:184
+#: src/pages/index.tsx:210
 msgid "Flexible"
 msgstr ""
 
@@ -244,6 +248,10 @@ msgstr ""
 msgid "Frequently Asked Questions"
 msgstr ""
 
+#: src/pages/index.tsx:56
+msgid "friend"
+msgstr ""
+
 #: src/components/ComunityComposition.tsx:49
 msgid "Friend"
 msgstr ""
@@ -252,13 +260,13 @@ msgstr ""
 msgid "Gasoline"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:220
+#: src/pages/sharing-request/owner.tsx:218
 msgid "General"
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:11
 #: src/components/Layout.tsx:111
-#: src/pages/index.tsx:49
+#: src/pages/index.tsx:75
 msgid "Get early access"
 msgstr ""
 
@@ -270,23 +278,23 @@ msgstr ""
 msgid "Go to FAQ"
 msgstr ""
 
-#: src/pages/index.tsx:186
+#: src/pages/index.tsx:212
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr ""
 
-#: src/pages/index.tsx:191
+#: src/pages/index.tsx:217
 msgid "Good for our planet"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:138
+#: src/pages/sharing-request/driver.tsx:136
 msgid "Hello!"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:118
+#: src/pages/sharing-request/driver.tsx:116
 msgid "Hey, do you want to share your car with me?"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:187
+#: src/pages/sharing-request/owner.tsx:185
 msgid "Hey, do you want to use my car together?"
 msgstr ""
 
@@ -294,7 +302,7 @@ msgstr ""
 #~ msgid "Hey, want to use my car together?"
 #~ msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:150
+#: src/pages/sharing-request/driver.tsx:148
 msgid "How would that work? 🤔"
 msgstr ""
 
@@ -310,11 +318,11 @@ msgstr ""
 msgid "I have a car"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:178
+#: src/pages/sharing-request/driver.tsx:176
 msgid "I make a reservation for when I need it. After your approval I start your trip in the app."
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:184
+#: src/pages/sharing-request/driver.tsx:182
 msgid "I pay for each trip based on the time and distance I drive."
 msgstr ""
 
@@ -322,7 +330,7 @@ msgstr ""
 #~ msgid "I Pay for each trip based on the time and distance I drive."
 #~ msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:225
+#: src/pages/sharing-request/driver.tsx:223
 msgid "I refuel the car or I pay for the used fuel through the app."
 msgstr ""
 
@@ -330,7 +338,7 @@ msgstr ""
 msgid "I want to use a car"
 msgstr ""
 
-#: src/pages/index.tsx:147
+#: src/pages/index.tsx:173
 msgid "Insurance for any damage"
 msgstr ""
 
@@ -354,8 +362,8 @@ msgstr ""
 msgid "john@doe.com"
 msgstr ""
 
-#: src/pages/index.tsx:121
-#: src/pages/index.tsx:204
+#: src/pages/index.tsx:147
+#: src/pages/index.tsx:230
 msgid "Learn more"
 msgstr ""
 
@@ -367,7 +375,7 @@ msgstr ""
 msgid "Let's do this?"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:69
+#: src/pages/sharing-request/redirect.tsx:72
 msgid "Let's go 🚀"
 msgstr ""
 
@@ -376,7 +384,7 @@ msgstr ""
 msgid "Let's go! 🚀"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:257
+#: src/pages/sharing-request/owner.tsx:255
 msgid "License plate number"
 msgstr ""
 
@@ -384,11 +392,11 @@ msgstr ""
 msgid "Link with an owner 💌"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:213
+#: src/pages/sharing-request/owner.tsx:211
 msgid "Loading"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:249
+#: src/pages/sharing-request/owner.tsx:247
 msgid "Location"
 msgstr ""
 
@@ -400,11 +408,11 @@ msgstr ""
 #~ msgid "Magenta"
 #~ msgstr ""
 
-#: src/pages/index.tsx:86
+#: src/pages/index.tsx:112
 msgid "Manage availability"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:235
+#: src/pages/sharing-request/owner.tsx:233
 msgid "Manual"
 msgstr ""
 
@@ -414,7 +422,16 @@ msgstr ""
 
 #: src/pages/sharing-request/driver.tsx:95
 #: src/pages/sharing-request/owner.tsx:164
-msgid "Message from {0} on Cabble"
+msgid "Message from {0}"
+msgstr ""
+
+#: src/pages/sharing-request/driver.tsx:95
+#: src/pages/sharing-request/owner.tsx:164
+#~ msgid "Message from {0} on Cabble"
+#~ msgstr ""
+
+#: src/pages/index.tsx:53
+msgid "neighbour"
 msgstr ""
 
 #: src/components/ComunityComposition.tsx:22
@@ -427,7 +444,7 @@ msgstr ""
 #~ msgid "No title"
 #~ msgstr ""
 
-#: src/pages/index.tsx:36
+#: src/pages/index.tsx:39
 msgid "One car, your community"
 msgstr ""
 
@@ -455,7 +472,7 @@ msgstr ""
 #~ msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
 #~ msgstr ""
 
-#: src/pages/index.tsx:93
+#: src/pages/index.tsx:119
 msgid "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
 msgstr ""
 
@@ -467,7 +484,7 @@ msgstr ""
 #~ msgid "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
 #~ msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:336
+#: src/pages/sharing-request/owner.tsx:334
 msgid "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
 msgstr ""
 
@@ -495,7 +512,11 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:77
+#: src/pages/sharing-request/redirect.tsx:70
+msgid "Redirecting"
+msgstr ""
+
+#: src/pages/sharing-request/redirect.tsx:80
 msgid "Redirecting you to the {0}"
 msgstr ""
 
@@ -503,11 +524,15 @@ msgstr ""
 #~ msgid "Request and approve/deny reservations in the app"
 #~ msgstr ""
 
-#: src/pages/index.tsx:87
+#: src/pages/index.tsx:113
 msgid "Request and approve/deny trips in the app"
 msgstr ""
 
-#: src/pages/index.tsx:177
+#: src/pages/index.tsx:64
+msgid "Save by using an underutilized car with a trusted group of people."
+msgstr ""
+
+#: src/pages/index.tsx:203
 msgid "Save money, everyone"
 msgstr ""
 
@@ -519,26 +544,30 @@ msgstr ""
 msgid "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 msgstr ""
 
-#: src/pages/index.tsx:170
+#: src/pages/index.tsx:45
+msgid "Share the car of your"
+msgstr ""
+
+#: src/pages/index.tsx:196
 msgid "Share with those you trust"
 msgstr ""
 
 #: src/pages/index.tsx:39
-msgid "Share your underutilized car with a trusted group of people."
-msgstr ""
+#~ msgid "Share your underutilized car with a trusted group of people."
+#~ msgstr ""
 
-#: src/pages/index.tsx:193
+#: src/pages/index.tsx:219
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr ""
 
-#: src/pages/index.tsx:72
+#: src/pages/index.tsx:98
 msgid "Sharing made easy in <0>one app</0>"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:158
-#: src/pages/sharing-request/driver.tsx:166
-#: src/pages/sharing-request/owner.tsx:310
-#: src/pages/sharing-request/owner.tsx:318
+#: src/pages/sharing-request/driver.tsx:156
+#: src/pages/sharing-request/driver.tsx:164
+#: src/pages/sharing-request/owner.tsx:308
+#: src/pages/sharing-request/owner.tsx:316
 msgid "Sharing with Cabble"
 msgstr ""
 
@@ -554,7 +583,7 @@ msgstr ""
 #~ msgid "Soon you will be able to insure for any damage that might occur during a trip."
 #~ msgstr ""
 
-#: src/pages/index.tsx:151
+#: src/pages/index.tsx:177
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr ""
 
@@ -573,8 +602,8 @@ msgstr ""
 msgid "Thank you!"
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:203
-#: src/pages/sharing-request/owner.tsx:356
+#: src/pages/sharing-request/driver.tsx:201
+#: src/pages/sharing-request/owner.tsx:354
 msgid "The costs"
 msgstr ""
 
@@ -590,7 +619,7 @@ msgstr ""
 #~ msgid "This is your unique pairing code to become a driver of this car."
 #~ msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:396
+#: src/pages/sharing-request/owner.tsx:394
 msgid "To make it worth my while, you pay a minimum of {0} hours per trip."
 msgstr ""
 
@@ -598,7 +627,7 @@ msgstr ""
 #~ msgid "Translation outside of React components"
 #~ msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:75
+#: src/pages/sharing-request/redirect.tsx:78
 msgid "Trying to open the app"
 msgstr ""
 
@@ -608,15 +637,15 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/sharing-request/redirect.tsx:67
-msgid "Use pairing code - Cabble"
-msgstr ""
+#~ msgid "Use pairing code - Cabble"
+#~ msgstr ""
 
 #: src/pages/support.tsx:89
 msgid "Use this form to send us feedback or report a problem."
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:245
-#: src/pages/sharing-request/owner.tsx:423
+#: src/pages/sharing-request/driver.tsx:243
+#: src/pages/sharing-request/owner.tsx:421
 msgid "Want to give it a go? 💪🏼"
 msgstr ""
 
@@ -637,11 +666,11 @@ msgstr ""
 msgid "WhatsApp us"
 msgstr ""
 
-#: src/pages/index.tsx:164
+#: src/pages/index.tsx:190
 msgid "Why sharing with Cabble?"
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:321
+#: src/pages/sharing-request/owner.tsx:319
 msgid "With Cabble we can share my car safely and easily."
 msgstr ""
 
@@ -649,7 +678,7 @@ msgstr ""
 #~ msgid "With Cabble we can share my car safely and without any hassle."
 #~ msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:169
+#: src/pages/sharing-request/driver.tsx:167
 msgid "With Cabble we can share your car safely and easily."
 msgstr ""
 
@@ -661,19 +690,19 @@ msgstr ""
 #~ msgid "Yellow"
 #~ msgstr ""
 
-#: src/pages/index.tsx:172
+#: src/pages/index.tsx:198
 msgid "You can be friends, neighbours or family; share your car with a trusted community."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:382
+#: src/pages/sharing-request/owner.tsx:380
 msgid "You can drive {0} for free and pay {1} per kilometer after that."
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:219
+#: src/pages/sharing-request/driver.tsx:217
 msgid "You can set a free number of kilometers per trip and a price per extra kilometer."
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:93
+#: src/pages/sharing-request/redirect.tsx:96
 msgid "You can start sharing once both of you have the app installed."
 msgstr ""
 
@@ -681,7 +710,7 @@ msgstr ""
 #~ msgid "You could set a free number of kilometers per trip and a price per extra kilometer."
 #~ msgstr ""
 
-#: src/pages/index.tsx:92
+#: src/pages/index.tsx:118
 msgid "You determine the price"
 msgstr ""
 
@@ -694,27 +723,27 @@ msgstr ""
 #~ msgid "You don't pay for using this app, why not give it a try?"
 #~ msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:403
+#: src/pages/sharing-request/owner.tsx:401
 msgid "You either refuel the car yourself or this gets added to the trip price."
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:206
+#: src/pages/sharing-request/driver.tsx:204
 msgid "You get some of the costs back, I save the cost of ownership."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:330
+#: src/pages/sharing-request/owner.tsx:328
 msgid "You make a reservation for when you need it. After my approval you can start your trip in the app."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:369
+#: src/pages/sharing-request/owner.tsx:367
 msgid "You pay {0} per hour."
 msgstr ""
 
-#: src/pages/sharing-request/owner.tsx:359
+#: src/pages/sharing-request/owner.tsx:357
 msgid "You save the cost of ownership, I get some of the costs back."
 msgstr ""
 
-#: src/pages/sharing-request/driver.tsx:216
+#: src/pages/sharing-request/driver.tsx:214
 msgid "You set a price per hour."
 msgstr ""
 
