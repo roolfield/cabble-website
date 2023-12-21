@@ -78,8 +78,8 @@ msgid "Automatic"
 msgstr "Automatic"
 
 #: src/pages/index.tsx:92
-msgid "Automatic payments from driver to owner"
-msgstr "Automatic payments from driver to owner"
+#~ msgid "Automatic payments from driver to owner"
+#~ msgstr "Automatic payments from driver to owner"
 
 #: src/pages/index.tsx:99
 #~ msgid "Automatic payments from owner to driver"
@@ -189,8 +189,8 @@ msgstr "Drivers save on cost of ownership and owners get some of it back. Moreov
 msgid "Electric"
 msgstr "Electric"
 
-#: src/pages/support.tsx:57
 #: src/pages/support.tsx:69
+#: src/pages/support.tsx:81
 msgid "Email us"
 msgstr "Email us"
 
@@ -214,11 +214,11 @@ msgstr "Everything in one place"
 msgid "FAQ"
 msgstr "FAQ"
 
-#: src/pages/support.tsx:74
+#: src/pages/support.tsx:86
 msgid "Feedback form"
 msgstr "Feedback form"
 
-#: src/pages/support.tsx:29
+#: src/pages/support.tsx:44
 msgid "Find answers to the most common questions about our service."
 msgstr "Find answers to the most common questions about our service."
 
@@ -240,7 +240,7 @@ msgstr "Frequently asked questions"
 
 #: src/components/Layout.tsx:127
 #: src/pages/faq.tsx:28
-#: src/pages/support.tsx:26
+#: src/pages/support.tsx:41
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
@@ -270,7 +270,7 @@ msgstr "Get early access"
 #~ msgid "Get started by editing <0>locales/en.po</0>"
 #~ msgstr "Get started by editing <0>locales/en.po</0>"
 
-#: src/pages/support.tsx:35
+#: src/pages/support.tsx:50
 msgid "Go to FAQ"
 msgstr "Go to FAQ"
 
@@ -435,11 +435,11 @@ msgstr "Neighbour"
 msgid "One car, your community"
 msgstr "One car, your community"
 
-#: src/pages/support.tsx:86
+#: src/pages/support.tsx:98
 msgid "Open feedback form"
 msgstr "Open feedback form"
 
-#: src/pages/support.tsx:52
+#: src/pages/support.tsx:64
 msgid "Open WhatsApp"
 msgstr "Open WhatsApp"
 
@@ -455,13 +455,17 @@ msgstr "Our mission"
 msgid "Owner"
 msgstr "Owner"
 
+#: src/pages/index.tsx:93
+msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+msgstr "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+
 #: src/pages/index.tsx:100
 #~ msgid "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
 #~ msgstr "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
 
 #: src/pages/index.tsx:93
-msgid "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
-msgstr "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
+#~ msgid "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
+#~ msgstr "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
 
 #: src/pages/sharing-request/owner.tsx:336
 msgid "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
@@ -507,11 +511,11 @@ msgstr "Request and approve/deny trips in the app"
 msgid "Save money, everyone"
 msgstr "Save money, everyone"
 
-#: src/pages/support.tsx:44
+#: src/pages/support.tsx:59
 msgid "Send us a message and we will respond as soon as possible."
 msgstr "Send us a message and we will respond as soon as possible."
 
-#: src/pages/support.tsx:60
+#: src/pages/support.tsx:72
 msgid "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 msgstr "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 
@@ -552,7 +556,7 @@ msgstr "Soon you will be able to insure for any damage that might occur during a
 
 #: src/components/Layout.tsx:66
 #: src/components/Layout.tsx:131
-#: src/pages/support.tsx:19
+#: src/pages/support.tsx:34
 msgid "Support"
 msgstr "Support"
 
@@ -603,7 +607,7 @@ msgstr "Trying to open the app"
 msgid "Use pairing code - Cabble"
 msgstr "Use pairing code - Cabble"
 
-#: src/pages/support.tsx:77
+#: src/pages/support.tsx:89
 msgid "Use this form to send us feedback or report a problem."
 msgstr "Use this form to send us feedback or report a problem."
 
@@ -617,7 +621,7 @@ msgstr "Want to give it a go? 💪🏼"
 #~ msgid "Want to give it a try? 💪🏼"
 #~ msgstr "Want to give it a try? 💪🏼"
 
-#: src/pages/support.tsx:21
+#: src/pages/support.tsx:36
 msgid "We're happy to help you"
 msgstr "We're happy to help you"
 
@@ -625,7 +629,7 @@ msgstr "We're happy to help you"
 #~ msgid "Welcome to <0>LinguiJS!</0>"
 #~ msgstr "Welcome to <0>LinguiJS!</0>"
 
-#: src/pages/support.tsx:41
+#: src/pages/support.tsx:56
 msgid "WhatsApp us"
 msgstr "WhatsApp us"
 
@@ -672,6 +676,10 @@ msgstr "You can start sharing once both of you have the app installed."
 #: src/pages/sharing-request/driver.tsx:222
 #~ msgid "You could set a free number of kilometers per trip and a price per extra kilometer."
 #~ msgstr "You could set a free number of kilometers per trip and a price per extra kilometer."
+
+#: src/pages/index.tsx:92
+msgid "You determine the price"
+msgstr "You determine the price"
 
 #: src/pages/car-profile.tsx:451
 #~ msgid "You don't pay for using the app, why don't we just try it out?"

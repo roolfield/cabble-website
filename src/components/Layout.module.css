@@ -1,11 +1,14 @@
 .container {
+  --padding: 0.5rem;
+  --header-height: 3.5em;
+
   min-height: 100vh;
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 0.5rem;
+  padding: var(--header-height) var(--padding) var(--padding);
   display: grid;
-  grid-gap: 0.5rem;
+  grid-gap: var(--padding);
 }
 
 .logo {
@@ -14,17 +17,47 @@
 
 .main {
   flex: 1;
-  padding: 4em 0.5em;
+  padding: 4em var(--padding);
   width: 100%;
   background: var(--background-color-2);
   border-radius: var(--section-border-radius);
 }
 
 .header {
+  position: fixed;
+  z-index: 100;
+  height: var(--header-height);
+  top: 0;
+  margin-left: calc(var(--padding) * -1);
+  background: var(--background-color-1);
   width: 100%;
-  padding: 0 1em 0;
+  max-width: inherit;
+  padding: 0 calc(var(--padding) * 2) 0;
   display: flex;
   align-items: center;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  background: url(../../public/images/menu-mask.svg) no-repeat left top;
+  bottom: -1em;
+  left: var(--padding);
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  background: url(../../public/images/menu-mask.svg) no-repeat left top;
+  transform: scaleX(-1);
+  bottom: -1em;
+  right: var(--padding);
+  width: 1em;
+  height: 1em;
+  display: block;
 }
 
 .menu {
@@ -113,9 +146,12 @@
 
 @media (min-width: 1200px) {
   .container {
-    padding: 1rem;
+    --padding: 1rem;
+    --header-height: 5em;
+
+    padding: var(--header-height) var(--padding) var(--padding);
     background: var(--background-color-5);
-    grid-gap: 1rem;
+    grid-gap: var(--padding);
   }
 
   .main {

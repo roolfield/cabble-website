@@ -19,7 +19,7 @@ export const PageSectionHowItWorks = ({
 
   const steps = useMemo(
     () =>
-      mode === 'owner'
+      mode === 'driver'
         ? [
             {
               title: t(i18n)`Download the app 📱`,

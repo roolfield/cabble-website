@@ -297,6 +297,10 @@
     height: 66em;
   }
 
+  .usps {
+    padding-top: 4em;
+  }
+
   .usp {
     padding: 2em;
   }
@@ -309,6 +313,10 @@
 
   .sectionUsps p {
     font-size: 1.5em;
+  }
+
+  .sectionUsps h2 {
+    padding-top: 1em;
   }
 
   .uspIcon {

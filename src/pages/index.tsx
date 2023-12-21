@@ -89,10 +89,10 @@ export default function Home() {
               icon: '/images/icon-calendar.svg',
             },
             {
-              title: t(i18n)`Automatic payments from driver to owner`,
+              title: t(i18n)`You determine the price`,
               subtext: t(
                 i18n,
-              )`Pay after a trip has ended. Fuel costs? These can be added too. Easy!`,
+              )`Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!`,
               image: '/images/mockup-payments.png',
               icon: '/images/icon-wallet.svg',
             },

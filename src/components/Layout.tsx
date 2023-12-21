@@ -38,7 +38,7 @@ export function Layout({
     <div className={classnames(showHeaderAndFooter && styles.container)}>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

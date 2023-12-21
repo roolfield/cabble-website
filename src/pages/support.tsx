@@ -2,16 +2,31 @@ import styles from './support.module.css';
 import { Layout } from '../components/Layout';
 import { useLingui } from '@lingui/react';
 import { t, Trans } from '@lingui/macro';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '../components/Button';
 import { useRouter } from 'next/router';
 import { useLink } from '../common/useLink';
 import Link from 'next/link';
 
+const WHATSAPP_URL = 'https://wa.me/31630686391';
+const FEEDBACK_FORM_URL = 'https://forms.gle/qeBbJT95MdYQnd1w9';
+
 export default function Support() {
   const { i18n } = useLingui();
 
-  const { push } = useRouter();
+  const { query, push } = useRouter();
+
+  useEffect(() => {
+    if (query['open-whatsapp'] !== undefined) {
+      window.location.href = WHATSAPP_URL;
+    }
+  }, [query]);
+
+  useEffect(() => {
+    if (query['open-feedback-form'] !== undefined) {
+      window.location.href = FEEDBACK_FORM_URL;
+    }
+  }, [query]);
 
   const { makeLinkParams } = useLink();
 
@@ -45,10 +60,7 @@ export default function Support() {
               Send us a message and we will respond as soon as possible.
             </Trans>
           </p>
-          <Button
-            href={'https://wa.me/4915735987499?text=Hi%20there!%20👋'}
-            showArrow={true}
-            element={'a'}>
+          <Button href={WHATSAPP_URL} showArrow={true} element={'a'}>
             <Trans>Open WhatsApp</Trans>
           </Button>
         </section>
@@ -82,7 +94,7 @@ export default function Support() {
             target={'_blank'}
             element={'a'}
             showArrow={true}
-            href="https://forms.gle/qeBbJT95MdYQnd1w9">
+            href={FEEDBACK_FORM_URL}>
             <Trans>Open feedback form</Trans>
           </Button>
         </section>
