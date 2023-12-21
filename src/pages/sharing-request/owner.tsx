@@ -161,9 +161,7 @@ export default function OwnerShareRequest() {
       showHeaderAndFooter={false}
       className={styles.container}
       ogImage={`${data?.car.profilePicture?.url}=s1200`}
-      title={t(i18n)`Message from ${
-        data?.car.owner.firstName ?? ''
-      } on Cabble`}>
+      title={t(i18n)`Message from ${data?.car.owner.firstName ?? ''}`}>
       <section className={styles.pageSection}>
         <StickyHeader minWidth={breakpoint}>
           <header

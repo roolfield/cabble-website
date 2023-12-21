@@ -29,7 +29,7 @@
   font-weight: 600;
   letter-spacing: -0.06em;
   margin: 0;
-  line-height: 1;
+  line-height: 1.15;
   color: var(--text-color-2);
 }
 
@@ -190,6 +190,20 @@
 .composition {
   margin: 0 -1em 4em;
   padding-bottom: 6em
+}
+
+.titleCarousel {
+  --title-step: 0;
+
+  display: inline-flex;
+  flex-direction: column;
+  height: 1.15em;
+  overflow: hidden;
+}
+
+.titleCarousel span  {
+  transition: all 0.5s ease-in-out;
+  transform: translateY(calc(var(--title-step) * -1.15em));
 }
 
 @media screen and (min-width: 480px) {

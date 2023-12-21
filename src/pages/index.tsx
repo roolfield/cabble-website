@@ -2,7 +2,7 @@ import styles from './index.module.css';
 import { Layout } from '../components/Layout';
 import { useLingui } from '@lingui/react';
 import { t, Trans } from '@lingui/macro';
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
 import LocalImage from '../components/LocalImage';
 import { Button } from '../components/Button';
@@ -23,21 +23,47 @@ export default function Home() {
 
   const faqLinkParams = useMemo<Url>(() => makeLinkParams('/faq'), []);
 
+  const [titleStep, setTitleStep] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTitleStep(step => (step + 1) % 3);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout
       resetMain={true}
       className={styles.container}
-      title={t(i18n)`Cabble car sharing app`}>
+      title={t(i18n)`One car, your community`}>
       <section
         className={classNames(styles.pageSection, styles.pageSectionSplash)}>
         <div className={styles.splashSectionLeft}>
           <div className={styles.splashSectionLeftInner}>
             <h1 className={styles.pageTitle}>
-              <Trans>One car, your community</Trans>
+              <Trans>Share the car of your</Trans>{' '}
+              <div
+                className={styles.titleCarousel}
+                style={{
+                  // @ts-ignore
+                  '--title-step': titleStep,
+                }}>
+                <span>
+                  <Trans>neighbour</Trans>
+                </span>
+                <span>
+                  <Trans>friend</Trans>
+                </span>
+                <span>
+                  <Trans>family</Trans>
+                </span>
+              </div>
             </h1>
             <span>
               <Trans>
-                Share your underutilized car with a trusted group of people.
+                Save by using an underutilized car with a trusted group of
+                people.
               </Trans>
             </span>
             <div>

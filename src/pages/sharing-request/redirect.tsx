@@ -9,6 +9,9 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
 
+const APP_STORE_URL = `https://apps.apple.com/app/id${process.env.NEXT_PUBLIC_APP_ID_IOS}`;
+const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${process.env.NEXT_PUBLIC_APP_ID_ANDROID}`;
+
 export default function DriverShareRequest() {
   const { i18n } = useLingui();
 
@@ -41,9 +44,9 @@ export default function DriverShareRequest() {
     if (isRedirecting) {
       setTimeout(function () {
         if (isIphone) {
-          window.location.href = `https://apps.apple.com/app/id${process.env.NEXT_PUBLIC_APP_ID_IOS}`;
+          window.location.href = APP_STORE_URL;
         } else if (isAndroid) {
-          window.location.href = `https://play.google.com/store/apps/details?id=${process.env.NEXT_PUBLIC_APP_ID_ANDROID}`;
+          window.location.href = PLAY_STORE_URL;
         }
       }, 2000);
     }
@@ -64,7 +67,7 @@ export default function DriverShareRequest() {
   return (
     <Layout
       className={classnames(styles.container, styles.redirectContainer)}
-      title={t(i18n)`Use pairing code - Cabble`}>
+      title={t(i18n)`Redirecting`}>
       <h1>
         <Trans>Let's go 🚀</Trans>
       </h1>
@@ -96,8 +99,8 @@ export default function DriverShareRequest() {
       </p>
 
       <div className={styles.appStoreButtons}>
-        <a href="" className={styles.playStoreButton} />
-        <a href="" className={styles.appStoreButton} />
+        <a href={APP_STORE_URL} className={styles.playStoreButton} />
+        <a href={PLAY_STORE_URL} className={styles.appStoreButton} />
       </div>
     </Layout>
   );

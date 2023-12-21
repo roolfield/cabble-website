@@ -37,7 +37,7 @@ export function Layout({
   return (
     <div className={classnames(showHeaderAndFooter && styles.container)}>
       <Head>
-        <title>{title}</title>
+        <title>{title} | Cabble car sharing app</title>
         <link rel="icon" href="/favicon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />

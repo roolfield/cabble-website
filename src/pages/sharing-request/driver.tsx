@@ -92,9 +92,7 @@ export default function DriverShareRequest() {
       showHeaderAndFooter={false}
       className={styles.container}
       ogImage={`${data?.userProfile.profilePicture?.url}=s1200`}
-      title={t(i18n)`Message from ${
-        data?.userProfile.firstName ?? ''
-      } on Cabble`}>
+      title={t(i18n)`Message from ${data?.userProfile.firstName ?? ''}`}>
       <section className={styles.pageSection}>
         <StickyHeader minWidth={breakpoint}>
           <header
