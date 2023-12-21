@@ -156,7 +156,7 @@
 }
 
 .pageSection:nth-of-type(3) h3 {
-  color: #fff;
+  color: #fff !important;
 }
 .pageSection:nth-of-type(3) p {
   margin: 0;

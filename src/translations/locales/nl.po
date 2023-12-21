@@ -143,7 +143,7 @@ msgstr ""
 msgid "Download the app 📱"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:92
+#: src/pages/sharing-request/redirect.tsx:88
 msgid "Download the app for free"
 msgstr ""
 
@@ -330,7 +330,7 @@ msgstr ""
 msgid "Let's do this?"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:73
+#: src/pages/sharing-request/redirect.tsx:69
 msgid "Let's go 🚀"
 msgstr ""
 
@@ -411,7 +411,11 @@ msgid "Owner"
 msgstr ""
 
 #: src/pages/index.tsx:93
-msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+#~ msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+#~ msgstr ""
+
+#: src/pages/index.tsx:93
+msgid "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
 msgstr ""
 
 #: src/pages/index.tsx:100
@@ -442,7 +446,7 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:81
+#: src/pages/sharing-request/redirect.tsx:77
 msgid "Redirecting you to the {0}"
 msgstr ""
 
@@ -498,7 +502,11 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index.tsx:151
-msgid "Soon you will be able to insure for any damage that might occur during a trip."
+#~ msgid "Soon you will be able to insure for any damage that might occur during a trip."
+#~ msgstr ""
+
+#: src/pages/index.tsx:151
+msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr ""
 
 #: src/components/Layout.tsx:66
@@ -537,7 +545,7 @@ msgstr ""
 msgid "To make it worth my while, you pay a minimum of {0} hours per trip."
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:79
+#: src/pages/sharing-request/redirect.tsx:75
 msgid "Trying to open the app"
 msgstr ""
 
@@ -546,7 +554,7 @@ msgstr ""
 #~ msgid "Use pairing code"
 #~ msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:71
+#: src/pages/sharing-request/redirect.tsx:67
 msgid "Use pairing code - Cabble"
 msgstr ""
 
@@ -604,7 +612,7 @@ msgstr ""
 msgid "You can set a free number of kilometers per trip and a price per extra kilometer."
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:97
+#: src/pages/sharing-request/redirect.tsx:93
 msgid "You can start sharing once both of you have the app installed."
 msgstr ""
 

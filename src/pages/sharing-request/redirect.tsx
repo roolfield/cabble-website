@@ -38,16 +38,12 @@ export default function DriverShareRequest() {
   }, []);
 
   useEffect(() => {
-    window.location.href = `${process.env.NEXT_PUBLIC_APP_SCHEME}${location}`;
-  }, []);
-
-  useEffect(() => {
     if (isRedirecting) {
       setTimeout(function () {
         if (isIphone) {
-          window.location.href = `https://apps.apple.com/app/id{${process.env.NEXT_PUBLIC_APP_ID_APPLE}}`;
+          window.location.href = `https://apps.apple.com/app/id${process.env.NEXT_PUBLIC_APP_ID_IOS}`;
         } else if (isAndroid) {
-          window.location.href = `https://play.google.com/store/apps/details?id={${process.env.NEXT_PUBLIC_APP_ID_ANDROID}}`;
+          window.location.href = `https://play.google.com/store/apps/details?id=${process.env.NEXT_PUBLIC_APP_ID_ANDROID}`;
         }
       }, 2000);
     }

@@ -92,7 +92,7 @@ export default function Home() {
               title: t(i18n)`You determine the price`,
               subtext: t(
                 i18n,
-              )`Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!`,
+              )`Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!`,
               image: '/images/mockup-payments.png',
               icon: '/images/icon-wallet.svg',
             },
@@ -149,8 +149,8 @@ export default function Home() {
               </div>
               <p className={styles.subText}>
                 <Trans>
-                  Soon you will be able to insure for any damage that might
-                  occur during a trip.
+                  Soon you will be able to insure for any self-incurred damage
+                  that might occur during a trip.
                 </Trans>
               </p>
             </div>

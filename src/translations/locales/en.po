@@ -164,7 +164,7 @@ msgstr "Diesel"
 msgid "Download the app 📱"
 msgstr "Download the app 📱"
 
-#: src/pages/sharing-request/redirect.tsx:92
+#: src/pages/sharing-request/redirect.tsx:88
 msgid "Download the app for free"
 msgstr "Download the app for free"
 
@@ -371,7 +371,7 @@ msgstr "Legal"
 msgid "Let's do this?"
 msgstr "Let's do this?"
 
-#: src/pages/sharing-request/redirect.tsx:73
+#: src/pages/sharing-request/redirect.tsx:69
 msgid "Let's go 🚀"
 msgstr "Let's go 🚀"
 
@@ -456,8 +456,12 @@ msgid "Owner"
 msgstr "Owner"
 
 #: src/pages/index.tsx:93
-msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
-msgstr "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+#~ msgid "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+#~ msgstr "Owner and driver agree on the costs for using the car. Fuel costs? These can be added too. Easy!"
+
+#: src/pages/index.tsx:93
+msgid "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
+msgstr "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
 
 #: src/pages/index.tsx:100
 #~ msgid "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
@@ -495,7 +499,7 @@ msgstr "Privacy policy"
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: src/pages/sharing-request/redirect.tsx:81
+#: src/pages/sharing-request/redirect.tsx:77
 msgid "Redirecting you to the {0}"
 msgstr "Redirecting you to the {0}"
 
@@ -551,8 +555,12 @@ msgstr "Son"
 #~ msgstr "Soon you will be able to insure for any damage that might occur during a reservation."
 
 #: src/pages/index.tsx:151
-msgid "Soon you will be able to insure for any damage that might occur during a trip."
-msgstr "Soon you will be able to insure for any damage that might occur during a trip."
+#~ msgid "Soon you will be able to insure for any damage that might occur during a trip."
+#~ msgstr "Soon you will be able to insure for any damage that might occur during a trip."
+
+#: src/pages/index.tsx:151
+msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
+msgstr "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 
 #: src/components/Layout.tsx:66
 #: src/components/Layout.tsx:131
@@ -594,7 +602,7 @@ msgstr "To make it worth my while, you pay a minimum of {0} hours per trip."
 #~ msgid "Translation outside of React components"
 #~ msgstr "Translation outside of React components"
 
-#: src/pages/sharing-request/redirect.tsx:79
+#: src/pages/sharing-request/redirect.tsx:75
 msgid "Trying to open the app"
 msgstr "Trying to open the app"
 
@@ -603,7 +611,7 @@ msgstr "Trying to open the app"
 #~ msgid "Use pairing code"
 #~ msgstr "Use pairing code"
 
-#: src/pages/sharing-request/redirect.tsx:71
+#: src/pages/sharing-request/redirect.tsx:67
 msgid "Use pairing code - Cabble"
 msgstr "Use pairing code - Cabble"
 
@@ -669,7 +677,7 @@ msgstr "You can drive {0} for free and pay {1} per kilometer after that."
 msgid "You can set a free number of kilometers per trip and a price per extra kilometer."
 msgstr "You can set a free number of kilometers per trip and a price per extra kilometer."
 
-#: src/pages/sharing-request/redirect.tsx:97
+#: src/pages/sharing-request/redirect.tsx:93
 msgid "You can start sharing once both of you have the app installed."
 msgstr "You can start sharing once both of you have the app installed."
 
