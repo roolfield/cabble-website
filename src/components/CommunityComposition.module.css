@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 620px;
+  padding-bottom: 20%;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.item picture {
+  position: relative;
+  z-index: 0;
+}
+
+.label {
+  padding: 0.5em 1em;
+  border-radius: 100px;
+  color: var(--text-color-2);
+  background-color: var(--background-color-4);
+  font-family: var(--font-work-sans);
+  font-weight: 600;
+  font-size: 0.9em;
+  z-index: 1;
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+.owner .label {
+  background-color: var(--background-color-3);
+}
+
+.car {
+  z-index: 0;
+}
+
+.item.transition {
+  opacity: 1;
+}

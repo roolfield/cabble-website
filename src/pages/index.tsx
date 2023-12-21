@@ -12,6 +12,7 @@ import { useGetEarlyAccess } from '../common/useGetEarlyAccess';
 import Link from 'next/link';
 import { Url } from 'next/dist/shared/lib/router/router';
 import { useLink } from '../common/useLink';
+import { CommunityComposition } from '../components/ComunityComposition';
 
 export default function Home() {
   const { i18n } = useLingui();
@@ -62,14 +63,8 @@ export default function Home() {
       </section>
       <section
         className={classNames(styles.pageSection, styles.pageSectionTogether)}>
-        <figure>
-          <LocalImage
-            src="/images/community.png"
-            width={613}
-            height={447}
-            lazy={false}
-            sizes={`(max-width: 655px) 100vw, 650px`}
-          />
+        <figure className={styles.composition}>
+          <CommunityComposition />
         </figure>
         <div className={styles.togetherText}>
           <header>

@@ -69,7 +69,7 @@ msgstr "Add this car on the Cabble app"
 msgid "And how does that all work? 🤔"
 msgstr "And how does that all work? 🤔"
 
-#: src/pages/index.tsx:108
+#: src/pages/index.tsx:101
 msgid "Anything to discuss? Use chat to keep each other in the loop."
 msgstr "Anything to discuss? Use chat to keep each other in the loop."
 
@@ -77,9 +77,13 @@ msgstr "Anything to discuss? Use chat to keep each other in the loop."
 msgid "Automatic"
 msgstr "Automatic"
 
+#: src/pages/index.tsx:92
+msgid "Automatic payments from driver to owner"
+msgstr "Automatic payments from driver to owner"
+
 #: src/pages/index.tsx:99
-msgid "Automatic payments from owner to driver"
-msgstr "Automatic payments from owner to driver"
+#~ msgid "Automatic payments from owner to driver"
+#~ msgstr "Automatic payments from owner to driver"
 
 #: src/pages/examples.tsx:18
 #~ msgid "Black"
@@ -89,7 +93,7 @@ msgstr "Automatic payments from owner to driver"
 #~ msgid "Cabble car profile - {0}"
 #~ msgstr "Cabble car profile - {0}"
 
-#: src/pages/index.tsx:29
+#: src/pages/index.tsx:30
 msgid "Cabble car sharing app"
 msgstr "Cabble car sharing app"
 
@@ -105,7 +109,7 @@ msgstr "Cabble is on a mission to bring together communities in order to reduce 
 msgid "CNG"
 msgstr "CNG"
 
-#: src/pages/index.tsx:151
+#: src/pages/index.tsx:144
 msgid "Coming soon"
 msgstr "Coming soon"
 
@@ -138,6 +142,10 @@ msgstr "Create a profile 🙋‍️"
 #~ msgid "Cyan"
 #~ msgstr "Cyan"
 
+#: src/components/ComunityComposition.tsx:57
+msgid "Daughter"
+msgstr "Daughter"
+
 #: src/pages/sharing-request/owner.tsx:40
 msgid "Diesel"
 msgstr "Diesel"
@@ -169,7 +177,7 @@ msgstr "Download the app for free"
 msgid "Download the app for free."
 msgstr "Download the app for free."
 
-#: src/pages/index.tsx:186
+#: src/pages/index.tsx:179
 msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 
@@ -186,7 +194,7 @@ msgstr "Electric"
 msgid "Email us"
 msgstr "Email us"
 
-#: src/pages/index.tsx:107
+#: src/pages/index.tsx:100
 msgid "Everything in one place"
 msgstr "Everything in one place"
 
@@ -218,7 +226,7 @@ msgstr "Find answers to the most common questions about our service."
 #~ msgid "Find in-depth information about LinguiJS features and API."
 #~ msgstr "Find in-depth information about LinguiJS features and API."
 
-#: src/pages/index.tsx:191
+#: src/pages/index.tsx:184
 msgid "Flexible"
 msgstr "Flexible"
 
@@ -236,6 +244,10 @@ msgstr "Frequently asked questions"
 msgid "Frequently Asked Questions"
 msgstr "Frequently Asked Questions"
 
+#: src/components/ComunityComposition.tsx:49
+msgid "Friend"
+msgstr "Friend"
+
 #: src/pages/sharing-request/owner.tsx:39
 msgid "Gasoline"
 msgstr "Gasoline"
@@ -246,7 +258,7 @@ msgstr "General"
 
 #: src/common/useGetEarlyAccess.ts:11
 #: src/components/Layout.tsx:111
-#: src/pages/index.tsx:48
+#: src/pages/index.tsx:49
 msgid "Get early access"
 msgstr "Get early access"
 
@@ -262,11 +274,11 @@ msgstr "Get early access"
 msgid "Go to FAQ"
 msgstr "Go to FAQ"
 
-#: src/pages/index.tsx:193
+#: src/pages/index.tsx:186
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 
-#: src/pages/index.tsx:198
+#: src/pages/index.tsx:191
 msgid "Good for our planet"
 msgstr "Good for our planet"
 
@@ -322,7 +334,7 @@ msgstr "I refuel the car or I pay for the used fuel through the app."
 msgid "I want to use a car"
 msgstr "I want to use a car"
 
-#: src/pages/index.tsx:154
+#: src/pages/index.tsx:147
 msgid "Insurance for any damage"
 msgstr "Insurance for any damage"
 
@@ -346,8 +358,8 @@ msgstr "Invite your community 💌"
 msgid "john@doe.com"
 msgstr "john@doe.com"
 
-#: src/pages/index.tsx:128
-#: src/pages/index.tsx:211
+#: src/pages/index.tsx:121
+#: src/pages/index.tsx:204
 msgid "Learn more"
 msgstr "Learn more"
 
@@ -392,7 +404,7 @@ msgstr "LPG"
 #~ msgid "Magenta"
 #~ msgstr "Magenta"
 
-#: src/pages/index.tsx:91
+#: src/pages/index.tsx:86
 msgid "Manage availability"
 msgstr "Manage availability"
 
@@ -409,11 +421,17 @@ msgstr "Menu"
 msgid "Message from {0} on Cabble"
 msgstr "Message from {0} on Cabble"
 
+#: src/components/ComunityComposition.tsx:22
+#: src/components/ComunityComposition.tsx:31
+#: src/components/ComunityComposition.tsx:40
+msgid "Neighbour"
+msgstr "Neighbour"
+
 #: src/components/Layout.tsx:23
 #~ msgid "No title"
 #~ msgstr "No title"
 
-#: src/pages/index.tsx:35
+#: src/pages/index.tsx:36
 msgid "One car, your community"
 msgstr "One car, your community"
 
@@ -433,9 +451,17 @@ msgstr "Other"
 msgid "Our mission"
 msgstr "Our mission"
 
+#: src/components/ComunityComposition.tsx:66
+msgid "Owner"
+msgstr "Owner"
+
 #: src/pages/index.tsx:100
-msgid "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
-msgstr "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
+#~ msgid "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
+#~ msgstr "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
+
+#: src/pages/index.tsx:93
+msgid "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
+msgstr "Pay after a trip has ended. Fuel costs? These can be added too. Easy!"
 
 #: src/pages/sharing-request/owner.tsx:336
 msgid "Pay for each trip based on the time and distance you drive. If you could not refuel, the app takes care of that too."
@@ -470,10 +496,14 @@ msgid "Redirecting you to the {0}"
 msgstr "Redirecting you to the {0}"
 
 #: src/pages/index.tsx:92
-msgid "Request and approve/deny reservations in the app"
-msgstr "Request and approve/deny reservations in the app"
+#~ msgid "Request and approve/deny reservations in the app"
+#~ msgstr "Request and approve/deny reservations in the app"
 
-#: src/pages/index.tsx:184
+#: src/pages/index.tsx:87
+msgid "Request and approve/deny trips in the app"
+msgstr "Request and approve/deny trips in the app"
+
+#: src/pages/index.tsx:177
 msgid "Save money, everyone"
 msgstr "Save money, everyone"
 
@@ -485,19 +515,19 @@ msgstr "Send us a message and we will respond as soon as possible."
 msgid "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 msgstr "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 
-#: src/pages/index.tsx:177
+#: src/pages/index.tsx:170
 msgid "Share with those you trust"
 msgstr "Share with those you trust"
 
-#: src/pages/index.tsx:38
+#: src/pages/index.tsx:39
 msgid "Share your underutilized car with a trusted group of people."
 msgstr "Share your underutilized car with a trusted group of people."
 
-#: src/pages/index.tsx:200
+#: src/pages/index.tsx:193
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 
-#: src/pages/index.tsx:77
+#: src/pages/index.tsx:72
 msgid "Sharing made easy in <0>one app</0>"
 msgstr "Sharing made easy in <0>one app</0>"
 
@@ -508,9 +538,17 @@ msgstr "Sharing made easy in <0>one app</0>"
 msgid "Sharing with Cabble"
 msgstr "Sharing with Cabble"
 
+#: src/components/ComunityComposition.tsx:86
+msgid "Son"
+msgstr "Son"
+
 #: src/pages/index.tsx:158
-msgid "Soon you will be able to insure for any damage that might occur during a reservation."
-msgstr "Soon you will be able to insure for any damage that might occur during a reservation."
+#~ msgid "Soon you will be able to insure for any damage that might occur during a reservation."
+#~ msgstr "Soon you will be able to insure for any damage that might occur during a reservation."
+
+#: src/pages/index.tsx:151
+msgid "Soon you will be able to insure for any damage that might occur during a trip."
+msgstr "Soon you will be able to insure for any damage that might occur during a trip."
 
 #: src/components/Layout.tsx:66
 #: src/components/Layout.tsx:131
@@ -591,7 +629,7 @@ msgstr "We're happy to help you"
 msgid "WhatsApp us"
 msgstr "WhatsApp us"
 
-#: src/pages/index.tsx:171
+#: src/pages/index.tsx:164
 msgid "Why sharing with Cabble?"
 msgstr "Why sharing with Cabble?"
 
@@ -615,7 +653,7 @@ msgstr "With Cabble we can share your car safely and easily."
 #~ msgid "Yellow"
 #~ msgstr "Yellow"
 
-#: src/pages/index.tsx:179
+#: src/pages/index.tsx:172
 msgid "You can be friends, neighbours or family; share your car with a trusted community."
 msgstr "You can be friends, neighbours or family; share your car with a trusted community."
 

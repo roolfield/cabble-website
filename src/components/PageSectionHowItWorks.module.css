@@ -54,7 +54,7 @@
 }
 
 .step p {
-    margin-top: 1em;
+    margin-top: 1em !important;
     min-height: 2em;
 }
 
