@@ -269,7 +269,7 @@ msgstr ""
 msgid "Hydrogen"
 msgstr ""
 
-#: src/components/PageSectionHowItWorks.tsx:108
+#: src/components/PageSectionHowItWorks.tsx:109
 msgid "I have a car"
 msgstr ""
 
@@ -289,7 +289,7 @@ msgstr ""
 msgid "I refuel the car or I pay for the used fuel through the app."
 msgstr ""
 
-#: src/components/PageSectionHowItWorks.tsx:113
+#: src/components/PageSectionHowItWorks.tsx:114
 msgid "I want to use a car"
 msgstr ""
 

@@ -100,18 +100,20 @@ export const PageSectionHowItWorks = ({
         }}
       />
       <div className={styles.content}>
-        <h2>How it works</h2>
-        <div className={styles.ownerDriverSwitch}>
-          <button
-            onClick={() => setMode('owner')}
-            className={mode === 'owner' ? styles.active : undefined}>
-            <Trans>I have a car</Trans>
-          </button>
-          <button
-            onClick={() => setMode('driver')}
-            className={mode === 'driver' ? styles.active : undefined}>
-            <Trans>I want to use a car</Trans>
-          </button>
+        <div className={styles.titleAndSwitch}>
+          <h2>How it works</h2>
+          <div className={styles.ownerDriverSwitch}>
+            <button
+              onClick={() => setMode('owner')}
+              className={mode === 'owner' ? styles.active : undefined}>
+              <Trans>I have a car</Trans>
+            </button>
+            <button
+              onClick={() => setMode('driver')}
+              className={mode === 'driver' ? styles.active : undefined}>
+              <Trans>I want to use a car</Trans>
+            </button>
+          </div>
         </div>
         <ul className={styles.steps}>
           {steps.map((step, index) => (
@@ -136,11 +138,19 @@ export const PageSectionHowItWorks = ({
         </ul>
         <div className={styles.buttons}>
           <button
-            className={classNames(styles.prevButton, styles.button)}
+            className={classNames(
+              styles.prevButton,
+              styles.button,
+              stepIndex === 0 && styles.disabledButton,
+            )}
             onClick={() => setStepIndex(Math.max(stepIndex - 1, 0))}
           />
           <button
-            className={classNames(styles.nextButton, styles.button)}
+            className={classNames(
+              styles.nextButton,
+              styles.button,
+              stepIndex === steps.length - 1 && styles.disabledButton,
+            )}
             onClick={() => setStepIndex(Math.min(stepIndex + 1, 3))}
           />
         </div>
