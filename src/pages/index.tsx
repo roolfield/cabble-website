@@ -115,8 +115,8 @@ export default function Home() {
               title: t(i18n)`You determine the price`,
               subtext: t(
                 i18n,
-              )`Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!`,
-              image: '/images/mockup-payments.png',
+              )`With Cabble your price can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!`,
+              image: '/images/mockup-payments2.png',
               icon: '/images/icon-wallet.svg',
             },
             {

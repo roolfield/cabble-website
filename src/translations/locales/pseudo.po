@@ -475,8 +475,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/index.tsx:116
-msgid "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
-msgstr ""
+#~ msgid "Owners set a good price. Drivers know exactly what they're paying. Fuel costs? Just add them to the bill. Easy!"
+#~ msgstr ""
 
 #: src/pages/index.tsx:100
 #~ msgid "Pay after a reservation has ended. Fuel costs? These can be added too. Easy!"
@@ -691,6 +691,10 @@ msgstr ""
 #: src/pages/sharing-request/driver.tsx:171
 #~ msgid "With Cabble we can share your car safely and without any hassle."
 #~ msgstr ""
+
+#: src/pages/index.tsx:116
+msgid "With Cabble your price can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
+msgstr ""
 
 #: src/pages/examples.tsx:18
 #~ msgid "Yellow"
