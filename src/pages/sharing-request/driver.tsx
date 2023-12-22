@@ -15,6 +15,7 @@ import { useRouter } from 'next/router';
 import { graphql } from '../../generated';
 import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
 import { useLink } from '../../common/useLink';
+import classNames from 'classnames';
 
 const query = graphql(`
   query DriverSharingRequest($driverId: ID!) {
@@ -138,6 +139,10 @@ export default function DriverShareRequest() {
               <h3>{`${data?.userProfile.firstName} ${data?.userProfile.lastName}`}</h3>
             </header>
           </aside>
+
+          <button className={styles.pairButton} onClick={openRedirect}>
+            <Trans>Add {data?.userProfile?.firstName}</Trans>
+          </button>
         </div>
       </section>
 
@@ -216,7 +221,7 @@ export default function DriverShareRequest() {
                   <li>
                     <Trans>
                       You can set a free number of kilometers per trip and a
-                      price per extra kilometer.
+                      price per extra kilometer (excluding fuel).
                     </Trans>
                   </li>
                   <li>
@@ -236,7 +241,7 @@ export default function DriverShareRequest() {
         </div>
       </section>
 
-      <section className={styles.pageSection}>
+      <section className={classNames(styles.pageSection, styles.pairSection)}>
         <StickyHeader minWidth={breakpoint}>
           <header className={styles.sectionHeader}>
             <h2>

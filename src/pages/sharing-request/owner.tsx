@@ -16,6 +16,7 @@ import { useRouter } from 'next/router';
 import { graphql } from '../../generated';
 import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
 import { useLink } from '../../common/useLink';
+import classNames from 'classnames';
 
 export enum Transmission {
   Automatic = 'automatic',
@@ -290,6 +291,10 @@ export default function OwnerShareRequest() {
               </div>
             </aside>
           </Slider>
+
+          <button className={styles.pairButton} onClick={openRedirect}>
+            <Trans>Add {data?.car?.name} on Cabble</Trans>
+          </button>
         </div>
       </section>
 
@@ -387,7 +392,7 @@ export default function OwnerShareRequest() {
                           currency: data?.car.tripPricing?.currency,
                         },
                       )}{' '}
-                      per kilometer after that.
+                      per kilometer after that (excluding fuel).
                     </Trans>
                   </li>
                   <li>
@@ -414,7 +419,7 @@ export default function OwnerShareRequest() {
         </div>
       </section>
 
-      <section className={styles.pageSection}>
+      <section className={classNames(styles.pageSection, styles.pairSection)}>
         <StickyHeader minWidth={breakpoint}>
           <header className={styles.sectionHeader}>
             <h2>

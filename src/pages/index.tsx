@@ -61,10 +61,7 @@ export default function Home() {
               </div>
             </h1>
             <span>
-              <Trans>
-                Save by using an underutilized car with a trusted group of
-                people.
-              </Trans>
+              <Trans>Save by using your car with your community.</Trans>
             </span>
             <div>
               <Button

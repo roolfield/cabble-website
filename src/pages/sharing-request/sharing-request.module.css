@@ -1,7 +1,6 @@
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,14 +108,18 @@
   padding: 1em;
   min-height: 2em;
   font-size: 1.25em;
-  background-color: var(--button-color-4);
+  border: 2px solid var(--button-color-2);
   text-align: center;
   border-radius: 2em;
   width: 100%;
   font-weight: 600;
-  color: var(--text-color-6);
   font-family: var(--font-work-sans);
   margin-top: 1.5em;
+}
+
+.pairSection .pairButton {
+  background-color: var(--button-color-4);
+  color: var(--text-color-6);
 }
 
 .appStoreButtons {
@@ -208,16 +211,17 @@
     border-bottom-right-radius: 8px;
   }
 
-  .pageSection:last-child .subSectionHeader {
+  .pairSection .subSectionHeader {
     padding: 0
   }
 
-  .pageSection:last-child {
+  .pairSection {
     padding-bottom: 3em;
   }
 
-  .pageSection:last-child h2 {
+  .pairSection h2 {
     margin-bottom: 0.5em;
+    color: #fff;
   }
 }
 

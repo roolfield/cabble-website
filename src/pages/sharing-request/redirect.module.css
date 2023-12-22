@@ -1,3 +1,7 @@
+.container {
+  padding: 1em;
+}
+
 .redirectText {
   font-size: 1.7em;
 }

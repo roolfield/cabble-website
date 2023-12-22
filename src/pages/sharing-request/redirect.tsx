@@ -48,7 +48,7 @@ export default function DriverShareRequest() {
         } else if (isAndroid) {
           window.location.href = PLAY_STORE_URL;
         }
-      }, 2000);
+      }, 5000);
     }
   }, [isRedirecting]);
 
@@ -66,7 +66,8 @@ export default function DriverShareRequest() {
 
   return (
     <Layout
-      className={classnames(styles.container, styles.redirectContainer)}
+      showHeaderAndFooter={false}
+      className={classnames(styles.container)}
       title={t(i18n)`Redirecting`}>
       <h1>
         <Trans>Let's go 🚀</Trans>
