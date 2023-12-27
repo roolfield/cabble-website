@@ -87,9 +87,17 @@ msgstr ""
 #~ msgid "Automatic payments from owner to driver"
 #~ msgstr ""
 
-#: src/components/TripCalculator.tsx:103
-msgid "Based on the settings above, the following table shows the cost of a trip for a driver (excl. fuel). On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
+#: src/components/TripCalculator.tsx:107
+#~ msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel and the platform fee. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
+#~ msgstr ""
+
+#: src/components/TripCalculator.tsx:107
+msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 msgstr ""
+
+#: src/components/TripCalculator.tsx:103
+#~ msgid "Based on the settings above, the following table shows the cost of a trip for a driver (excl. fuel). On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
+#~ msgstr ""
 
 #: src/pages/examples.tsx:18
 #~ msgid "Black"
@@ -248,7 +256,7 @@ msgstr ""
 msgid "Follow the onboarding to add your car to the app."
 msgstr ""
 
-#: src/components/TripCalculator.tsx:90
+#: src/components/TripCalculator.tsx:94
 msgid "Free kilometers per day"
 msgstr ""
 
@@ -643,7 +651,11 @@ msgid "There was an error loading this page."
 msgstr ""
 
 #: src/components/TripCalculator.tsx:50
-msgid "These settings are also found in the app when the owner creates a car profile. Based on the license plate data, the app will suggest a value for the hourly rate but the owner is free to change it."
+#~ msgid "These settings are also found in the app when the owner creates a car profile. Based on the license plate data, the app will suggest a value for the hourly rate but the owner is free to change it."
+#~ msgstr ""
+
+#: src/components/TripCalculator.tsx:50
+msgid "These settings are also found in the app when the owner creates a car profile. Based on what is known about the car, the app will do a suggestion, but the owner is free to change these values."
 msgstr ""
 
 #: src/pages/sharing-request/driver.tsx:263
@@ -666,7 +678,7 @@ msgstr ""
 msgid "Trip cost calculator"
 msgstr ""
 
-#: src/components/TripCalculator.tsx:100
+#: src/components/TripCalculator.tsx:104
 msgid "Trip costs"
 msgstr ""
 
@@ -688,7 +700,11 @@ msgstr ""
 #~ msgstr ""
 
 #: src/pages/calculator.tsx:22
-msgid "Use this calculator to calculate the cost of a trip for a driver when you use Cabble. To learn more about trip pricing, refer to the <0>FAQ</0>."
+#~ msgid "Use this calculator to calculate the cost of a trip for a driver when you use Cabble. To learn more about trip pricing, refer to the <0>FAQ</0>."
+#~ msgstr ""
+
+#: src/pages/calculator.tsx:22
+msgid "Use this calculator to calculate the cost of a trip when using Cabble. To learn more about trip pricing, refer to the <0>FAQ</0>."
 msgstr ""
 
 #: src/pages/support.tsx:89

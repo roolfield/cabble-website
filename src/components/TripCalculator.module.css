@@ -2,6 +2,14 @@
   font-size: 1.1em;
 }
 
+.container h2:not(:first-child) {
+  margin-top: 1.5em;
+}
+
+.container table input {
+  max-width: 5em;
+}
+
 .container input,
 .container select {
   font-size: inherit;

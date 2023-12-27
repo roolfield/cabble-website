@@ -20,8 +20,8 @@ export default function Support() {
         </h1>
         <p className={styles.instructions}>
           <Trans>
-            Use this calculator to calculate the cost of a trip for a driver
-            when you use Cabble. To learn more about trip pricing, refer to the{' '}
+            Use this calculator to calculate the cost of a trip when using
+            Cabble. To learn more about trip pricing, refer to the{' '}
             <Link href={makeLinkParams('/faq')}>FAQ</Link>.
           </Trans>
         </p>

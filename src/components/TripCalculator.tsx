@@ -49,8 +49,8 @@ export const TripCalculator = ({ className }: { className?: string }) => {
         <p>
           <Trans>
             These settings are also found in the app when the owner creates a
-            car profile. Based on the license plate data, the app will suggest a
-            value for the hourly rate but the owner is free to change it.
+            car profile. Based on what is known about the car, the app will do a
+            suggestion, but the owner is free to change these values.
           </Trans>
         </p>
       </header>
@@ -79,63 +79,104 @@ export const TripCalculator = ({ className }: { className?: string }) => {
             Price per kilometer <Link href={makeLinkParams('/faq')}>(?)</Link>
           </Trans>
           <select {...register('kilometerRate')}>
-            {[0.15, 0.2, 0.25].map(option => (
-              <option value={option}>
-                {formatInCurrency(option, { currency })}
-              </option>
-            ))}
+            {Array.from({
+              length: 11,
+            })
+              .map((_, i) => 0.15 + 0.01 * i)
+              .map(option => (
+                <option value={option}>
+                  {formatInCurrency(option, { currency })}
+                </option>
+              ))}
           </select>
         </label>
         <label className={styles.select} htmlFor="freeKilometers">
           <Trans>Free kilometers per day</Trans>{' '}
           <Link href={makeLinkParams('/faq')}>(?)</Link>
           <select {...register('freeKilometers')}>
-            {[0, 50, 100].map(option => (
+            {[0, 50, 100, 150, 200, 300, 1000].map(option => (
               <option value={option}>{option} km</option>
             ))}
           </select>
         </label>
       </form>
-      <h2 style={{ marginTop: '1.5em' }}>
+      <h2>
         <Trans>Trip costs</Trans>
       </h2>
       <p>
         <Trans>
           Based on the settings above, the following table shows the cost of a
-          trip for a driver (excl. fuel). On the left side of the table the
-          number of kilometers driven and on the top the number of hours the car
-          is used.
+          trip excluding fuel. On the left side of the table the number of
+          kilometers driven and on the top the number of hours the car is used.
         </Trans>
       </p>
       <table>
         <thead>
           <tr>
             <th></th>
-            {hours.map(hours => (
+            {hours.slice(0, hours.length - 1).map(hours => (
               <th>{hours} h</th>
             ))}
+            <th>
+              <div>
+                <input
+                  type="number"
+                  value={hours[hours.length - 1]}
+                  onChange={e =>
+                    setHours([
+                      ...hours.slice(0, hours.length - 1),
+                      parseInt(e.target.value),
+                    ])
+                  }
+                />{' '}
+                h
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
-          {kilometers.map(kilometers => (
-            <tr>
-              <td>
-                <strong>{kilometers} km</strong>
-              </td>
-              {hours.map(hours => (
+          {kilometers.map((kilometer, index) => {
+            const isLast = index === kilometers.length - 1;
+            return (
+              <tr>
                 <td>
-                  {formatInCurrency(
-                    hours *
-                      Math.max(1, Math.floor(hours / 24)) *
-                      parseFloat(hourlyRate) +
-                      Math.max(0, kilometers - parseFloat(freeKilometers)) *
-                        parseFloat(kilometerRate),
-                    { currency },
+                  {!isLast ? (
+                    <strong>{kilometer} km</strong>
+                  ) : (
+                    <div>
+                      <input
+                        onChange={e =>
+                          setKilometers([
+                            ...kilometers.slice(0, kilometers.length - 1),
+                            parseInt(e.target.value),
+                          ])
+                        }
+                        type="number"
+                        value={kilometer}
+                      />
+                      <strong> km</strong>
+                    </div>
                   )}
                 </td>
-              ))}
-            </tr>
-          ))}
+                {hours.map(hours => {
+                  const numberOfDays = Math.max(1, Math.floor(hours / 24));
+                  const freeKm = numberOfDays * parseFloat(freeKilometers);
+                  const km = Math.max(0, kilometer - freeKm);
+                  const hoursCharged = (numberOfDays - 1) * 10 + (hours % 24);
+                  const price =
+                    hoursCharged * parseFloat(hourlyRate) +
+                    km * parseFloat(kilometerRate);
+                  return (
+                    <td>
+                      {isNaN(price)
+                        ? '?'
+                        : formatInCurrency(price, { currency })}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

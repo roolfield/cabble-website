@@ -55,6 +55,12 @@ betaalt bovenop het aantal inbegrepen kilometers. Je berekent het aantal
 inbegrepen kilometers door het aantal dagen dat je de auto huurt te
 vermenigvuldigen met het aantal inbegrepen kilometers per dag.
 
+### Wat houd ik over als eigenaar?
+
+Als eigenaar van de auto houd je 93.5% van de ritprijs over. Voor de berekening
+van de ritprijs kan je gebruik maken van de [calculator](/calculator). Voor een
+handmatige berekening, zie [Hoe wordt mijn ritprijs bepaald?](#hoe-wordt-een-ritprijs-bepaald).
+
 ### Wat betaal je voor de app?
 
 De app is gratis te downloaden. Van de ritprijs betaal je 6.5% platform fee
@@ -63,8 +69,8 @@ laag mogelijk te houden zodat je als deler zoveel mogelijk overhoudt.
 
 ### Wanneer word ik uitbetaald?
 
-Nadat de driver de betaling afrond, word je binnen 4 werkdagen uitbetaald. Het 
-kan voorkomen dat het langer duurt voordat je het geld op je rekening hebt staan 
+Nadat de driver de betaling afrond, word je binnen 4 werkdagen uitbetaald. Het
+kan voorkomen dat het langer duurt voordat je het geld op je rekening hebt staan
 door vertragingen bij de bank.
 
 ## Account
