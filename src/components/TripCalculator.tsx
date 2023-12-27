@@ -42,6 +42,18 @@ export const TripCalculator = ({ className }: { className?: string }) => {
 
   return (
     <div className={classNames(styles.container, className)}>
+      <header>
+        <h2>
+          <Trans>Determine your price</Trans>
+        </h2>
+        <p>
+          <Trans>
+            These settings are also found in the app when the owner creates a
+            car profile. Based on the license plate data, the app will suggest a
+            value for the hourly rate but the owner is free to change it.
+          </Trans>
+        </p>
+      </header>
       <form>
         <Controller
           control={control}
@@ -84,6 +96,17 @@ export const TripCalculator = ({ className }: { className?: string }) => {
           </select>
         </label>
       </form>
+      <h2 style={{ marginTop: '1.5em' }}>
+        <Trans>Trip costs</Trans>
+      </h2>
+      <p>
+        <Trans>
+          Based on the settings above, the following table shows the cost of a
+          trip for a driver (excl. fuel). On the left side of the table the
+          number of kilometers driven and on the top the number of hours the car
+          is used.
+        </Trans>
+      </p>
       <table>
         <thead>
           <tr>

@@ -21,9 +21,8 @@ export default function Support() {
         <p className={styles.instructions}>
           <Trans>
             Use this calculator to calculate the cost of a trip for a driver
-            when you use Cabble. The same parameters are entered by the car
-            owner when creating the car profile on the app. To learn more, refer
-            to the <Link href={makeLinkParams('/faq')}>FAQ</Link>.
+            when you use Cabble. To learn more about trip pricing, refer to the{' '}
+            <Link href={makeLinkParams('/faq')}>FAQ</Link>.
           </Trans>
         </p>
       </header>

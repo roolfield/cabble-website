@@ -6,7 +6,7 @@
     margin-top: 0;
 }
 
-.container .calculator {
+.calculator :global(form), .calculator :global(table) {
     padding: 1em;
     background: var(--background-color-5);
 }
@@ -22,7 +22,7 @@
         grid-template-columns: 1fr 2fr;
     }
 
-    .container .calculator {
+    .calculator :global(form), .calculator :global(table) {
         padding: 2em;
     }
 
