@@ -1,0 +1,75 @@
+.container {
+  font-size: 1.1em;
+}
+
+.container input,
+.container select {
+  font-size: inherit;
+}
+
+.container label {
+  margin: 1.5em 0;
+}
+
+.container output {
+  font-size: 2em;
+  font-family: var(--font-work-sans);
+  font-weight: 700;
+  display: block;
+}
+
+.container .hourlyRate {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.hourlyRate input {
+  display: block;
+  width: 100%;
+}
+
+.hourlyRate .sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color-4);
+  font-size: 0.9em;
+}
+
+.container label {
+  display: block;
+}
+
+.container label a {
+  color: var(--text-color-5);
+  text-decoration: underline;
+}
+
+.select select {
+  float: right;
+  clear: both;
+}
+
+.container table {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.container table th {
+    text-align: left;
+}
+
+.container td, .container th {
+  padding: 0.5em;
+}
+
+.container td {
+  border-top: 1px solid #EEE;
+}
+
+.container .perDay {
+  color: var(--text-color-4);
+  font-size: 0.9em;
+}

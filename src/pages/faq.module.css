@@ -6,6 +6,11 @@
     margin-top: 0;
 }
 
+.container a {
+    color: var(--text-color-5);
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 1200px) {
     .container {
         display: grid;

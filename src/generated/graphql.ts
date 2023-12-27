@@ -113,6 +113,11 @@ export type GeocodedLocationView = {
   description: Scalars['String']['output'];
 };
 
+export type HistoricalFuelPriceView = {
+  __typename?: 'HistoricalFuelPriceView';
+  price: MoneyView;
+};
+
 export type ImageFileMetadataView = {
   __typename?: 'ImageFileMetadataView';
   height: Scalars['Float']['output'];
@@ -246,8 +251,7 @@ export type QueryCarArgs = {
 
 
 export type QueryChatArgs = {
-  chatId?: InputMaybe<Scalars['ID']['input']>;
-  members?: InputMaybe<Array<Scalars['String']['input']>>;
+  chatId: Scalars['ID']['input'];
 };
 
 
@@ -440,6 +444,7 @@ export type VehicleDataView = {
   brand?: Maybe<Scalars['String']['output']>;
   firstAdmission?: Maybe<Scalars['String']['output']>;
   fuel?: Maybe<FuelView>;
+  fuelPrice?: Maybe<HistoricalFuelPriceView>;
   length?: Maybe<Scalars['Float']['output']>;
   licensePlate: Scalars['ID']['output'];
   numberOfDoors?: Maybe<Scalars['Float']['output']>;
@@ -447,6 +452,13 @@ export type VehicleDataView = {
   tradeName?: Maybe<Scalars['String']['output']>;
   wheelbase?: Maybe<Scalars['Float']['output']>;
 };
+
+export type CalculatorQueryVariables = Exact<{
+  licensePlate: Scalars['ID']['input'];
+}>;
+
+
+export type CalculatorQuery = { __typename?: 'Query', vehicleData?: { __typename?: 'VehicleDataView', fuel?: { __typename?: 'FuelView', type: string, consumptionCombined?: number | null } | null, fuelPrice?: { __typename?: 'HistoricalFuelPriceView', price: { __typename?: 'MoneyView', currency: string, amount: number } } | null } | null };
 
 export type DriverSharingRequestQueryVariables = Exact<{
   driverId: Scalars['ID']['input'];
@@ -463,5 +475,6 @@ export type OwnerSharingRequestQueryVariables = Exact<{
 export type OwnerSharingRequestQuery = { __typename?: 'Query', car?: { __typename?: 'CarView', id: string, name: string, description?: string | null, transmission?: string | null, profilePicture?: { __typename?: 'ImageFileView', url?: string | null, metadata?: { __typename?: 'ImageFileMetadataView', width: number, height: number } | null } | null, vehicleData?: { __typename?: 'VehicleDataView', licensePlate: string, numberOfDoors?: number | null, numberOfSeats?: number | null, firstAdmission?: string | null, fuel?: { __typename?: 'FuelView', type: string } | null } | null, location?: { __typename?: 'GeocodedLocationView', description: string } | null, tripPricing?: { __typename?: 'TimeDistancePricingView', minimumBillableHours: number, currency: string, distanceAllowance?: number | null, serviceFeePercentage: number, priceList: { __typename?: 'TimeDistancePriceList', distancePrice: number, timePrice: number } } | null, owner: { __typename?: 'UserProfileView', id: string, firstName: string, lastName: string, profilePicture?: { __typename?: 'ImageFileView', url?: string | null, metadata?: { __typename?: 'ImageFileMetadataView', width: number, height: number } | null } | null } } | null };
 
 
+export const CalculatorDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Calculator"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"licensePlate"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"vehicleData"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"licensePlate"},"value":{"kind":"Variable","name":{"kind":"Name","value":"licensePlate"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"fuel"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"type"}},{"kind":"Field","name":{"kind":"Name","value":"consumptionCombined"}}]}},{"kind":"Field","name":{"kind":"Name","value":"fuelPrice"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"price"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"currency"}},{"kind":"Field","name":{"kind":"Name","value":"amount"}}]}}]}}]}}]}}]} as unknown as DocumentNode<CalculatorQuery, CalculatorQueryVariables>;
 export const DriverSharingRequestDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"DriverSharingRequest"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"driverId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"userProfile"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"userId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"driverId"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"profilePicture"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ImageFileMetadataView"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"width"}},{"kind":"Field","name":{"kind":"Name","value":"height"}}]}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"firstName"}},{"kind":"Field","name":{"kind":"Name","value":"lastName"}}]}}]}}]} as unknown as DocumentNode<DriverSharingRequestQuery, DriverSharingRequestQueryVariables>;
 export const OwnerSharingRequestDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"OwnerSharingRequest"},"variableDefinitions":[{"kind":"VariableDefinition","variable":{"kind":"Variable","name":{"kind":"Name","value":"carId"}},"type":{"kind":"NonNullType","type":{"kind":"NamedType","name":{"kind":"Name","value":"ID"}}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"car"},"arguments":[{"kind":"Argument","name":{"kind":"Name","value":"carId"},"value":{"kind":"Variable","name":{"kind":"Name","value":"carId"}}}],"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"name"}},{"kind":"Field","name":{"kind":"Name","value":"description"}},{"kind":"Field","name":{"kind":"Name","value":"profilePicture"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ImageFileMetadataView"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"width"}},{"kind":"Field","name":{"kind":"Name","value":"height"}}]}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"vehicleData"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"fuel"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"type"}}]}},{"kind":"Field","name":{"kind":"Name","value":"licensePlate"}},{"kind":"Field","name":{"kind":"Name","value":"numberOfDoors"}},{"kind":"Field","name":{"kind":"Name","value":"numberOfSeats"}},{"kind":"Field","name":{"kind":"Name","value":"firstAdmission"}}]}},{"kind":"Field","name":{"kind":"Name","value":"location"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"description"}}]}},{"kind":"Field","name":{"kind":"Name","value":"transmission"}},{"kind":"Field","name":{"kind":"Name","value":"tripPricing"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"minimumBillableHours"}},{"kind":"Field","name":{"kind":"Name","value":"currency"}},{"kind":"Field","name":{"kind":"Name","value":"distanceAllowance"}},{"kind":"Field","name":{"kind":"Name","value":"serviceFeePercentage"}},{"kind":"Field","name":{"kind":"Name","value":"priceList"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"distancePrice"}},{"kind":"Field","name":{"kind":"Name","value":"timePrice"}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"owner"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"id"}},{"kind":"Field","name":{"kind":"Name","value":"profilePicture"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"url"}},{"kind":"Field","name":{"kind":"Name","value":"metadata"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"InlineFragment","typeCondition":{"kind":"NamedType","name":{"kind":"Name","value":"ImageFileMetadataView"}},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"width"}},{"kind":"Field","name":{"kind":"Name","value":"height"}}]}}]}}]}},{"kind":"Field","name":{"kind":"Name","value":"firstName"}},{"kind":"Field","name":{"kind":"Name","value":"lastName"}}]}}]}}]}}]} as unknown as DocumentNode<OwnerSharingRequestQuery, OwnerSharingRequestQueryVariables>;

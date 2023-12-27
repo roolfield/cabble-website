@@ -115,9 +115,11 @@ export default function Home() {
               title: t(i18n)`You determine the price`,
               subtext: t(
                 i18n,
-              )`With Cabble your price can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!`,
+              )`With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!`,
               image: '/images/mockup-payments2.png',
               icon: '/images/icon-wallet.svg',
+              buttonText: t(i18n)`Open cost calculator`,
+              buttonLink: '/calculator',
             },
             {
               title: t(i18n)`Everything in one place`,
@@ -136,12 +138,17 @@ export default function Home() {
                 </div>
                 <p className={styles.subText}>{feature.subtext}</p>
                 <div>
-                  <Link href={faqLinkParams}>
+                  <Link
+                    href={
+                      feature.buttonLink
+                        ? makeLinkParams(feature.buttonLink)
+                        : faqLinkParams
+                    }>
                     <Button
                       element={null}
                       className={styles.readMore}
                       variant={'outline-blue'}>
-                      <Trans>Learn more</Trans>
+                      {feature.buttonText || <Trans>Learn more</Trans>}
                     </Button>
                   </Link>
                 </div>

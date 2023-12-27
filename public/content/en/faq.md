@@ -21,7 +21,8 @@ van de auto een prijs per uur. Per 24 uur betaal je maximaal 10 keer het
 uurtarief. Daarnaast betaal je een prijs per kilometer boven een aantal
 inbegrepen kilometers. Deze worden allebei worden bepaald door de eigenaar van
 de auto. Met deze combinatie van factoren kan je een aantrekkelijke ritprijs
-uitkomen voor zowel korte als lange ritten.
+uitkomen voor zowel korte als lange ritten. Gebruik de [calculator](/calculator)
+om een beeld te krijgen van hoe de ritprijs is opgebouwd.
 
 ### Hoe wordt de brandstofprijs bepaald?
 
@@ -40,7 +41,7 @@ van de auto betaal je niet voor de brandstof, alleen de ritprijs. Op deze manier
 betaal je altijd naar wat je verbruikt.
 
 Als je toch moet tanken tijdens de rit, regel terugbetaling dan onderling met de
-eigenaar. Je betaalt de gereden brandstof via de app maar krijgt het getankte
+eigenaar. Je betaalt de gereden brandstof via de app, maar krijgt het getankte
 bedrag weer terug. Op deze manier betaal je alleen voor de brandstof die je
 verbruikt.
 
