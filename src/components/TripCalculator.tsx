@@ -29,7 +29,7 @@ export const TripCalculator = ({ className }: { className?: string }) => {
 
   const { formatInCurrency } = useNumberFormat();
 
-  const [hours, setHours] = useState([2, 4, 8, 36]);
+  const [hours, setHours] = useState([2, 4, 8]);
   const [kilometers, setKilometers] = useState([20, 150, 300]);
 
   const hourlyRate = watch('hourlyRate');
