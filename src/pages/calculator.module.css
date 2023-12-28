@@ -2,13 +2,14 @@
     margin-top: 0;
 }
 
-.container h2:first-of-type {
+.container header h2 {
     margin-top: 0;
 }
 
 .calculator :global(form), .calculator :global(table) {
     padding: 1em;
     background: var(--background-color-5);
+    border-radius: var(--border-radius);
 }
 
 .container .instructions {
