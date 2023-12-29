@@ -1,81 +1,51 @@
-## Mijn auto registreren
+## Registering my car
 
-### Kan iedereen mijn auto zien als ik deze aanmeld?
+### Can everyone see my car once I register it?
 
-Nee, alleen de mensen die je toestemming geeft kunnen je auto zien.
+No, only the people who you select can see your car.
 
-### Kan ik meer dan 1 auto aanmelden?
+### Can I register more than 1 car?
 
-Ja, je kan zoveel auto's aanmelden als je wilt.
+Yes, you can register as many cars as you want.
 
-### Zit er een limiet aan het aantal drivers van mijn auto?
+### Is there a limit to the number of drivers for my car?
 
-Nee, je kan zoveel drivers aan je auto koppelen als je wilt.
+No, you can link as many drivers to your car as you want.
 
-## Financieel
+## Financial
 
-### Hoe wordt een ritprijs bepaald?
+### How is the trip price calculated?
 
-De ritprijs wordt bepaald door een paar factoren. Zo bepaalt de eigenaar
-van de auto een prijs per uur. Per 24 uur betaal je maximaal 10 keer het
-uurtarief. Daarnaast betaal je een prijs per kilometer boven een aantal
-inbegrepen kilometers. Deze worden allebei worden bepaald door de eigenaar van
-de auto. Met deze combinatie van factoren kan je een aantrekkelijke ritprijs
-uitkomen voor zowel korte als lange ritten. Gebruik de [calculator](/calculator)
-om een beeld te krijgen van hoe de ritprijs is opgebouwd.
+The ride price is determined by several factors. The car owner sets an hourly rate, and for each 24 hours, you pay a maximum of 10 times the hourly rate. Additionally, there is a price per kilometer beyond a certain included distance. Both of these factors are determined by the car owner. By combining these factors, you can arrive at an attractive ride price for both short and long journeys. Use the calculator to get an idea of how the ride price is structured.
 
-### Hoe wordt de brandstofprijs bepaald?
+### How is the fuel price determined?
 
-De prijs voor de brandstof wordt berekend door het verbruik van de auto te
-vermenigvuldigen met de actuele brandstofprijs. Het verbruik van de auto wordt
-uitgerekend door het aantal kilometers dat je rijdt te delen door het
-verbruik van de auto. Het gemiddelde verbruik van de auto wordt bepaald door
-de eigenaar van de auto.
+The fuel price is calculated by multiplying the car's consumption by the current fuel price. The car's consumption is calculated by dividing the number of kilometers you drive by the car's consumption rate. The average consumption rate is determined by the car owner.
 
-### Hoe zit het met tanken?
+### What about refueling?
 
-In principe betaal je altijd voor de brandstof die je verbruikt. Er is één
-uitzondering: als je de auto ophaalt met een volle tank en je levert de auto
-weer in met een volle tank. In dit geval kan je dit aangeven bij het inleveren
-van de auto betaal je niet voor de brandstof, alleen de ritprijs. Op deze manier
-betaal je altijd naar wat je verbruikt.
+In principle, you always pay for the fuel you consume. There is one exception: if you pick up the car with a full tank and return it with a full tank, you can indicate this when returning the car, and you only pay the ride price, not the fuel. This way, you pay only for what you consume.
 
-Als je toch moet tanken tijdens de rit, regel terugbetaling dan onderling met de
-eigenaar. Je betaalt de gereden brandstof via de app, maar krijgt het getankte
-bedrag weer terug. Op deze manier betaal je alleen voor de brandstof die je
-verbruikt.
+If you still need to refuel during the journey, arrange reimbursement with the owner directly. You pay for the consumed fuel through the app but get the refueled amount back. This way, you only pay for the fuel you consume.
 
-### Hoe werken inbegrepen kilometers?
+### How do included kilometers work?
 
-De eigenaar van de auto kan een aantal gratis kilometers per dag opgeven
-die inbegrepen zijn bij de ritprijs. Bij langere ritten worden de
-afschrijvingskosten (de kosten die je maakt door het rijden van de auto) hoger.
-Daarom kan de eigenaar van de auto een prijs per kilometer opgeven die je
-betaalt bovenop het aantal inbegrepen kilometers. Je berekent het aantal
-inbegrepen kilometers door het aantal dagen dat je de auto huurt te
-vermenigvuldigen met het aantal inbegrepen kilometers per dag.
+The car owner can specify a certain number of free kilometers per day included in the ride price. For longer journeys, the depreciation costs (the costs incurred by driving the car) increase. Therefore, the car owner can set a price per kilometer that you pay in addition to the included kilometers. Calculate the number of included kilometers by multiplying the number of days you rent the car by the included kilometers per day.
 
-### Wat houd ik over als eigenaar?
+### What do I get as an owner?
 
-Als eigenaar van de auto houd je 93.5% van de ritprijs over. Voor de berekening
-van de ritprijs kan je gebruik maken van de [calculator](/calculator). Voor een
-handmatige berekening, zie [Hoe wordt mijn ritprijs bepaald?](#hoe-wordt-een-ritprijs-bepaald).
+As the owner of the car, you keep 93.5% of the ride price. You can use the calculator for the ride price calculation. For a manual calculation, see [How is the trip price calculated?](#how-is-the-trip-price-calculated)?.
 
-### Wat betaal je voor de app?
+### What do you pay for the app?
 
-De app is gratis te downloaden. Van de ritprijs betaal je 6.5% platform fee
-die grotendeels bestaat uit transactiekosten. We proberen deze kosten zo
-laag mogelijk te houden zodat je als deler zoveel mogelijk overhoudt.
+The app is free to download. From the ride price, you pay a 6.5% platform fee, mainly consisting of transaction costs. We try to keep these costs as low as possible so that you, as a sharer, keep as much as possible.
 
-### Wanneer word ik uitbetaald?
+### When do I get paid?
 
-Nadat de driver de betaling afrond, word je binnen 4 werkdagen uitbetaald. Het
-kan voorkomen dat het langer duurt voordat je het geld op je rekening hebt staan
-door vertragingen bij de bank.
+After the driver completes the payment, you will be paid within 4 working days. It may take longer for the money to appear in your account due to delays with the bank.
 
 ## Account
 
-### Hoe kan ik mijn account verwijderen?
+### How can I delete my account?
 
-Stuur ons een bericht via [de support pagina](/support) met het account waarmee
-je bent ingelogd en we zullen je account verwijderen.
+Send us a message via the support page with the account you are logged in with, and we will delete your account.

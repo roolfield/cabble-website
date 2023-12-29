@@ -98,8 +98,10 @@ export default function Home() {
               </Trans>
             </h2>
             <p className={styles.subText}>
-              Everything you need to share your car with e.g. your neighbors,
-              friends or family. Conveniently in one app.
+              <Trans>
+                Everything you need to share your car with e.g. your neighbors,
+                friends or family. Conveniently in one app.
+              </Trans>
             </p>
           </header>
         </div>

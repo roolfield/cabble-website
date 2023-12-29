@@ -21,6 +21,10 @@ msgstr ""
 msgid "{0} seats"
 msgstr ""
 
+#: src/components/Layout.tsx:101
+msgid "1. Download 2. Create an account 3. Invite ...🚀"
+msgstr ""
+
 #: src/pages/sharing-request/owner.tsx:195
 #: src/pages/sharing-request/owner.tsx:280
 msgid "About me"
@@ -61,7 +65,7 @@ msgstr ""
 msgid "And how does that all work? 🤔"
 msgstr ""
 
-#: src/pages/index.tsx:126
+#: src/pages/index.tsx:128
 msgid "Anything to discuss? Use chat to keep each other in the loop."
 msgstr ""
 
@@ -81,7 +85,7 @@ msgstr ""
 msgid "CNG"
 msgstr ""
 
-#: src/pages/index.tsx:174
+#: src/pages/index.tsx:176
 msgid "Coming soon"
 msgstr ""
 
@@ -136,7 +140,7 @@ msgstr ""
 msgid "Download the app for free."
 msgstr ""
 
-#: src/pages/index.tsx:209
+#: src/pages/index.tsx:211
 msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr ""
 
@@ -149,8 +153,12 @@ msgstr ""
 msgid "Email us"
 msgstr ""
 
-#: src/pages/index.tsx:125
+#: src/pages/index.tsx:127
 msgid "Everything in one place"
+msgstr ""
+
+#: src/pages/index.tsx:101
+msgid "Everything you need to share your car with e.g. your neighbors, friends or family. Conveniently in one app."
 msgstr ""
 
 #: src/pages/index.tsx:59
@@ -169,7 +177,7 @@ msgstr ""
 msgid "Find answers to the most common questions about our service."
 msgstr ""
 
-#: src/pages/index.tsx:214
+#: src/pages/index.tsx:216
 msgid "Flexible"
 msgstr ""
 
@@ -217,11 +225,11 @@ msgstr ""
 msgid "Go to FAQ"
 msgstr ""
 
-#: src/pages/index.tsx:216
+#: src/pages/index.tsx:218
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr ""
 
-#: src/pages/index.tsx:221
+#: src/pages/index.tsx:223
 msgid "Good for our planet"
 msgstr ""
 
@@ -237,6 +245,10 @@ msgstr ""
 msgid "Hey, do you want to use my car together?"
 msgstr ""
 
+#: src/components/PageSectionHowItWorks.tsx:105
+msgid "How it works"
+msgstr ""
+
 #: src/pages/sharing-request/driver.tsx:153
 msgid "How would that work? 🤔"
 msgstr ""
@@ -249,7 +261,7 @@ msgstr ""
 msgid "Hydrogen"
 msgstr ""
 
-#: src/components/PageSectionHowItWorks.tsx:109
+#: src/components/PageSectionHowItWorks.tsx:111
 msgid "I have a car"
 msgstr ""
 
@@ -265,11 +277,11 @@ msgstr ""
 msgid "I refuel the car or I pay for the used fuel through the app."
 msgstr ""
 
-#: src/components/PageSectionHowItWorks.tsx:114
+#: src/components/PageSectionHowItWorks.tsx:116
 msgid "I want to use a car"
 msgstr ""
 
-#: src/pages/index.tsx:177
+#: src/pages/index.tsx:179
 msgid "Insurance for any damage"
 msgstr ""
 
@@ -289,8 +301,8 @@ msgstr ""
 msgid "john@doe.com"
 msgstr ""
 
-#: src/pages/index.tsx:151
-#: src/pages/index.tsx:234
+#: src/pages/index.tsx:153
+#: src/pages/index.tsx:236
 msgid "Learn more"
 msgstr ""
 
@@ -331,7 +343,7 @@ msgstr ""
 msgid "LPG"
 msgstr ""
 
-#: src/pages/index.tsx:109
+#: src/pages/index.tsx:111
 msgid "Manage availability"
 msgstr ""
 
@@ -362,7 +374,7 @@ msgstr ""
 msgid "One car, your community"
 msgstr ""
 
-#: src/pages/index.tsx:121
+#: src/pages/index.tsx:123
 msgid "Open cost calculator"
 msgstr ""
 
@@ -418,7 +430,7 @@ msgstr ""
 msgid "Redirecting you to the {0}"
 msgstr ""
 
-#: src/pages/index.tsx:110
+#: src/pages/index.tsx:112
 msgid "Request and approve/deny trips in the app"
 msgstr ""
 
@@ -426,7 +438,7 @@ msgstr ""
 msgid "Save by using your car with your community."
 msgstr ""
 
-#: src/pages/index.tsx:207
+#: src/pages/index.tsx:209
 msgid "Save money, everyone"
 msgstr ""
 
@@ -442,11 +454,11 @@ msgstr ""
 msgid "Share the car of your"
 msgstr ""
 
-#: src/pages/index.tsx:200
+#: src/pages/index.tsx:202
 msgid "Share with those you trust"
 msgstr ""
 
-#: src/pages/index.tsx:223
+#: src/pages/index.tsx:225
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr ""
 
@@ -465,7 +477,7 @@ msgstr ""
 msgid "Son"
 msgstr ""
 
-#: src/pages/index.tsx:181
+#: src/pages/index.tsx:183
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr ""
 
@@ -535,11 +547,11 @@ msgstr ""
 msgid "WhatsApp us"
 msgstr ""
 
-#: src/pages/index.tsx:194
+#: src/pages/index.tsx:196
 msgid "Why sharing with Cabble?"
 msgstr ""
 
-#: src/pages/index.tsx:116
+#: src/pages/index.tsx:118
 msgid "With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
 msgstr ""
 
@@ -551,7 +563,7 @@ msgstr ""
 msgid "With Cabble we can share your car safely and easily."
 msgstr ""
 
-#: src/pages/index.tsx:202
+#: src/pages/index.tsx:204
 msgid "You can be friends, neighbours or family; share your car with a trusted community."
 msgstr ""
 
@@ -567,7 +579,7 @@ msgstr ""
 msgid "You can start sharing once both of you have the app installed."
 msgstr ""
 
-#: src/pages/index.tsx:115
+#: src/pages/index.tsx:117
 msgid "You determine the price"
 msgstr ""
 

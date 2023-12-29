@@ -101,7 +101,9 @@ export const PageSectionHowItWorks = ({
       />
       <div className={styles.content}>
         <div className={styles.titleAndSwitch}>
-          <h2>How it works</h2>
+          <h2>
+            <Trans>How it works</Trans>
+          </h2>
           <div className={styles.ownerDriverSwitch}>
             <button
               onClick={() => setMode('owner')}
