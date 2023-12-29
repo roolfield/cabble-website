@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-29 12:41\n"
+"PO-Revision-Date: 2023-12-29 13:57\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -125,7 +125,7 @@ msgstr "Dochter"
 
 #: src/components/TripCalculator.tsx:47
 msgid "Determine your price"
-msgstr "Bepaal je prijs"
+msgstr "Bepaal zelf je prijs"
 
 #: src/pages/sharing-request/owner.tsx:41
 msgid "Diesel"
@@ -206,7 +206,7 @@ msgstr "Veelgestelde vragen"
 
 #: src/pages/index.tsx:56
 msgid "friend"
-msgstr "vriend"
+msgstr "vrienden"
 
 #: src/components/ComunityComposition.tsx:49
 msgid "Friend"
@@ -272,11 +272,11 @@ msgstr "Ik heb een auto"
 
 #: src/pages/sharing-request/driver.tsx:181
 msgid "I make a reservation for when I need it. After your approval I start your trip in the app."
-msgstr "Ik maak een reservering voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik uw reis in de app."
+msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de rit in de app."
 
 #: src/pages/sharing-request/driver.tsx:187
 msgid "I pay for each trip based on the time and distance I drive."
-msgstr "Ik betaal voor elke reis op basis van de tijd en afstand die ik rijd."
+msgstr "Ik betaal voor elke rit op basis van de tijd en afstand die ik rijd."
 
 #: src/pages/sharing-request/driver.tsx:228
 msgid "I refuel the car or I pay for the used fuel through the app."
@@ -367,7 +367,7 @@ msgstr "Bericht van {0}"
 
 #: src/pages/index.tsx:53
 msgid "neighbour"
-msgstr "buurman"
+msgstr "buren"
 
 #: src/components/ComunityComposition.tsx:22
 #: src/components/ComunityComposition.tsx:31
@@ -484,7 +484,7 @@ msgstr "Zoon"
 
 #: src/pages/index.tsx:183
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
-msgstr "Binnenkort kan je alle schade die tijdens een reis kan optreden ook verzekeren."
+msgstr "Binnenkort kan je alle schade die tijdens een rit kan optreden ook verzekeren."
 
 #: src/components/Layout.tsx:66
 #: src/components/Layout.tsx:131
@@ -517,15 +517,15 @@ msgstr "Deze instellingen staan ook in de app wanneer de eigenaar een autoprofie
 
 #: src/pages/sharing-request/owner.tsx:399
 msgid "To make it worth my while, you pay a minimum of {0} hours per trip."
-msgstr "Om het de moeite waard te maken, betaal je minimaal {0} uur per reis."
+msgstr "Om het de moeite waard te maken, betaal je minimaal {0} uur per rit."
 
 #: src/pages/calculator.tsx:19
 msgid "Trip cost calculator"
-msgstr "Trip kosten calculator"
+msgstr "Kosten calculator"
 
 #: src/components/TripCalculator.tsx:104
 msgid "Trip costs"
-msgstr "Trip kosten"
+msgstr "Rit kosten"
 
 #: src/pages/sharing-request/redirect.tsx:79
 msgid "Trying to open the app"
@@ -533,7 +533,7 @@ msgstr "Proberen de app te openen"
 
 #: src/pages/calculator.tsx:22
 msgid "Use this calculator to calculate the cost of a trip when using Cabble. To learn more about trip pricing, refer to the <0>FAQ</0>."
-msgstr "Gebruik deze rekenmachine voor het berekenen van de kosten van een reis bij het gebruik van Cabble. Raadpleeg de <0>FAQ</0> om meer te weten te komen over de prijs van ritten."
+msgstr "Gebruik deze rekenmachine voor het berekenen van de kosten van een rit bij het gebruik van Cabble. Raadpleeg de <0>FAQ</0> om meer te weten te komen over de prijs van ritten."
 
 #: src/pages/support.tsx:89
 msgid "Use this form to send us feedback or report a problem."
@@ -598,7 +598,7 @@ msgstr "Jij krijgt een deel van de kosten terug, ik bespaar op de kosten van bez
 
 #: src/pages/sharing-request/owner.tsx:333
 msgid "You make a reservation for when you need it. After my approval you can start your trip in the app."
-msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de trip in de app."
+msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de rit in de app."
 
 #: src/pages/sharing-request/owner.tsx:372
 msgid "You pay {0} per hour."
