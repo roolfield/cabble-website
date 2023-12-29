@@ -98,7 +98,7 @@ export function Layout({
               </h2>
 
               <div className={styles.subText}>
-                1. Download 2. Create an account 3. Invite ...🚀
+                <Trans>1. Download 2. Create an account 3. Invite ...🚀</Trans>
               </div>
 
               <div>
