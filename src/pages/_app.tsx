@@ -7,6 +7,11 @@ import { AppProps } from 'next/app';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/router';
 
+function getBrowserLanguage() {
+  if (navigator.languages != undefined) return navigator.languages[0];
+  return navigator.language;
+}
+
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [messages, setMessages] = useState();
 
@@ -18,7 +23,8 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     }
     if (!query.lang) {
       const searchParams = new URLSearchParams(window.location.search);
-      searchParams.set('lang', 'en');
+      const locale = getBrowserLanguage().indexOf('nl') !== -1 ? 'nl' : 'en';
+      searchParams.set('lang', locale);
       window.location.search = searchParams.toString();
     }
   }, [query, isReady]);
