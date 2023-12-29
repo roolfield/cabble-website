@@ -2,7 +2,9 @@ import { i18n, Messages } from '@lingui/core';
 import { useEffect } from 'react';
 
 export async function loadCatalog(locale: string) {
-  const catalog = await import(`@lingui/loader!./locales/${locale}.po`);
+  const catalog = await import(
+    `@lingui/loader!./locales/${locale}/messages.po`
+  );
   return catalog.messages;
 }
 
