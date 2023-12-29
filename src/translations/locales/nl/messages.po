@@ -6,15 +6,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: nl\n"
+"Project-Id-Version: cabble-website\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-12-29 10:52\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: cabble-website\n"
 "X-Crowdin-Project-ID: 636922\n"
 "X-Crowdin-Language: nl\n"
-"X-Crowdin-File: /master/src/translations/locales/nl/messages.po\n"
-"X-Crowdin-File-ID: 32\n"
-"Project-Id-Version: cabble-website\n"
-"Language-Team: Dutch\n"
-"PO-Revision-Date: 2023-12-29 10:48\n"
+"X-Crowdin-File: /master/src/translations/locales/pseudo/messages.po\n"
+"X-Crowdin-File-ID: 34\n"
 
 #: src/pages/sharing-request/owner.tsx:235
 msgid "{0} doors"
@@ -66,7 +68,7 @@ msgstr "En hoe werkt dat allemaal? 🤔"
 
 #: src/pages/index.tsx:126
 msgid "Anything to discuss? Use chat to keep each other in the loop."
-msgstr "Iets te bespreken? Gebruik chat om elkaar op de hoogte te houden."
+msgstr "Iets te bespreken? Gebruik chat om elkaar in de lus te houden."
 
 #: src/pages/sharing-request/owner.tsx:233
 msgid "Automatic"
@@ -82,7 +84,7 @@ msgstr "Cabble is op een missie om gemeenschappen bij elkaar te brengen om gezam
 
 #: src/pages/sharing-request/owner.tsx:45
 msgid "CNG"
-msgstr "CNG"
+msgstr ""
 
 #: src/pages/index.tsx:174
 msgid "Coming soon"
@@ -123,7 +125,7 @@ msgstr "Bepaal je prijs"
 
 #: src/pages/sharing-request/owner.tsx:41
 msgid "Diesel"
-msgstr "Diesel"
+msgstr ""
 
 #: src/components/PageSectionHowItWorks.tsx:25
 #: src/components/PageSectionHowItWorks.tsx:43
@@ -162,7 +164,7 @@ msgstr "familie"
 
 #: src/components/Layout.tsx:62
 msgid "FAQ"
-msgstr "FAQ"
+msgstr ""
 
 #: src/pages/support.tsx:86
 msgid "Feedback form"
@@ -307,7 +309,7 @@ msgstr "Zullen we dit doen?"
 
 #: src/pages/sharing-request/redirect.tsx:73
 msgid "Let's go 🚀"
-msgstr "Let's go 🚀"
+msgstr ""
 
 #: src/components/PageSectionHowItWorks.tsx:37
 #: src/components/PageSectionHowItWorks.tsx:59
@@ -332,7 +334,7 @@ msgstr "Locatie"
 
 #: src/pages/sharing-request/owner.tsx:44
 msgid "LPG"
-msgstr "LPG"
+msgstr ""
 
 #: src/pages/index.tsx:109
 msgid "Manage availability"
@@ -344,7 +346,7 @@ msgstr "Handgeschakeld"
 
 #: src/components/Layout.tsx:121
 msgid "Menu"
-msgstr "Menu"
+msgstr ""
 
 #: src/pages/sharing-request/driver.tsx:96
 #: src/pages/sharing-request/owner.tsx:165
@@ -375,7 +377,7 @@ msgstr "Open feedbackformulier"
 
 #: src/pages/support.tsx:64
 msgid "Open WhatsApp"
-msgstr "Open WhatsApp"
+msgstr ""
 
 #: src/pages/sharing-request/owner.tsx:47
 msgid "Other"
