@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-29 12:29\n"
+"PO-Revision-Date: 2023-12-29 12:41\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -28,7 +28,7 @@ msgstr "{0} zitplaatsen"
 
 #: src/components/Layout.tsx:101
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
-msgstr ""
+msgstr "1. Download 2. Maak een account aan 3. Uitnodigen ...🚀"
 
 #: src/pages/sharing-request/owner.tsx:195
 #: src/pages/sharing-request/owner.tsx:280
@@ -164,7 +164,7 @@ msgstr "Alles op één plek"
 
 #: src/pages/index.tsx:101
 msgid "Everything you need to share your car with e.g. your neighbors, friends or family. Conveniently in one app."
-msgstr ""
+msgstr "Alles wat je nodig hebt om je auto te delen met bijvoorbeeld je buren, vrienden of familie. Handig in één app."
 
 #: src/pages/index.tsx:59
 msgid "family"
@@ -252,7 +252,7 @@ msgstr "Hey, wil je mijn auto samen gebruiken?"
 
 #: src/components/PageSectionHowItWorks.tsx:105
 msgid "How it works"
-msgstr ""
+msgstr "Hoe het werkt"
 
 #: src/pages/sharing-request/driver.tsx:153
 msgid "How would that work? 🤔"
