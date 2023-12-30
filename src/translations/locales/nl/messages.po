@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-29 13:57\n"
+"PO-Revision-Date: 2023-12-30 08:26\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -558,7 +558,7 @@ msgstr "Waarom delen met Cabble?"
 
 #: src/pages/index.tsx:118
 msgid "With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
-msgstr "Met het delen van Cabble kan een win-win voor iedereen zijn. Brandstof kosten? Voeg ze gewoon toe aan de rekening. Makkelijk!"
+msgstr "Met Cabble kan delen een win-win voor iedereen zijn. Brandstof kosten? Voeg ze gewoon toe aan de rekening. Makkelijk!"
 
 #: src/pages/sharing-request/owner.tsx:324
 msgid "With Cabble we can share my car safely and easily."
