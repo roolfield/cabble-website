@@ -10,6 +10,8 @@ import { usePathname } from 'next/navigation';
 import classNames from 'classnames';
 import { useGetEarlyAccess } from '../common/useGetEarlyAccess';
 import { useLink } from '../common/useLink';
+import { useCallback, useMemo } from 'react';
+import { APP_LANGUAGES } from '../translations/i18n';
 
 export function Layout({
   title = null,
@@ -34,6 +36,19 @@ export function Layout({
 
   const { makeLinkParams } = useLink();
 
+  const alternateUrls = useMemo(() => {
+    return Object.values(APP_LANGUAGES)
+      .filter(lang => lang !== i18n.locale)
+      .map(lang => {
+        const url = new URL(window.location.href);
+        url.searchParams.set('lang', lang);
+        return {
+          lang,
+          url: url.toString(),
+        };
+      });
+  }, []);
+
   return (
     <div className={classnames(showHeaderAndFooter && styles.container)}>
       <Head>
@@ -48,6 +63,17 @@ export function Layout({
         />
 
         <meta property="og:image" content={ogImage} />
+
+        {alternateUrls.map(({ lang, url }) => (
+          <link
+            rel="alternate"
+            href={url}
+            hrefLang={lang}
+            key={lang}
+            data-hid={`alternate-${lang}`}
+          />
+        ))}
+        <meta http-equiv="Content-Language" content={i18n.locale} />
       </Head>
 
       {showHeaderAndFooter && (

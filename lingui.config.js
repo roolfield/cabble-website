@@ -1,5 +1,3 @@
-const nextConfig = require('./next.config');
-
 /** @type {import('@lingui/conf').LinguiConfig} */
 module.exports = {
   locales: ['en', 'nl', 'pseudo'],

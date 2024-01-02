@@ -19,7 +19,11 @@ export const CommunityComposition = () => {
   const avatars = useMemo(
     () => [
       {
-        title: t(i18n)`Neighbour`,
+        title: t(i18n)({
+          id: `neighbour.f`,
+          context: `female`,
+          message: `Neighbour`,
+        }),
         image: '/images/avatars/neighbour.png',
         width: 76,
         height: 75,
@@ -28,7 +32,11 @@ export const CommunityComposition = () => {
         transitionAt: 0.5,
       },
       {
-        title: t(i18n)`Neighbour`,
+        title: t(i18n)({
+          id: `neighbour.f`,
+          context: `female`,
+          message: `Neighbour`,
+        }),
         image: '/images/avatars/neighbour3.png',
         width: 146,
         height: 146,
@@ -37,7 +45,11 @@ export const CommunityComposition = () => {
         transitionAt: 0.3,
       },
       {
-        title: t(i18n)`Neighbour`,
+        title: t(i18n)({
+          id: `neighbour.m`,
+          context: `male`,
+          message: `Neighbour`,
+        }),
         image: '/images/avatars/neighbour2.png',
         width: 106,
         height: 105,
