@@ -6,17 +6,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: nl\n"
+"Project-Id-Version: cabble-website\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2023-12-30 08:26\n"
+"Last-Translator: \n"
+"Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Crowdin-Project: cabble-website\n"
 "X-Crowdin-Project-ID: 636922\n"
 "X-Crowdin-Language: nl\n"
 "X-Crowdin-File: /master/src/translations/locales/en/messages.po\n"
 "X-Crowdin-File-ID: 30\n"
-"Project-Id-Version: cabble-website\n"
-"Language-Team: Dutch\n"
-"PO-Revision-Date: 2023-12-29 11:17\n"
-"Report-Msgid-Bugs-To: \n"
-"Last-Translator: \n"
 
 #: src/pages/sharing-request/owner.tsx:235
 msgid "{0} doors"
@@ -28,7 +28,7 @@ msgstr "{0} zitplaatsen"
 
 #: src/components/Layout.tsx:101
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
-msgstr ""
+msgstr "1. Download 2. Maak een account aan 3. Uitnodigen ...🚀"
 
 #: src/pages/sharing-request/owner.tsx:195
 #: src/pages/sharing-request/owner.tsx:280
@@ -72,7 +72,7 @@ msgstr "En hoe werkt dat allemaal? 🤔"
 
 #: src/pages/index.tsx:128
 msgid "Anything to discuss? Use chat to keep each other in the loop."
-msgstr "Iets te bespreken? Gebruik chat om elkaar in de lus te houden."
+msgstr "Iets te bespreken? Gebruik chat om elkaar op de hoogte te houden."
 
 #: src/pages/sharing-request/owner.tsx:233
 msgid "Automatic"
@@ -125,7 +125,7 @@ msgstr "Dochter"
 
 #: src/components/TripCalculator.tsx:47
 msgid "Determine your price"
-msgstr "Bepaal je prijs"
+msgstr "Bepaal zelf je prijs"
 
 #: src/pages/sharing-request/owner.tsx:41
 msgid "Diesel"
@@ -164,7 +164,7 @@ msgstr "Alles op één plek"
 
 #: src/pages/index.tsx:101
 msgid "Everything you need to share your car with e.g. your neighbors, friends or family. Conveniently in one app."
-msgstr ""
+msgstr "Alles wat je nodig hebt om je auto te delen met bijvoorbeeld je buren, vrienden of familie. Handig in één app."
 
 #: src/pages/index.tsx:59
 msgid "family"
@@ -206,7 +206,7 @@ msgstr "Veelgestelde vragen"
 
 #: src/pages/index.tsx:56
 msgid "friend"
-msgstr "vriend"
+msgstr "vrienden"
 
 #: src/components/ComunityComposition.tsx:49
 msgid "Friend"
@@ -252,7 +252,7 @@ msgstr "Hey, wil je mijn auto samen gebruiken?"
 
 #: src/components/PageSectionHowItWorks.tsx:105
 msgid "How it works"
-msgstr ""
+msgstr "Hoe het werkt"
 
 #: src/pages/sharing-request/driver.tsx:153
 msgid "How would that work? 🤔"
@@ -272,11 +272,11 @@ msgstr "Ik heb een auto"
 
 #: src/pages/sharing-request/driver.tsx:181
 msgid "I make a reservation for when I need it. After your approval I start your trip in the app."
-msgstr "Ik maak een reservering voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik uw reis in de app."
+msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de rit in de app."
 
 #: src/pages/sharing-request/driver.tsx:187
 msgid "I pay for each trip based on the time and distance I drive."
-msgstr "Ik betaal voor elke reis op basis van de tijd en afstand die ik rijd."
+msgstr "Ik betaal voor elke rit op basis van de tijd en afstand die ik rijd."
 
 #: src/pages/sharing-request/driver.tsx:228
 msgid "I refuel the car or I pay for the used fuel through the app."
@@ -317,7 +317,7 @@ msgstr "Juridisch"
 
 #: src/components/Layout.tsx:97
 msgid "Let's do this?"
-msgstr "Zullen we dit doen?"
+msgstr "Let's do this?"
 
 #: src/pages/sharing-request/redirect.tsx:73
 msgid "Let's go 🚀"
@@ -367,7 +367,7 @@ msgstr "Bericht van {0}"
 
 #: src/pages/index.tsx:53
 msgid "neighbour"
-msgstr "buurman"
+msgstr "buren"
 
 #: src/components/ComunityComposition.tsx:22
 #: src/components/ComunityComposition.tsx:31
@@ -484,7 +484,7 @@ msgstr "Zoon"
 
 #: src/pages/index.tsx:183
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
-msgstr "Binnenkort kan je alle schade die tijdens een reis kan optreden ook verzekeren."
+msgstr "Binnenkort kan je alle schade die tijdens een rit kan optreden ook verzekeren."
 
 #: src/components/Layout.tsx:66
 #: src/components/Layout.tsx:131
@@ -517,15 +517,15 @@ msgstr "Deze instellingen staan ook in de app wanneer de eigenaar een autoprofie
 
 #: src/pages/sharing-request/owner.tsx:399
 msgid "To make it worth my while, you pay a minimum of {0} hours per trip."
-msgstr "Om het de moeite waard te maken, betaal je minimaal {0} uur per reis."
+msgstr "Om het de moeite waard te maken, betaal je minimaal {0} uur per rit."
 
 #: src/pages/calculator.tsx:19
 msgid "Trip cost calculator"
-msgstr "Trip kosten calculator"
+msgstr "Kosten calculator"
 
 #: src/components/TripCalculator.tsx:104
 msgid "Trip costs"
-msgstr "Trip kosten"
+msgstr "Rit kosten"
 
 #: src/pages/sharing-request/redirect.tsx:79
 msgid "Trying to open the app"
@@ -533,7 +533,7 @@ msgstr "Proberen de app te openen"
 
 #: src/pages/calculator.tsx:22
 msgid "Use this calculator to calculate the cost of a trip when using Cabble. To learn more about trip pricing, refer to the <0>FAQ</0>."
-msgstr "Gebruik deze rekenmachine voor het berekenen van de kosten van een reis bij het gebruik van Cabble. Raadpleeg de <0>FAQ</0> om meer te weten te komen over de prijs van ritten."
+msgstr "Gebruik deze rekenmachine voor het berekenen van de kosten van een rit bij het gebruik van Cabble. Raadpleeg de <0>FAQ</0> om meer te weten te komen over de prijs van ritten."
 
 #: src/pages/support.tsx:89
 msgid "Use this form to send us feedback or report a problem."
@@ -558,7 +558,7 @@ msgstr "Waarom delen met Cabble?"
 
 #: src/pages/index.tsx:118
 msgid "With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
-msgstr "Met het delen van Cabble kan een win-win voor iedereen zijn. Brandstof kosten? Voeg ze gewoon toe aan de rekening. Makkelijk!"
+msgstr "Met Cabble kan delen een win-win voor iedereen zijn. Brandstof kosten? Voeg ze gewoon toe aan de rekening. Makkelijk!"
 
 #: src/pages/sharing-request/owner.tsx:324
 msgid "With Cabble we can share my car safely and easily."
@@ -598,7 +598,7 @@ msgstr "Jij krijgt een deel van de kosten terug, ik bespaar op de kosten van bez
 
 #: src/pages/sharing-request/owner.tsx:333
 msgid "You make a reservation for when you need it. After my approval you can start your trip in the app."
-msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de trip in de app."
+msgstr "Ik doe een aanvraag voor wanneer ik hem nodig heb. Na jouw goedkeuring start ik de rit in de app."
 
 #: src/pages/sharing-request/owner.tsx:372
 msgid "You pay {0} per hour."
@@ -620,3 +620,4 @@ msgstr "Je ontvangt binnenkort een e-mail met de downloadlink."
 #: src/components/PageSectionHowItWorks.tsx:60
 msgid "You're all set! Now you can start sharing."
 msgstr "Je bent helemaal klaar! Nu kan je beginnen met delen."
+
