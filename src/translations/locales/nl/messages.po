@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-12-30 08:26\n"
+"PO-Revision-Date: 2024-01-02 16:16\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -374,13 +374,19 @@ msgstr "buren"
 #: src/components/ComunityComposition.tsx:35
 msgctxt "female"
 msgid "neighbour.f"
-msgstr "Buurvrouw"
+msgstr ""
 
 #. js-lingui-explicit-id
 #: src/components/ComunityComposition.tsx:48
 msgctxt "male"
 msgid "neighbour.m"
-msgstr "Buurman"
+msgstr ""
+
+#: src/components/ComunityComposition.tsx:22
+#: src/components/ComunityComposition.tsx:31
+#: src/components/ComunityComposition.tsx:40
+#~ msgid "Neighbour"
+#~ msgstr "Neighbour"
 
 #: src/pages/index.tsx:39
 msgid "One car, your community"
@@ -627,3 +633,4 @@ msgstr "Je ontvangt binnenkort een e-mail met de downloadlink."
 #: src/components/PageSectionHowItWorks.tsx:60
 msgid "You're all set! Now you can start sharing."
 msgstr "Je bent helemaal klaar! Nu kan je beginnen met delen."
+
