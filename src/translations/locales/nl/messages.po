@@ -26,7 +26,7 @@ msgstr "{0} deuren"
 msgid "{0} seats"
 msgstr "{0} zitplaatsen"
 
-#: src/components/Layout.tsx:101
+#: src/components/Layout.tsx:127
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
 msgstr "1. Download 2. Maak een account aan 3. Uitnodigen ...🚀"
 
@@ -82,7 +82,7 @@ msgstr "Automatisch"
 msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 msgstr "Op basis van bovenstaande instellingen toont de volgende tabel de kosten van een rit met uitzondering van brandstof. Aan de linkerkant van de tafel wordt het aantal kilometers rijden en bovenin het aantal uren dat de auto wordt gebruikt."
 
-#: src/components/Layout.tsx:168
+#: src/components/Layout.tsx:194
 msgid "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
 msgstr "Cabble is op een missie om gemeenschappen bij elkaar te brengen om gezamenlijk het aantal auto's op straat te verminderen."
 
@@ -119,7 +119,7 @@ msgstr "Maak een autoprofiel aan 🙋‍"
 msgid "Create a profile 🙋‍️"
 msgstr "Maak een profiel aan 🙋‍"
 
-#: src/components/ComunityComposition.tsx:57
+#: src/components/ComunityComposition.tsx:69
 msgid "Daughter"
 msgstr "Dochter"
 
@@ -170,7 +170,7 @@ msgstr "Alles wat je nodig hebt om je auto te delen met bijvoorbeeld je buren, v
 msgid "family"
 msgstr "familie"
 
-#: src/components/Layout.tsx:62
+#: src/components/Layout.tsx:88
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -198,7 +198,7 @@ msgstr "Gratis kilometers per dag"
 msgid "Frequently asked questions"
 msgstr "Veelgestelde vragen"
 
-#: src/components/Layout.tsx:127
+#: src/components/Layout.tsx:153
 #: src/pages/faq.tsx:28
 #: src/pages/support.tsx:41
 msgid "Frequently Asked Questions"
@@ -208,7 +208,7 @@ msgstr "Veelgestelde vragen"
 msgid "friend"
 msgstr "vrienden"
 
-#: src/components/ComunityComposition.tsx:49
+#: src/components/ComunityComposition.tsx:61
 msgid "Friend"
 msgstr "Vriend"
 
@@ -221,7 +221,7 @@ msgid "General"
 msgstr "Algemeen"
 
 #: src/common/useGetEarlyAccess.ts:11
-#: src/components/Layout.tsx:111
+#: src/components/Layout.tsx:137
 #: src/pages/index.tsx:72
 msgid "Get early access"
 msgstr "Krijg vroege toegang"
@@ -311,11 +311,11 @@ msgstr "jan@metdepet.nl"
 msgid "Learn more"
 msgstr "Meer informatie"
 
-#: src/components/Layout.tsx:143
+#: src/components/Layout.tsx:169
 msgid "Legal"
 msgstr "Juridisch"
 
-#: src/components/Layout.tsx:97
+#: src/components/Layout.tsx:123
 msgid "Let's do this?"
 msgstr "Let's do this?"
 
@@ -356,7 +356,7 @@ msgstr "Beheer beschikbaarheid"
 msgid "Manual"
 msgstr "Handgeschakeld"
 
-#: src/components/Layout.tsx:121
+#: src/components/Layout.tsx:147
 msgid "Menu"
 msgstr "Menu"
 
@@ -369,10 +369,17 @@ msgstr "Bericht van {0}"
 msgid "neighbour"
 msgstr "buren"
 
+#. js-lingui-explicit-id
 #: src/components/ComunityComposition.tsx:22
-#: src/components/ComunityComposition.tsx:31
-#: src/components/ComunityComposition.tsx:40
-msgid "Neighbour"
+#: src/components/ComunityComposition.tsx:35
+msgctxt "female"
+msgid "neighbour.f"
+msgstr "Buurvrouw"
+
+#. js-lingui-explicit-id
+#: src/components/ComunityComposition.tsx:48
+msgctxt "male"
+msgid "neighbour.m"
 msgstr "Buurman"
 
 #: src/pages/index.tsx:39
@@ -395,11 +402,11 @@ msgstr "Open WhatsApp"
 msgid "Other"
 msgstr "Overige"
 
-#: src/components/Layout.tsx:165
+#: src/components/Layout.tsx:191
 msgid "Our mission"
 msgstr "Onze missie"
 
-#: src/components/ComunityComposition.tsx:66
+#: src/components/ComunityComposition.tsx:78
 msgid "Owner"
 msgstr "Eigenaar"
 
@@ -423,7 +430,7 @@ msgstr "Prijs per kilometer <0>(?)</0>"
 msgid "Privacy policy"
 msgstr "Privacy beleid"
 
-#: src/components/Layout.tsx:149
+#: src/components/Layout.tsx:175
 msgid "Privacy Policy"
 msgstr "Privacy beleid"
 
@@ -478,7 +485,7 @@ msgstr "Gemakkelijk delen in <0>één app</0>"
 msgid "Sharing with Cabble"
 msgstr "Delen met Cabble"
 
-#: src/components/ComunityComposition.tsx:86
+#: src/components/ComunityComposition.tsx:98
 msgid "Son"
 msgstr "Zoon"
 
@@ -486,14 +493,14 @@ msgstr "Zoon"
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr "Binnenkort kan je alle schade die tijdens een rit kan optreden ook verzekeren."
 
-#: src/components/Layout.tsx:66
-#: src/components/Layout.tsx:131
+#: src/components/Layout.tsx:92
+#: src/components/Layout.tsx:157
 #: src/pages/calculator.tsx:16
 #: src/pages/support.tsx:34
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: src/components/Layout.tsx:153
+#: src/components/Layout.tsx:179
 #: src/pages/terms-and-conditions.tsx:10
 msgid "Terms and Conditions"
 msgstr "Algemene Voorwaarden"
@@ -620,4 +627,3 @@ msgstr "Je ontvangt binnenkort een e-mail met de downloadlink."
 #: src/components/PageSectionHowItWorks.tsx:60
 msgid "You're all set! Now you can start sharing."
 msgstr "Je bent helemaal klaar! Nu kan je beginnen met delen."
-
