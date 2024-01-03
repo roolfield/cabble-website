@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-02 16:16\n"
+"PO-Revision-Date: 2024-01-03 10:27\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -26,7 +26,7 @@ msgstr "{0} deuren"
 msgid "{0} seats"
 msgstr "{0} zitplaatsen"
 
-#: src/components/Layout.tsx:127
+#: src/components/Layout.tsx:129
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
 msgstr "1. Download 2. Maak een account aan 3. Uitnodigen ...🚀"
 
@@ -70,7 +70,7 @@ msgstr "Voeg deze auto toe aan de Cabble app"
 msgid "And how does that all work? 🤔"
 msgstr "En hoe werkt dat allemaal? 🤔"
 
-#: src/pages/index.tsx:128
+#: src/pages/index.tsx:120
 msgid "Anything to discuss? Use chat to keep each other in the loop."
 msgstr "Iets te bespreken? Gebruik chat om elkaar op de hoogte te houden."
 
@@ -82,7 +82,7 @@ msgstr "Automatisch"
 msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 msgstr "Op basis van bovenstaande instellingen toont de volgende tabel de kosten van een rit met uitzondering van brandstof. Aan de linkerkant van de tafel wordt het aantal kilometers rijden en bovenin het aantal uren dat de auto wordt gebruikt."
 
-#: src/components/Layout.tsx:194
+#: src/components/Layout.tsx:190
 msgid "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
 msgstr "Cabble is op een missie om gemeenschappen bij elkaar te brengen om gezamenlijk het aantal auto's op straat te verminderen."
 
@@ -90,7 +90,7 @@ msgstr "Cabble is op een missie om gemeenschappen bij elkaar te brengen om gezam
 msgid "CNG"
 msgstr "CNG"
 
-#: src/pages/index.tsx:176
+#: src/pages/index.tsx:168
 msgid "Coming soon"
 msgstr "Binnenkort beschikbaar"
 
@@ -136,7 +136,7 @@ msgstr "Diesel"
 msgid "Download the app 📱"
 msgstr "Download de app 📱"
 
-#: src/pages/sharing-request/redirect.tsx:92
+#: src/pages/sharing-request/redirect.tsx:93
 msgid "Download the app for free"
 msgstr "Download de app gratis"
 
@@ -145,7 +145,7 @@ msgstr "Download de app gratis"
 msgid "Download the app for free."
 msgstr "Download de app gratis."
 
-#: src/pages/index.tsx:211
+#: src/pages/index.tsx:203
 msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr "Gebruikers besparen op kosten van bezit en eigenaren krijgen een deel daarvan terug. Bovendien, met een fee van 6.5% heeft Cabble veruit de laagste fees."
 
@@ -158,19 +158,19 @@ msgstr "Elektrisch"
 msgid "Email us"
 msgstr "Mail ons"
 
-#: src/pages/index.tsx:127
+#: src/pages/index.tsx:119
 msgid "Everything in one place"
 msgstr "Alles op één plek"
 
-#: src/pages/index.tsx:101
+#: src/pages/index.tsx:93
 msgid "Everything you need to share your car with e.g. your neighbors, friends or family. Conveniently in one app."
 msgstr "Alles wat je nodig hebt om je auto te delen met bijvoorbeeld je buren, vrienden of familie. Handig in één app."
 
-#: src/pages/index.tsx:59
+#: src/pages/index.tsx:57
 msgid "family"
 msgstr "familie"
 
-#: src/components/Layout.tsx:88
+#: src/components/Layout.tsx:85
 msgid "FAQ"
 msgstr "FAQ"
 
@@ -182,7 +182,7 @@ msgstr "Feedback formulier"
 msgid "Find answers to the most common questions about our service."
 msgstr "Vind antwoorden op de meest voorkomende vragen over onze service."
 
-#: src/pages/index.tsx:216
+#: src/pages/index.tsx:208
 msgid "Flexible"
 msgstr "Flexibel"
 
@@ -198,13 +198,13 @@ msgstr "Gratis kilometers per dag"
 msgid "Frequently asked questions"
 msgstr "Veelgestelde vragen"
 
-#: src/components/Layout.tsx:153
+#: src/components/Layout.tsx:149
 #: src/pages/faq.tsx:28
 #: src/pages/support.tsx:41
 msgid "Frequently Asked Questions"
 msgstr "Veelgestelde vragen"
 
-#: src/pages/index.tsx:56
+#: src/pages/index.tsx:54
 msgid "friend"
 msgstr "vrienden"
 
@@ -223,18 +223,18 @@ msgstr "Algemeen"
 #: src/common/useGetEarlyAccess.ts:11
 #: src/components/Layout.tsx:137
 #: src/pages/index.tsx:72
-msgid "Get early access"
-msgstr "Krijg vroege toegang"
+#~ msgid "Get early access"
+#~ msgstr "Get early access"
 
 #: src/pages/support.tsx:50
 msgid "Go to FAQ"
 msgstr "Ga naar de FAQ"
 
-#: src/pages/index.tsx:218
+#: src/pages/index.tsx:210
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr "Een weekend trip? Of een reisje naar IKEA? Bepaal samen hoe lang en wanneer."
 
-#: src/pages/index.tsx:223
+#: src/pages/index.tsx:215
 msgid "Good for our planet"
 msgstr "Goed voor onze planeet"
 
@@ -286,7 +286,7 @@ msgstr "Ik tank de auto af of ik betaal de gebruikte brandstof via de app."
 msgid "I want to use a car"
 msgstr "Ik wil een auto gebruiken"
 
-#: src/pages/index.tsx:179
+#: src/pages/index.tsx:171
 msgid "Insurance for any damage"
 msgstr "Verzekeringen voor eventuele schade"
 
@@ -303,23 +303,23 @@ msgid "Invite your community 💌"
 msgstr "Nodig je community uit 💌"
 
 #: src/common/useGetEarlyAccess.ts:16
-msgid "john@doe.com"
-msgstr "jan@metdepet.nl"
+#~ msgid "john@doe.com"
+#~ msgstr "john@doe.com"
 
-#: src/pages/index.tsx:153
-#: src/pages/index.tsx:236
+#: src/pages/index.tsx:145
+#: src/pages/index.tsx:228
 msgid "Learn more"
 msgstr "Meer informatie"
 
-#: src/components/Layout.tsx:169
+#: src/components/Layout.tsx:165
 msgid "Legal"
 msgstr "Juridisch"
 
-#: src/components/Layout.tsx:123
+#: src/components/Layout.tsx:125
 msgid "Let's do this?"
 msgstr "Let's do this?"
 
-#: src/pages/sharing-request/redirect.tsx:73
+#: src/pages/sharing-request/redirect.tsx:74
 msgid "Let's go 🚀"
 msgstr "Let's go 🚀"
 
@@ -348,7 +348,7 @@ msgstr "Locatie"
 msgid "LPG"
 msgstr "LPG"
 
-#: src/pages/index.tsx:111
+#: src/pages/index.tsx:103
 msgid "Manage availability"
 msgstr "Beheer beschikbaarheid"
 
@@ -356,7 +356,7 @@ msgstr "Beheer beschikbaarheid"
 msgid "Manual"
 msgstr "Handgeschakeld"
 
-#: src/components/Layout.tsx:147
+#: src/components/Layout.tsx:143
 msgid "Menu"
 msgstr "Menu"
 
@@ -365,7 +365,7 @@ msgstr "Menu"
 msgid "Message from {0}"
 msgstr "Bericht van {0}"
 
-#: src/pages/index.tsx:53
+#: src/pages/index.tsx:51
 msgid "neighbour"
 msgstr "buren"
 
@@ -388,11 +388,11 @@ msgstr ""
 #~ msgid "Neighbour"
 #~ msgstr "Neighbour"
 
-#: src/pages/index.tsx:39
+#: src/pages/index.tsx:37
 msgid "One car, your community"
 msgstr "Één auto, jouw community"
 
-#: src/pages/index.tsx:123
+#: src/pages/index.tsx:115
 msgid "Open cost calculator"
 msgstr "Open de kostencalculator"
 
@@ -408,7 +408,7 @@ msgstr "Open WhatsApp"
 msgid "Other"
 msgstr "Overige"
 
-#: src/components/Layout.tsx:191
+#: src/components/Layout.tsx:187
 msgid "Our mission"
 msgstr "Onze missie"
 
@@ -425,8 +425,8 @@ msgid "per hour (max. 10 hours per day)"
 msgstr "per uur (max. 10 uur per dag)"
 
 #: src/common/useGetEarlyAccess.ts:12
-msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
-msgstr "Voer uw e-mail in. Dit opent uw e-mailclient om ons een e-mail (support@cabbleapp.com) met uw verzoek te sturen."
+#~ msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
+#~ msgstr "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
 
 #: src/components/TripCalculator.tsx:78
 msgid "Price per kilometer <0>(?)</0>"
@@ -436,27 +436,27 @@ msgstr "Prijs per kilometer <0>(?)</0>"
 msgid "Privacy policy"
 msgstr "Privacy beleid"
 
-#: src/components/Layout.tsx:175
+#: src/components/Layout.tsx:171
 msgid "Privacy Policy"
 msgstr "Privacy beleid"
 
-#: src/pages/sharing-request/redirect.tsx:71
+#: src/pages/sharing-request/redirect.tsx:72
 msgid "Redirecting"
 msgstr "Omleiden"
 
-#: src/pages/sharing-request/redirect.tsx:81
+#: src/pages/sharing-request/redirect.tsx:82
 msgid "Redirecting you to the {0}"
 msgstr "Je wordt doorgestuurd naar {0}"
 
-#: src/pages/index.tsx:112
+#: src/pages/index.tsx:104
 msgid "Request and approve/deny trips in the app"
 msgstr "Vraag trips aan en keur goed/wijs af in de app"
 
-#: src/pages/index.tsx:64
+#: src/pages/index.tsx:62
 msgid "Save by using your car with your community."
 msgstr "Bespaar door je auto te gebruiken in je community."
 
-#: src/pages/index.tsx:209
+#: src/pages/index.tsx:201
 msgid "Save money, everyone"
 msgstr "Iedereen bespaart"
 
@@ -468,19 +468,19 @@ msgstr "Stuur ons een bericht en we zullen zo snel mogelijk reageren."
 msgid "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 msgstr "Stuur ons een e-mail naar support@cabbleapp.com en we zullen zo snel mogelijk reageren."
 
-#: src/pages/index.tsx:45
+#: src/pages/index.tsx:43
 msgid "Share the car of your"
 msgstr "Deel de auto van je"
 
-#: src/pages/index.tsx:202
+#: src/pages/index.tsx:194
 msgid "Share with those you trust"
 msgstr "Deel met degenen die je vertrouwt"
 
-#: src/pages/index.tsx:225
+#: src/pages/index.tsx:217
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr "Het delen van een auto betekent minder auto's op de weg, wat leidt tot minder uitstoot en meer ruimte in onze steden."
 
-#: src/pages/index.tsx:95
+#: src/pages/index.tsx:87
 msgid "Sharing made easy in <0>one app</0>"
 msgstr "Gemakkelijk delen in <0>één app</0>"
 
@@ -495,25 +495,25 @@ msgstr "Delen met Cabble"
 msgid "Son"
 msgstr "Zoon"
 
-#: src/pages/index.tsx:183
+#: src/pages/index.tsx:175
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr "Binnenkort kan je alle schade die tijdens een rit kan optreden ook verzekeren."
 
-#: src/components/Layout.tsx:92
-#: src/components/Layout.tsx:157
+#: src/components/Layout.tsx:89
+#: src/components/Layout.tsx:153
 #: src/pages/calculator.tsx:16
 #: src/pages/support.tsx:34
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: src/components/Layout.tsx:179
+#: src/components/Layout.tsx:175
 #: src/pages/terms-and-conditions.tsx:10
 msgid "Terms and Conditions"
 msgstr "Algemene Voorwaarden"
 
 #: src/common/useGetEarlyAccess.ts:26
-msgid "Thank you!"
-msgstr "Dank je wel!"
+#~ msgid "Thank you!"
+#~ msgstr "Thank you!"
 
 #: src/pages/sharing-request/driver.tsx:206
 #: src/pages/sharing-request/owner.tsx:359
@@ -540,7 +540,7 @@ msgstr "Kosten calculator"
 msgid "Trip costs"
 msgstr "Rit kosten"
 
-#: src/pages/sharing-request/redirect.tsx:79
+#: src/pages/sharing-request/redirect.tsx:80
 msgid "Trying to open the app"
 msgstr "Proberen de app te openen"
 
@@ -565,11 +565,11 @@ msgstr "We helpen je graag"
 msgid "WhatsApp us"
 msgstr "WhatsApp ons"
 
-#: src/pages/index.tsx:196
+#: src/pages/index.tsx:188
 msgid "Why sharing with Cabble?"
 msgstr "Waarom delen met Cabble?"
 
-#: src/pages/index.tsx:118
+#: src/pages/index.tsx:110
 msgid "With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
 msgstr "Met Cabble kan delen een win-win voor iedereen zijn. Brandstof kosten? Voeg ze gewoon toe aan de rekening. Makkelijk!"
 
@@ -581,7 +581,7 @@ msgstr "Met de Cabble kunnen we onze auto gemakkelijk en veilig delen."
 msgid "With Cabble we can share your car safely and easily."
 msgstr "Met de Cabble kunnen we je auto gemakkelijk en veilig delen."
 
-#: src/pages/index.tsx:204
+#: src/pages/index.tsx:196
 msgid "You can be friends, neighbours or family; share your car with a trusted community."
 msgstr "Als vrienden, buren of familie; deel je auto met een vertrouwde gemeenschap."
 
@@ -593,11 +593,11 @@ msgstr "Je kunt {0} gratis rijden en daarna {1} per kilometer betalen (exclusief
 msgid "You can set a free number of kilometers per trip and a price per extra kilometer (excluding fuel)."
 msgstr "Je kunt een gratis aantal kilometers per rit en een prijs per extra kilometer instellen (exclusief brandstof)."
 
-#: src/pages/sharing-request/redirect.tsx:97
+#: src/pages/sharing-request/redirect.tsx:98
 msgid "You can start sharing once both of you have the app installed."
 msgstr "Je kunt beginnen met delen zodra de app bij beiden is geïnstalleerd."
 
-#: src/pages/index.tsx:117
+#: src/pages/index.tsx:109
 msgid "You determine the price"
 msgstr "Jij bepaalt de prijs"
 
@@ -626,8 +626,8 @@ msgid "You set a price per hour."
 msgstr "Jij stelt een prijs per uur in."
 
 #: src/common/useGetEarlyAccess.ts:27
-msgid "You will receive an email with the download link soon."
-msgstr "Je ontvangt binnenkort een e-mail met de downloadlink."
+#~ msgid "You will receive an email with the download link soon."
+#~ msgstr "You will receive an email with the download link soon."
 
 #: src/components/PageSectionHowItWorks.tsx:38
 #: src/components/PageSectionHowItWorks.tsx:60
