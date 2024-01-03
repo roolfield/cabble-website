@@ -8,16 +8,14 @@ import LocalImage from '../components/LocalImage';
 import { Button } from '../components/Button';
 import { PageSectionHowItWorks } from '../components/PageSectionHowItWorks';
 import { StickyHeader } from '../components/StickyHeader';
-import { useGetEarlyAccess } from '../common/useGetEarlyAccess';
 import Link from 'next/link';
 import { Url } from 'next/dist/shared/lib/router/router';
 import { useLink } from '../common/useLink';
 import { CommunityComposition } from '../components/ComunityComposition';
+import { AppStoreButtons } from '../components/AppStoreButtons';
 
 export default function Home() {
   const { i18n } = useLingui();
-
-  const { showPopup } = useGetEarlyAccess();
 
   const { makeLinkParams } = useLink();
 
@@ -64,13 +62,7 @@ export default function Home() {
               <Trans>Save by using your car with your community.</Trans>
             </span>
             <div>
-              <Button
-                size={'lg'}
-                variant="outline-white"
-                onClick={() => showPopup()}
-                className={styles.button}>
-                <Trans>Get early access</Trans>
-              </Button>
+              <AppStoreButtons buttonClass={styles.downloadButton} />
             </div>
           </div>
         </div>

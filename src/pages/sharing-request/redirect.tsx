@@ -8,9 +8,10 @@ import { useLingui } from '@lingui/react';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import classnames from 'classnames';
+import { AppStoreButtons } from '../../components/AppStoreButtons';
 
-const APP_STORE_URL = `https://apps.apple.com/app/id${process.env.NEXT_PUBLIC_APP_ID_IOS}`;
-const PLAY_STORE_URL = `https://play.google.com/store/apps/details?id=${process.env.NEXT_PUBLIC_APP_ID_ANDROID}`;
+const APP_STORE_URL = process.env.NEXT_PUBLIC_APP_STORE_URL as string;
+const PLAY_STORE_URL = process.env.NEXT_PUBLIC_PLAY_STORE_URL as string;
 
 export default function DriverShareRequest() {
   const { i18n } = useLingui();
@@ -99,10 +100,7 @@ export default function DriverShareRequest() {
         </Trans>
       </p>
 
-      <div className={styles.appStoreButtons}>
-        <a href={APP_STORE_URL} className={styles.playStoreButton} />
-        <a href={PLAY_STORE_URL} className={styles.appStoreButton} />
-      </div>
+      <AppStoreButtons className={styles.appStoreButtons} />
     </Layout>
   );
 }

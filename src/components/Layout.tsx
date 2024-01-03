@@ -5,13 +5,12 @@ import styles from './Layout.module.css';
 import { t, Trans } from '@lingui/macro';
 import Link from 'next/link';
 import { useLingui } from '@lingui/react';
-import { Button } from './Button';
 import { usePathname } from 'next/navigation';
 import classNames from 'classnames';
-import { useGetEarlyAccess } from '../common/useGetEarlyAccess';
 import { useLink } from '../common/useLink';
-import { useCallback, useMemo } from 'react';
+import { useMemo } from 'react';
 import { APP_LANGUAGES } from '../translations/i18n';
+import { AppStoreButtons } from './AppStoreButtons';
 
 export function Layout({
   title = null,
@@ -31,8 +30,6 @@ export function Layout({
   const pathname = usePathname();
 
   const { i18n } = useLingui();
-
-  const { showPopup } = useGetEarlyAccess();
 
   const { makeLinkParams } = useLink();
 
@@ -127,16 +124,10 @@ export function Layout({
                 <Trans>1. Download 2. Create an account 3. Invite ...🚀</Trans>
               </div>
 
-              <div>
-                <Button
-                  element={'button'}
-                  variant="outline-blue"
-                  size={'lg'}
-                  className={styles.button}
-                  onClick={() => showPopup()}>
-                  <Trans>Get early access</Trans>
-                </Button>
-              </div>
+              <AppStoreButtons
+                className={styles.appStoreButtons}
+                buttonClass={styles.downloadButton}
+              />
             </div>
           </section>
 

@@ -345,4 +345,8 @@
     margin: 0;
     padding-bottom: 8em;
   }
+
+  .downloadButton {
+    width: 14em !important;
+  }
 }

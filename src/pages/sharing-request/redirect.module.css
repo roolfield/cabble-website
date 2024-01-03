@@ -6,23 +6,3 @@
   font-size: 1.7em;
 }
 
-.appStoreButtons {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-  flex-wrap: wrap;
-}
-
-.playStoreButton {
-  background: url("../../../public/images/play-store-dark.svg") no-repeat left center ;
-  background-size: contain;
-  width: 9em;
-  height: 5em;
-}
-
-.appStoreButton {
-  background: url("../../../public/images/app-store-dark.svg") no-repeat left center ;
-  background-size: contain;
-  width: 9em;
-  height: 5em;
-}
