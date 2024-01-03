@@ -21,7 +21,7 @@ msgstr "{0} doors"
 msgid "{0} seats"
 msgstr "{0} seats"
 
-#: src/components/Layout.tsx:124
+#: src/components/Layout.tsx:129
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
 msgstr "1. Download 2. Create an account 3. Invite ...🚀"
 
@@ -77,7 +77,7 @@ msgstr "Automatic"
 msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 msgstr "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 
-#: src/components/Layout.tsx:185
+#: src/components/Layout.tsx:190
 msgid "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
 msgstr "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
 
@@ -193,7 +193,7 @@ msgstr "Free kilometers per day"
 msgid "Frequently asked questions"
 msgstr "Frequently asked questions"
 
-#: src/components/Layout.tsx:144
+#: src/components/Layout.tsx:149
 #: src/pages/faq.tsx:28
 #: src/pages/support.tsx:41
 msgid "Frequently Asked Questions"
@@ -306,11 +306,11 @@ msgstr "Invite your community 💌"
 msgid "Learn more"
 msgstr "Learn more"
 
-#: src/components/Layout.tsx:160
+#: src/components/Layout.tsx:165
 msgid "Legal"
 msgstr "Legal"
 
-#: src/components/Layout.tsx:120
+#: src/components/Layout.tsx:125
 msgid "Let's do this?"
 msgstr "Let's do this?"
 
@@ -351,7 +351,7 @@ msgstr "Manage availability"
 msgid "Manual"
 msgstr "Manual"
 
-#: src/components/Layout.tsx:138
+#: src/components/Layout.tsx:143
 msgid "Menu"
 msgstr "Menu"
 
@@ -403,7 +403,7 @@ msgstr "Open WhatsApp"
 msgid "Other"
 msgstr "Other"
 
-#: src/components/Layout.tsx:182
+#: src/components/Layout.tsx:187
 msgid "Our mission"
 msgstr "Our mission"
 
@@ -431,7 +431,7 @@ msgstr "Price per kilometer <0>(?)</0>"
 msgid "Privacy policy"
 msgstr "Privacy policy"
 
-#: src/components/Layout.tsx:166
+#: src/components/Layout.tsx:171
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
@@ -495,13 +495,13 @@ msgid "Soon you will be able to insure for any self-incurred damage that might o
 msgstr "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 
 #: src/components/Layout.tsx:89
-#: src/components/Layout.tsx:148
+#: src/components/Layout.tsx:153
 #: src/pages/calculator.tsx:16
 #: src/pages/support.tsx:34
 msgid "Support"
 msgstr "Support"
 
-#: src/components/Layout.tsx:170
+#: src/components/Layout.tsx:175
 #: src/pages/terms-and-conditions.tsx:10
 msgid "Terms and Conditions"
 msgstr "Terms and Conditions"

@@ -15,11 +15,11 @@ export function AppStoreButtons({
     <div className={classNames(styles.appStoreButtons, className)}>
       <a
         href={APP_STORE_URL}
-        className={classNames(styles.playStoreButton, buttonClass)}
+        className={classNames(styles.appStoreButton, buttonClass)}
       />
       <a
         href={PLAY_STORE_URL}
-        className={classNames(styles.appStoreButton, buttonClass)}
+        className={classNames(styles.playStoreButton, buttonClass)}
       />
     </div>
   );
