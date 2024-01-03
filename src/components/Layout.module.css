@@ -151,6 +151,13 @@
   justify-content: center;
 }
 
+.languageSwitcher {
+  font-size: 1.5em;
+  list-style: none;
+  margin-right: 0 !important;
+  padding: 0 !important;
+}
+
 @media (min-width: 1200px) {
   .container {
     --padding: 1rem;

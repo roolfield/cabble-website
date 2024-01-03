@@ -44,7 +44,7 @@ export function Layout({
           url: url.toString(),
         };
       });
-  }, []);
+  }, [i18n.locale]);
 
   return (
     <div className={classnames(showHeaderAndFooter && styles.container)}>
@@ -102,6 +102,11 @@ export function Layout({
                   }}>
                   {label}
                 </Link>
+              </li>
+            ))}
+            {alternateUrls.map(({ lang, url }) => (
+              <li className={styles.languageSwitcher} key={lang}>
+                <Link href={url}>{lang === 'nl' ? '🇳🇱' : '🇬🇧'}</Link>
               </li>
             ))}
           </ul>

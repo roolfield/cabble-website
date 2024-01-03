@@ -21,7 +21,7 @@ msgstr ""
 msgid "{0} seats"
 msgstr ""
 
-#: src/components/Layout.tsx:127
+#: src/components/Layout.tsx:124
 msgid "1. Download 2. Create an account 3. Invite ...🚀"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgstr ""
 msgid "And how does that all work? 🤔"
 msgstr ""
 
-#: src/pages/index.tsx:128
+#: src/pages/index.tsx:120
 msgid "Anything to discuss? Use chat to keep each other in the loop."
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 msgid "Based on the settings above, the following table shows the cost of a trip excluding fuel. On the left side of the table the number of kilometers driven and on the top the number of hours the car is used."
 msgstr ""
 
-#: src/components/Layout.tsx:194
+#: src/components/Layout.tsx:185
 msgid "Cabble is on a mission to bring together communities in order to reduce the number of cars on the streets collectively."
 msgstr ""
 
@@ -85,7 +85,7 @@ msgstr ""
 msgid "CNG"
 msgstr ""
 
-#: src/pages/index.tsx:176
+#: src/pages/index.tsx:168
 msgid "Coming soon"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Download the app 📱"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:92
+#: src/pages/sharing-request/redirect.tsx:93
 msgid "Download the app for free"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Download the app for free."
 msgstr ""
 
-#: src/pages/index.tsx:211
+#: src/pages/index.tsx:203
 msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
 msgstr ""
 
@@ -153,19 +153,19 @@ msgstr ""
 msgid "Email us"
 msgstr ""
 
-#: src/pages/index.tsx:127
+#: src/pages/index.tsx:119
 msgid "Everything in one place"
 msgstr ""
 
-#: src/pages/index.tsx:101
+#: src/pages/index.tsx:93
 msgid "Everything you need to share your car with e.g. your neighbors, friends or family. Conveniently in one app."
 msgstr ""
 
-#: src/pages/index.tsx:59
+#: src/pages/index.tsx:57
 msgid "family"
 msgstr ""
 
-#: src/components/Layout.tsx:88
+#: src/components/Layout.tsx:85
 msgid "FAQ"
 msgstr ""
 
@@ -177,7 +177,7 @@ msgstr ""
 msgid "Find answers to the most common questions about our service."
 msgstr ""
 
-#: src/pages/index.tsx:216
+#: src/pages/index.tsx:208
 msgid "Flexible"
 msgstr ""
 
@@ -193,13 +193,13 @@ msgstr ""
 msgid "Frequently asked questions"
 msgstr ""
 
-#: src/components/Layout.tsx:153
+#: src/components/Layout.tsx:144
 #: src/pages/faq.tsx:28
 #: src/pages/support.tsx:41
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: src/pages/index.tsx:56
+#: src/pages/index.tsx:54
 msgid "friend"
 msgstr ""
 
@@ -218,18 +218,18 @@ msgstr ""
 #: src/common/useGetEarlyAccess.ts:11
 #: src/components/Layout.tsx:137
 #: src/pages/index.tsx:72
-msgid "Get early access"
-msgstr ""
+#~ msgid "Get early access"
+#~ msgstr ""
 
 #: src/pages/support.tsx:50
 msgid "Go to FAQ"
 msgstr ""
 
-#: src/pages/index.tsx:218
+#: src/pages/index.tsx:210
 msgid "Going for a weekend trip? Or just a trip to IKEA? Decide together for how long and when."
 msgstr ""
 
-#: src/pages/index.tsx:223
+#: src/pages/index.tsx:215
 msgid "Good for our planet"
 msgstr ""
 
@@ -281,7 +281,7 @@ msgstr ""
 msgid "I want to use a car"
 msgstr ""
 
-#: src/pages/index.tsx:179
+#: src/pages/index.tsx:171
 msgid "Insurance for any damage"
 msgstr ""
 
@@ -298,23 +298,23 @@ msgid "Invite your community 💌"
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:16
-msgid "john@doe.com"
-msgstr ""
+#~ msgid "john@doe.com"
+#~ msgstr ""
 
-#: src/pages/index.tsx:153
-#: src/pages/index.tsx:236
+#: src/pages/index.tsx:145
+#: src/pages/index.tsx:228
 msgid "Learn more"
 msgstr ""
 
-#: src/components/Layout.tsx:169
+#: src/components/Layout.tsx:160
 msgid "Legal"
 msgstr ""
 
-#: src/components/Layout.tsx:123
+#: src/components/Layout.tsx:120
 msgid "Let's do this?"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:73
+#: src/pages/sharing-request/redirect.tsx:74
 msgid "Let's go 🚀"
 msgstr ""
 
@@ -343,7 +343,7 @@ msgstr ""
 msgid "LPG"
 msgstr ""
 
-#: src/pages/index.tsx:111
+#: src/pages/index.tsx:103
 msgid "Manage availability"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr ""
 msgid "Manual"
 msgstr ""
 
-#: src/components/Layout.tsx:147
+#: src/components/Layout.tsx:138
 msgid "Menu"
 msgstr ""
 
@@ -360,7 +360,7 @@ msgstr ""
 msgid "Message from {0}"
 msgstr ""
 
-#: src/pages/index.tsx:53
+#: src/pages/index.tsx:51
 msgid "neighbour"
 msgstr ""
 
@@ -383,11 +383,11 @@ msgstr ""
 #~ msgid "Neighbour"
 #~ msgstr ""
 
-#: src/pages/index.tsx:39
+#: src/pages/index.tsx:37
 msgid "One car, your community"
 msgstr ""
 
-#: src/pages/index.tsx:123
+#: src/pages/index.tsx:115
 msgid "Open cost calculator"
 msgstr ""
 
@@ -403,7 +403,7 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
-#: src/components/Layout.tsx:191
+#: src/components/Layout.tsx:182
 msgid "Our mission"
 msgstr ""
 
@@ -420,8 +420,8 @@ msgid "per hour (max. 10 hours per day)"
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:12
-msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
-msgstr ""
+#~ msgid "Please enter your email. This will open your email client to send us an email (support@cabbleapp.com) with your request."
+#~ msgstr ""
 
 #: src/components/TripCalculator.tsx:78
 msgid "Price per kilometer <0>(?)</0>"
@@ -431,27 +431,27 @@ msgstr ""
 msgid "Privacy policy"
 msgstr ""
 
-#: src/components/Layout.tsx:175
+#: src/components/Layout.tsx:166
 msgid "Privacy Policy"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:71
+#: src/pages/sharing-request/redirect.tsx:72
 msgid "Redirecting"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:81
+#: src/pages/sharing-request/redirect.tsx:82
 msgid "Redirecting you to the {0}"
 msgstr ""
 
-#: src/pages/index.tsx:112
+#: src/pages/index.tsx:104
 msgid "Request and approve/deny trips in the app"
 msgstr ""
 
-#: src/pages/index.tsx:64
+#: src/pages/index.tsx:62
 msgid "Save by using your car with your community."
 msgstr ""
 
-#: src/pages/index.tsx:209
+#: src/pages/index.tsx:201
 msgid "Save money, everyone"
 msgstr ""
 
@@ -463,19 +463,19 @@ msgstr ""
 msgid "Send us an email a support@cabbleapp.com and we will respond as soon as possible."
 msgstr ""
 
-#: src/pages/index.tsx:45
+#: src/pages/index.tsx:43
 msgid "Share the car of your"
 msgstr ""
 
-#: src/pages/index.tsx:202
+#: src/pages/index.tsx:194
 msgid "Share with those you trust"
 msgstr ""
 
-#: src/pages/index.tsx:225
+#: src/pages/index.tsx:217
 msgid "Sharing a car means less cars on the road, which means less emissions and more space in our cities."
 msgstr ""
 
-#: src/pages/index.tsx:95
+#: src/pages/index.tsx:87
 msgid "Sharing made easy in <0>one app</0>"
 msgstr ""
 
@@ -490,25 +490,25 @@ msgstr ""
 msgid "Son"
 msgstr ""
 
-#: src/pages/index.tsx:183
+#: src/pages/index.tsx:175
 msgid "Soon you will be able to insure for any self-incurred damage that might occur during a trip."
 msgstr ""
 
-#: src/components/Layout.tsx:92
-#: src/components/Layout.tsx:157
+#: src/components/Layout.tsx:89
+#: src/components/Layout.tsx:148
 #: src/pages/calculator.tsx:16
 #: src/pages/support.tsx:34
 msgid "Support"
 msgstr ""
 
-#: src/components/Layout.tsx:179
+#: src/components/Layout.tsx:170
 #: src/pages/terms-and-conditions.tsx:10
 msgid "Terms and Conditions"
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:26
-msgid "Thank you!"
-msgstr ""
+#~ msgid "Thank you!"
+#~ msgstr ""
 
 #: src/pages/sharing-request/driver.tsx:206
 #: src/pages/sharing-request/owner.tsx:359
@@ -535,7 +535,7 @@ msgstr ""
 msgid "Trip costs"
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:79
+#: src/pages/sharing-request/redirect.tsx:80
 msgid "Trying to open the app"
 msgstr ""
 
@@ -560,11 +560,11 @@ msgstr ""
 msgid "WhatsApp us"
 msgstr ""
 
-#: src/pages/index.tsx:196
+#: src/pages/index.tsx:188
 msgid "Why sharing with Cabble?"
 msgstr ""
 
-#: src/pages/index.tsx:118
+#: src/pages/index.tsx:110
 msgid "With Cabble sharing can be a win-win for everyone. Fuel costs? Just add them to the bill. Easy!"
 msgstr ""
 
@@ -576,7 +576,7 @@ msgstr ""
 msgid "With Cabble we can share your car safely and easily."
 msgstr ""
 
-#: src/pages/index.tsx:204
+#: src/pages/index.tsx:196
 msgid "You can be friends, neighbours or family; share your car with a trusted community."
 msgstr ""
 
@@ -588,11 +588,11 @@ msgstr ""
 msgid "You can set a free number of kilometers per trip and a price per extra kilometer (excluding fuel)."
 msgstr ""
 
-#: src/pages/sharing-request/redirect.tsx:97
+#: src/pages/sharing-request/redirect.tsx:98
 msgid "You can start sharing once both of you have the app installed."
 msgstr ""
 
-#: src/pages/index.tsx:117
+#: src/pages/index.tsx:109
 msgid "You determine the price"
 msgstr ""
 
@@ -621,8 +621,8 @@ msgid "You set a price per hour."
 msgstr ""
 
 #: src/common/useGetEarlyAccess.ts:27
-msgid "You will receive an email with the download link soon."
-msgstr ""
+#~ msgid "You will receive an email with the download link soon."
+#~ msgstr ""
 
 #: src/components/PageSectionHowItWorks.tsx:38
 #: src/components/PageSectionHowItWorks.tsx:60
