@@ -50,6 +50,7 @@
 
 .subSectionImage {
   border-radius: var(--border-radius);
+  max-height: 20em;
 }
 
 .subSection {

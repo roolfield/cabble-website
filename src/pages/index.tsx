@@ -202,7 +202,7 @@ export default function Home() {
               icon: '/images/usp-financial.svg',
               subtext: t(
                 i18n,
-              )`Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far).`,
+              )`Drivers save on cost of ownership and owners get money to cover their costs.`,
             },
             {
               title: t(i18n)`Flexible`,

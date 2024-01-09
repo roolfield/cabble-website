@@ -17,6 +17,7 @@ import { graphql } from '../../generated';
 import { UseTypedDocumentNodeType } from '../../common/graphqlTypes';
 import { useLink } from '../../common/useLink';
 import classNames from 'classnames';
+import LocalImage from '../../components/LocalImage';
 
 export enum Transmission {
   Automatic = 'automatic',
@@ -195,14 +196,25 @@ export default function OwnerShareRequest() {
             nextText={t(i18n)`About me`}>
             <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
               <figure>
-                <GoogleServedImage
-                  url={data?.car.profilePicture?.url ?? ''}
-                  widths={[600, 1000, 2000]}
-                  sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
-                  width={data?.car.profilePicture?.metadata?.width}
-                  height={data?.car.profilePicture?.metadata?.height}
-                  className={styles.subSectionImage}
-                />
+                {data?.car.profilePicture?.url && (
+                  <GoogleServedImage
+                    url={data?.car.profilePicture?.url ?? ''}
+                    widths={[600, 1000, 2000]}
+                    sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
+                    width={data?.car.profilePicture?.metadata?.width}
+                    height={data?.car.profilePicture?.metadata?.height}
+                    className={styles.subSectionImage}
+                  />
+                )}
+                {!data?.car.owner.profilePicture?.url && (
+                  <LocalImage
+                    src={'../../images/car-placeholder.png'}
+                    className={styles.subSectionImage}
+                    width={310}
+                    height={219}
+                    sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
+                  />
+                )}
               </figure>
 
               <header className={styles.subSectionHeader}>
@@ -265,14 +277,16 @@ export default function OwnerShareRequest() {
 
             <aside className={classnames(styles.subSection, styles.lgTitleTop)}>
               <figure>
-                <GoogleServedImage
-                  url={data?.car.owner.profilePicture?.url ?? ''}
-                  widths={[600, 1000, 2000]}
-                  sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
-                  width={data?.car.owner.profilePicture?.metadata?.width}
-                  height={data?.car.owner.profilePicture?.metadata?.height}
-                  className={styles.subSectionImage}
-                />
+                {data?.car.owner.profilePicture?.url && (
+                  <GoogleServedImage
+                    url={data?.car.owner.profilePicture?.url ?? ''}
+                    widths={[600, 1000, 2000]}
+                    sizes={`(max-width: ${breakpoint}) 100vw, 31.5em`}
+                    width={data?.car.owner.profilePicture?.metadata?.width}
+                    height={data?.car.owner.profilePicture?.metadata?.height}
+                    className={styles.subSectionImage}
+                  />
+                )}
               </figure>
 
               <header className={styles.subSectionHeader}>

@@ -141,7 +141,11 @@ msgid "Download the app for free."
 msgstr ""
 
 #: src/pages/index.tsx:203
-msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+#~ msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+#~ msgstr ""
+
+#: src/pages/index.tsx:203
+msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with the lowest fees out there you get to keep most."
 msgstr ""
 
 #: src/pages/sharing-request/owner.tsx:42
