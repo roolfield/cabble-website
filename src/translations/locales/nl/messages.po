@@ -8,7 +8,7 @@ msgstr ""
 "Language: nl\n"
 "Project-Id-Version: cabble-website\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2024-01-03 10:27\n"
+"PO-Revision-Date: 2024-01-09 12:07\n"
 "Last-Translator: \n"
 "Language-Team: Dutch\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -146,8 +146,12 @@ msgid "Download the app for free."
 msgstr "Download de app gratis."
 
 #: src/pages/index.tsx:203
-msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
-msgstr "Gebruikers besparen op kosten van bezit en eigenaren krijgen een deel daarvan terug. Bovendien, met een fee van 6.5% heeft Cabble veruit de laagste fees."
+#~ msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+#~ msgstr "Drivers save on cost of ownership and owners get some of it back. Moreover, with a fee of only 6,5% Cabble has the lowest fees (by far)."
+
+#: src/pages/index.tsx:203
+msgid "Drivers save on cost of ownership and owners get some of it back. Moreover, with the lowest fees out there you get to keep most."
+msgstr ""
 
 #: src/pages/sharing-request/owner.tsx:42
 msgid "Electric"
