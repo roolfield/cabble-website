@@ -169,14 +169,19 @@ export default function OwnerShareRequest() {
           <header
             className={classnames(styles.sectionHeader, styles.pageHeader)}>
             <div className={styles.headerAvatars}>
-              <GoogleServedImage
-                url={data?.car.owner?.profilePicture?.url ?? ''}
-                widths={[48, 96, 192]}
-                sizes={`(max-width: ${breakpoint}) 3em, 4em`}
-                width={data?.car.profilePicture?.metadata?.width}
-                height={data?.car.profilePicture?.metadata?.height}
-                className={styles.ownerPicture}
-              />
+              {!data?.car.owner?.profilePicture?.url && (
+                <span className={styles.avatarPlaceholder}>{'🙋'}</span>
+              )}
+              {data?.car.owner?.profilePicture?.url && (
+                <GoogleServedImage
+                  url={data?.car.owner?.profilePicture?.url ?? undefined}
+                  widths={[48, 96, 192]}
+                  sizes={`(max-width: ${breakpoint}) 3em, 4em`}
+                  width={data?.car.profilePicture?.metadata?.width}
+                  height={data?.car.profilePicture?.metadata?.height}
+                  className={styles.ownerPicture}
+                />
+              )}
               <span className={styles.cabbleLogo}>C</span>
             </div>
             <span>
@@ -206,7 +211,7 @@ export default function OwnerShareRequest() {
                     className={styles.subSectionImage}
                   />
                 )}
-                {!data?.car.owner.profilePicture?.url && (
+                {!data?.car.profilePicture?.url && (
                   <LocalImage
                     src={'../../images/car-placeholder.png'}
                     className={styles.subSectionImage}

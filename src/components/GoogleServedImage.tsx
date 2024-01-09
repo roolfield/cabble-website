@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import classnames from 'classnames';
 import { useInView } from 'react-intersection-observer';
+import classNames from 'classnames';
 
 export default function GoogleServedImage({
   url,
@@ -89,7 +90,7 @@ export default function GoogleServedImage({
   return (
     <div ref={ref}>
       <picture
-        className={`container ${containerClasses.join(' ')}`.trim()}
+        className={classNames('container', containerClasses)}
         style={{
           backgroundImage: show ? `url(${progressiveImgUrl})` : '',
           ...style,

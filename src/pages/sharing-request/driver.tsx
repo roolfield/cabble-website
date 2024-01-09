@@ -99,14 +99,19 @@ export default function DriverShareRequest() {
           <header
             className={classnames(styles.sectionHeader, styles.pageHeader)}>
             <div className={styles.headerAvatars}>
-              <GoogleServedImage
-                url={data?.userProfile.profilePicture?.url ?? ''}
-                widths={[48, 96, 192]}
-                sizes={`(max-width: ${breakpoint}) 3em, 4em`}
-                width={data?.userProfile.profilePicture?.metadata?.width}
-                height={data?.userProfile.profilePicture?.metadata?.height}
-                className={styles.ownerPicture}
-              />
+              {!data?.userProfile.profilePicture?.url && (
+                <span className={styles.avatarPlaceholder}>{'🙋'}</span>
+              )}
+              {data?.userProfile.profilePicture?.url && (
+                <GoogleServedImage
+                  url={data?.userProfile.profilePicture?.url}
+                  widths={[48, 96, 192]}
+                  sizes={`(max-width: ${breakpoint}) 3em, 4em`}
+                  width={data?.userProfile.profilePicture?.metadata?.width}
+                  height={data?.userProfile.profilePicture?.metadata?.height}
+                  className={styles.ownerPicture}
+                />
+              )}
               <span className={styles.cabbleLogo}>C</span>
             </div>
             <span>
